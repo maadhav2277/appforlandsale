@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#c6e8f8",
+                    "on-surface-variant": "#414844",
+                    "inverse-on-surface": "#dff4ff",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#c6e8f8",
+                    "outline": "#717973",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#76b394",
+                    "surface": "#f3faff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "surface-dim": "#bedfef",
+                    "primary-fixed": "#b1f0ce",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-secondary-fixed": "#002113",
+                    "secondary-fixed": "#a1f4c8",
+                    "on-tertiary-fixed": "#092012",
+                    "on-primary-fixed": "#002114",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-secondary-container": "#1b724f",
+                    "on-background": "#001f29",
+                    "tertiary": "#152b1c",
+                    "primary": "#002d1c",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "inverse-primary": "#95d4b3",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "tertiary-container": "#2a4131",
+                    "background": "#f3faff",
+                    "inverse-surface": "#123441",
+                    "surface-container": "#d8f2ff",
+                    "secondary-container": "#a1f4c8",
+                    "tertiary-fixed": "#cee9d3",
+                    "surface-tint": "#2c694e",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#001f29",
+                    "secondary": "#116c4a",
+                    "surface-container-low": "#e6f6ff",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#ccedfe",
+                    "primary-container": "#00452e",
+                    "outline-variant": "#c1c8c2",
+                    "surface-bright": "#f3faff",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#93ad98"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen">
+<header class="fixed top-0 left-0 w-full z-50 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<h1 class="text-emerald-950 dark:text-emerald-50 uppercase tracking-[0.2em] font-bold text-2xl">Terra Nova</h1>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-emerald-950 dark:text-emerald-500" data-icon="search">search</button>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a professional man in his 40s with a warm smile, wearing an outdoor vest, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMilqwP6ADWVTznX01MONcJGYB7X4OHRRgzvDUrz7bor77uzvvAiyQjho0oSW6FPi8vjih842IcmY02GH0bYPl_X4DOqYkxAS-Mg9oIzoBqh6fJ8dtTJjQ7UFo2a0CaX3GcfsEb8v4c3sEuayCRz4YmCCPeDhnjG9dBlYNSpmdAH4wdq8tG8D2kZHkGaGn_Wo-0UR9EYGD4lxbVCyZVoEs-F1ygIPpOJ4Py3tCasm_TKl_176ENZwOaSw-ylb1qrSKVOybgKJ_VTCm"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<section class="mb-10 text-center">
+<div class="relative inline-block mb-6">
+<div class="w-32 h-32 rounded-full overflow-hidden border-4 border-surface-container-lowest shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Close up professional portrait of a verified land owner, confident expression, natural outdoor background with soft bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzLKbn3HHDwUjfRQDpL34k-NxobvgDZvTawUDDAiZGzXq_ccC6LjSEbyHB-yN7V-MPigjd594rqQvj72rYDHxbxNBN9KmHYcTj2PkLNKGb5groyblQFjYHlabra3SNnDpJTROl_SoTUpyurd1V4qBOfbDf1Hsh7xMPMVtyZnuEDlCxXwif7fSo9gKkcovcvPp8ltpkAf4Tt4udXoIT56OGZi9cPGta3JVCP0BLe752hJgylHez5B-fi8IZnYDr5XFsgDoMygYioKQU"/>
+</div>
+<div class="absolute bottom-1 right-1 bg-secondary p-1.5 rounded-full border-2 border-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<h2 class="text-3xl font-extrabold tracking-tighter text-primary mb-1">Julian Thorne</h2>
+<p class="font-label text-on-surface-variant font-medium text-sm tracking-wide">Verified Owner</p>
+</section>
+<section class="mb-10">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-5 rounded-full font-bold text-lg shadow-xl flex items-center justify-center gap-3 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="add_location">add_location</span>
+                List New Land
+            </button>
+</section>
+<nav class="space-y-4">
+<div class="bg-surface-container-low rounded-full p-1">
+<a class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-full transition-all group hover:bg-surface-bright" href="#">
+<div class="flex items-center gap-4 px-2">
+<span class="material-symbols-outlined text-primary" data-icon="landslide">landslide</span>
+<span class="font-semibold text-on-surface">My Listings</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<div class="bg-surface-container-low rounded-full p-1">
+<a class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-full transition-all group hover:bg-surface-bright" href="#">
+<div class="flex items-center gap-4 px-2">
+<span class="material-symbols-outlined text-primary" data-icon="settings">settings</span>
+<span class="font-semibold text-on-surface">Account Settings</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<div class="bg-surface-container-low rounded-full p-1">
+<a class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-full transition-all group hover:bg-surface-bright" href="#">
+<div class="flex items-center gap-4 px-2">
+<span class="material-symbols-outlined text-primary" data-icon="help">help</span>
+<span class="font-semibold text-on-surface">Help &amp; Support</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<div class="pt-6">
+<a class="flex items-center justify-center gap-2 p-4 text-error font-bold border border-error/10 rounded-full hover:bg-error-container transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                    Logout
+                </a>
+</div>
+</nav>
+</main>
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-xl z-50 rounded-t-3xl shadow-[0px_-4px_20px_rgba(0,31,41,0.06)]">
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-4 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-800/30 scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-4 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-800/30 scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-4 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-800/30 scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Inquiries</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-950 dark:text-emerald-100 rounded-2xl px-4 py-1.5 transition-all scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Profile</span>
+</a>
+</nav>
+</body></html>

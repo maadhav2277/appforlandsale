@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Discover Land</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#95d4b3",
+                    "on-tertiary-fixed": "#092012",
+                    "outline": "#717973",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "surface-container-highest": "#c6e8f8",
+                    "surface-bright": "#f3faff",
+                    "surface": "#f3faff",
+                    "secondary-container": "#a1f4c8",
+                    "inverse-on-surface": "#dff4ff",
+                    "tertiary-container": "#2a4131",
+                    "secondary-fixed": "#a1f4c8",
+                    "primary-fixed": "#b1f0ce",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#002114",
+                    "surface-variant": "#c6e8f8",
+                    "secondary": "#116c4a",
+                    "on-surface-variant": "#414844",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "background": "#f3faff",
+                    "surface-container-high": "#ccedfe",
+                    "surface-container-low": "#e6f6ff",
+                    "on-secondary-container": "#1b724f",
+                    "surface-dim": "#bedfef",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-surface": "#001f29",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "surface-tint": "#2c694e",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#00452e",
+                    "primary": "#002d1c",
+                    "inverse-surface": "#123441",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-secondary-fixed-variant": "#005236",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#152b1c",
+                    "surface-container": "#d8f2ff",
+                    "on-tertiary-container": "#93ad98",
+                    "on-secondary-fixed": "#002113",
+                    "on-primary-container": "#76b394",
+                    "outline-variant": "#c1c8c2",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-background": "#001f29",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#95d4b3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.map-bg {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCMLFjWMzMy0l_EGYv27zdVSGrsDTS3949GcBzsPCRkbN5oDtlSzLrOhUrlrkQzuactzEIVc7oz7JdZPVFGT3wvAh-e59RJpCLlK5XK2yEB36jmH30sRtIx4i7z_BjW0AJgY24LlsBMTGej5fye_nj5guWxKEb-nwCoT__mkcKZi8C37fkfOZc3mSJSKKhD0SiKMRWYIMG7VhkrWaZxEm84JFNO0T6wUIvor_nmgR8YtD_zEBgkP6Z-34jwxTzwIWJ0UUMNIo3E3OR-);
+    background-size: cover;
+    background-position: center
+    }
+.backdrop-blur-xl {
+    backdrop-filter: blur(24px)
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high">
+<img alt="user profile" data-alt="close-up portrait of a professional woman with a soft natural background and clean lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh9yzvY4Q2CQFCFOaQSJKLNUTDEe-vLix4uF5E9OlXKKCvM_3Md10cPiD4Bpim476U4GpPx5_r0HBqD0vkmhdL7BfoAcdPq7XmopvE7PR1TDDXfbvWVUFT_jMxOoLFk2gkOxrHdl3eot3Ata6LJpfWsx9lgKUvYC1m5Se44euQJ3HpqG8hKhFFgchCZQvn9PdeD-d4UrANCXuqL4NV8BbeKVw8Nq38tYTZ03X0uKE0AzvrrSuzmilnuVVgxd_hIklIMbNUW4iZ3Sh9"/>
+</div>
+<h1 class="font-headline tracking-tight font-bold text-2xl uppercase text-[#1B4332]">The Topographic</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex gap-6">
+<a class="font-label text-sm font-semibold uppercase tracking-widest text-[#1B4332] transition-opacity duration-300 hover:opacity-80" href="#">Explore</a>
+<a class="font-label text-sm font-semibold uppercase tracking-widest text-slate-500 transition-opacity duration-300 hover:opacity-80" href="#">Saved</a>
+<a class="font-label text-sm font-semibold uppercase tracking-widest text-slate-500 transition-opacity duration-300 hover:opacity-80" href="#">Profile</a>
+</nav>
+<button class="text-[#1B4332] hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+<!-- Mobile Search Icon Only -->
+<div class="md:hidden">
+<button class="text-[#1B4332]">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Map Canvas -->
+<main class="relative h-screen w-full overflow-hidden pt-20">
+<!-- The Map Layer -->
+<div class="absolute inset-0 z-0 map-bg" data-alt="high-resolution satellite view of rolling green hills and patchwork agricultural land with soft topographic shadows" data-location="Montana Highlands" style="">
+<!-- Price Tags / Markers -->
+<!-- Marker 1 -->
+<div class="absolute top-[35%] left-[25%] animate-pulse">
+<div class="relative group">
+<div class="bg-primary text-on-primary font-label text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1 cursor-pointer transition-transform hover:scale-110">
+                        $120k
+                    </div>
+<div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45"></div>
+</div>
+</div>
+<!-- Marker 2 (Active/Large) -->
+<div class="absolute top-[55%] left-[50%]">
+<div class="relative group">
+<div class="bg-primary text-on-primary font-label text-sm font-bold px-4 py-2 rounded-full shadow-[0px_20px_40px_rgba(0,31,41,0.2)] flex items-center gap-1 cursor-pointer ring-4 ring-secondary-container/50">
+                        $450k
+                    </div>
+<div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45"></div>
+</div>
+</div>
+<!-- Marker 3 -->
+<div class="absolute top-[42%] left-[70%]">
+<div class="relative group">
+<div class="bg-primary text-on-primary font-label text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1 cursor-pointer transition-transform hover:scale-110">
+                        $295k
+                    </div>
+<div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45"></div>
+</div>
+</div>
+<!-- Marker 4 -->
+<div class="absolute top-[68%] left-[20%]">
+<div class="relative group">
+<div class="bg-primary text-on-primary font-label text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1 cursor-pointer transition-transform hover:scale-110">
+                        $85k
+                    </div>
+<div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45"></div>
+</div>
+</div>
+</div>
+<!-- Floating Search Interface -->
+<div class="absolute top-24 left-1/2 -translate-x-1/2 w-[90%] max-w-xl z-20">
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl rounded-full shadow-[0px_20px_40px_rgba(0,31,41,0.06)] p-2 flex items-center gap-2">
+<div class="pl-4 text-primary">
+<span class="material-symbols-outlined">explore</span>
+</div>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-on-surface font-body text-sm placeholder:text-on-surface-variant/60" placeholder="Search coordinates, counties, or acreage..." type="text"/>
+<button class="bg-primary text-on-primary p-2.5 rounded-full hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm">tune</span>
+</button>
+</div>
+</div>
+<!-- Floating Control Cluster (Right) -->
+<div class="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-20">
+<button class="w-12 h-12 bg-surface-container-lowest/90 backdrop-blur-xl rounded-xl shadow-lg flex items-center justify-center text-primary hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">layers</span>
+</button>
+<button class="w-12 h-12 bg-surface-container-lowest/90 backdrop-blur-xl rounded-xl shadow-lg flex items-center justify-center text-primary hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+<div class="flex flex-col bg-surface-container-lowest/90 backdrop-blur-xl rounded-xl shadow-lg overflow-hidden">
+<button class="w-12 h-12 flex items-center justify-center text-primary hover:bg-surface-container-low border-b border-outline-variant/10">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center text-primary hover:bg-surface-container-low">
+<span class="material-symbols-outlined">remove</span>
+</button>
+</div>
+</div>
+<!-- Property Quick Glance (Left) -->
+<div class="absolute bottom-32 left-6 z-20 max-w-xs hidden lg:block">
+<div class="bg-surface-container-lowest/95 backdrop-blur-xl rounded-xl p-4 shadow-[0px_20px_40px_rgba(0,31,41,0.06)] group cursor-pointer transition-transform hover:-translate-y-1">
+<div class="relative h-40 rounded-lg overflow-hidden mb-3">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="expansive green pasture with a single majestic oak tree under a clear blue sky, late afternoon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD--vzELncDWPxM24EUeW4c4wwckGYvDPMXfMGbhaKpbUujmemVzYh9hN6gDBGCj0q8jNikWDuf00-qwJm9Xz-Ioh6le9Oruy9aflp1Pn-iKHwxbJ2_J5tDpuJ5bJPEZ57otVxWKysdTKtumHUKcnLcOOlzLFGMuDHhL3oq5R0HYxJDgVpETKjKkGnC-8HwAj_ErQCdERGvIQkuWagEUamLl243ClruINIR8OObZPct27FirtKl2qb2VDdSac2nc04YQBW5Srpe1zYM"/>
+<div class="absolute top-2 right-2 bg-white/20 backdrop-blur-md px-2 py-1 rounded text-[10px] font-label font-bold text-white uppercase tracking-tighter">Featured</div>
+</div>
+<h3 class="font-headline font-bold text-lg text-primary leading-tight">Rolling Meadows Plot 42</h3>
+<p class="text-on-surface-variant font-label text-xs uppercase tracking-widest mt-1">Big Sky County, MT • 12.4 AC</p>
+<div class="mt-4 flex justify-between items-center">
+<span class="text-primary font-headline font-extrabold text-xl">$450,000</span>
+<button class="bg-secondary-container text-on-secondary-container font-label text-[10px] font-bold px-3 py-1.5 rounded-md uppercase tracking-widest hover:opacity-80 transition-opacity">View Details</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-[#f3faff]/70 backdrop-blur-xl z-50 rounded-t-3xl border-t border-white/10 shadow-[0px_-10px_30px_rgba(0,31,41,0.04)]">
+<div class="flex flex-col items-center justify-center text-[#1B4332] bg-[#a1f4c8]/20 rounded-full px-4 py-1 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label text-[11px] font-semibold uppercase tracking-widest">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/60 hover:bg-white/20 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-label text-[11px] font-semibold uppercase tracking-widest">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/60 hover:bg-white/20 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-label text-[11px] font-semibold uppercase tracking-widest">Inquiries</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/60 hover:bg-white/20 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label text-[11px] font-semibold uppercase tracking-widest">Profile</span>
+</div>
+</nav>
+</body></html>

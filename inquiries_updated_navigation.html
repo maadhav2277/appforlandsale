@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inquiries | TERRA NOVA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#bedfef",
+                    "surface": "#f3faff",
+                    "surface-variant": "#c6e8f8",
+                    "outline-variant": "#c1c8c2",
+                    "on-tertiary-fixed": "#092012",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#123441",
+                    "secondary-fixed": "#a1f4c8",
+                    "secondary-container": "#a1f4c8",
+                    "primary-container": "#00452e",
+                    "secondary": "#116c4a",
+                    "inverse-on-surface": "#dff4ff",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#95d4b3",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-surface-variant": "#414844",
+                    "on-background": "#001f29",
+                    "on-secondary-fixed-variant": "#005236",
+                    "surface-tint": "#2c694e",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#d8f2ff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "surface-container-low": "#e6f6ff",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#76b394",
+                    "outline": "#717973",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#b1f0ce",
+                    "on-tertiary-container": "#93ad98",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "background": "#f3faff",
+                    "surface-bright": "#f3faff",
+                    "surface-container-high": "#ccedfe",
+                    "tertiary": "#152b1c",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#001f29",
+                    "on-secondary-fixed": "#002113",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#c6e8f8",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "primary": "#002d1c",
+                    "on-secondary-container": "#1b724f",
+                    "on-primary-fixed": "#002114",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "tertiary-container": "#2a4131"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/70 dark:bg-emerald-950/70 backdrop-blur-xl flex items-center justify-between px-6 py-4 w-full no-border tonal-shift shadow-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-50">landscape</span>
+</div>
+<h1 class="text-xl font-extrabold tracking-[0.2em] text-emerald-900 dark:text-emerald-100 font-['Manrope']">TERRA NOVA</h1>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-50">search</span>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Editorial Header -->
+<section class="mb-12">
+<span class="font-label text-on-secondary-container bg-secondary-container/30 px-3 py-1 rounded-md text-[11px] uppercase tracking-widest font-semibold">Workspace</span>
+<h2 class="text-4xl font-extrabold text-primary tracking-tight mt-4 leading-tight">Inquiries</h2>
+<p class="text-on-surface-variant text-body-md mt-2 max-w-md">Manage your ongoing negotiations and site visit requests with verified landowners.</p>
+</section>
+<!-- Messages Layout: Bento Grid Style -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Active Conversation Thread (Main) -->
+<div class="md:col-span-8 space-y-6">
+<!-- Chat Card 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-full shadow-[0_20px_40px_rgba(0,31,41,0.06)] group cursor-pointer transition-all hover:translate-y-[-4px]">
+<div class="flex items-start gap-4">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="close-up portrait of a professional land surveyor in outdoor gear with soft natural lighting and forest background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZu0d26i_4TOCzlpq-NOO9g0u3rf-f_VlPQlIhNnwvN9Jyqhu7nbvZw9_YhiVz1ePOVrEOvgDLu8uhsMeEu2fpdD7BhmQ2HhyF6753vZkbqWePnRh-x63qjonsMV3-923NIsh4lOAW1baQqj93sQHrcq0yWYSBMVwNR9vFE_LVcNJ7xPW8s-W6oUoqeNJF8jenjXvKTStP9C83igz-dMO7zm0NarinzEWqdwltf4A3b7ele4uzvsKdIm8Fq3pKomoSHv765w66X3Yc"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-secondary rounded-full border-2 border-surface-container-lowest"></div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<h3 class="font-bold text-lg text-primary">Marcus Thorne</h3>
+<span class="text-label text-[11px] text-on-surface-variant/60 font-semibold uppercase tracking-wider">24m ago</span>
+</div>
+<p class="text-on-primary-fixed-variant font-semibold text-sm mb-2">Re: Blackwood Valley Plot #42</p>
+<p class="text-on-surface-variant text-sm line-clamp-2 italic">"The soil analysis reports are ready for your review. We can schedule the drone survey for Tuesday if the weather holds..."</p>
+<div class="mt-4 flex gap-2">
+<span class="text-[10px] font-label font-bold bg-surface-container text-on-secondary-container px-2 py-1 rounded">PENDING SURVEY</span>
+<span class="text-[10px] font-label font-bold bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-1 rounded">HIGH PRIORITY</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Chat Card 2 -->
+<div class="bg-surface-container-low p-6 rounded-full group cursor-pointer transition-all hover:bg-surface-container">
+<div class="flex items-start gap-4 opacity-80 group-hover:opacity-100">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="candid headshot of a female agricultural expert in a sunlit meadow with warm golden hour tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzOnH-MZ5dyq31tsilnQXwcoiOcnQU5EQRumB9L0znUOcgVNkPxbvqA2NC25GigmnxOEUfvWQLu8L3xxfvHoAcEqFvxEuDySHnR3HgvRiTkJwS3wthaD2dBC37-PA8_PHEQKkWu_mhv9jLl3TiNWl-2mlFJh3lbFhgv_qYEx1FgCgHAXMwmFaVxwP8-5-sbelsGncMUF5mYd0QBmvd_2XmJqJTKUjir09Y4ZLo3j1d8RfKeXQZ-tN0i5xf7suhK36-_Ro3kZTVJLkG"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<h3 class="font-bold text-lg text-primary">Elena Rodriguez</h3>
+<span class="text-label text-[11px] text-on-surface-variant/60 font-semibold uppercase tracking-wider">Yesterday</span>
+</div>
+<p class="text-on-primary-fixed-variant font-semibold text-sm mb-2">Site Visit: Willow Creek Estates</p>
+<p class="text-on-surface-variant text-sm line-clamp-1">Confirmed for Friday at 09:00. Please bring the topographic maps we discussed.</p>
+</div>
+</div>
+</div>
+<!-- Chat Card 3 -->
+<div class="bg-surface-container-low p-6 rounded-full group cursor-pointer transition-all hover:bg-surface-container">
+<div class="flex items-start gap-4 opacity-80 group-hover:opacity-100">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center">
+<span class="text-on-primary font-bold">JB</span>
+</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<h3 class="font-bold text-lg text-primary">Julian Bennet</h3>
+<span class="text-label text-[11px] text-on-surface-variant/60 font-semibold uppercase tracking-wider">Oct 12</span>
+</div>
+<p class="text-on-primary-fixed-variant font-semibold text-sm mb-2">Acreage Inquiry</p>
+<p class="text-on-surface-variant text-sm line-clamp-1">Thank you for your interest. The water rights are included in the deed...</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar / Stats (Editorial Style) -->
+<div class="md:col-span-4 space-y-6">
+<!-- Activity Summary Card -->
+<div class="bg-primary p-8 rounded-full text-on-primary shadow-xl overflow-hidden relative">
+<div class="relative z-10">
+<h4 class="text-label text-[11px] uppercase tracking-[0.2em] font-bold text-secondary-fixed/70 mb-6">Active Overview</h4>
+<div class="space-y-6">
+<div>
+<span class="text-4xl font-extrabold">08</span>
+<p class="text-on-primary/60 text-xs font-label mt-1">Open Negotiations</p>
+</div>
+<div>
+<span class="text-4xl font-extrabold">03</span>
+<p class="text-on-primary/60 text-xs font-label mt-1">Site Visits Scheduled</p>
+</div>
+</div>
+</div>
+<!-- Abstract Background Shape -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary-container rounded-full opacity-50 blur-3xl"></div>
+</div>
+<!-- Quick Action Card -->
+<div class="bg-surface-container-high p-6 rounded-full border border-outline-variant/10">
+<h4 class="text-primary font-bold mb-4">Quick Resources</h4>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-sm text-on-secondary-container font-medium hover:underline cursor-pointer">
+<span class="material-symbols-outlined text-sm">description</span>
+                            Standard Lease Template
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-secondary-container font-medium hover:underline cursor-pointer">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+                            Ownership Verification Guide
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-secondary-container font-medium hover:underline cursor-pointer">
+<span class="material-symbols-outlined text-sm">map</span>
+                            Zoning Regulation Map
+                        </li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-slate-50/80 dark:bg-emerald-950/80 backdrop-blur-xl z-50 rounded-t-3xl shadow-[0_-10px_40px_rgba(0,31,41,0.06)] bg-emerald-100/20 dark:bg-emerald-800/20 no-border">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-emerald-700 px-4 py-1 scale-95 active:scale-90 transition-transform hover:text-emerald-800 dark:hover:text-emerald-300 cursor-pointer">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase mt-1">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-emerald-700 px-4 py-1 scale-95 active:scale-90 transition-transform hover:text-emerald-800 dark:hover:text-emerald-300 cursor-pointer">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase mt-1">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center text-emerald-900 dark:text-emerald-400 bg-emerald-500/10 rounded-xl px-4 py-1 scale-95 active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase mt-1">Inquiries</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-emerald-700 px-4 py-1 scale-95 active:scale-90 transition-transform hover:text-emerald-800 dark:hover:text-emerald-300 cursor-pointer">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase mt-1">Profile</span>
+</div>
+</nav>
+</body></html>

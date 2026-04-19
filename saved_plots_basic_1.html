@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "surface": "#f3faff",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#93ad98",
+                        "inverse-surface": "#123441",
+                        "on-surface-variant": "#414844",
+                        "surface-dim": "#bedfef",
+                        "surface-container-highest": "#c6e8f8",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#c6e8f8",
+                        "secondary-fixed-dim": "#86d7ad",
+                        "primary": "#002d1c",
+                        "on-primary-fixed": "#002114",
+                        "secondary": "#116c4a",
+                        "on-background": "#001f29",
+                        "on-primary-container": "#76b394",
+                        "surface-container": "#d8f2ff",
+                        "surface-bright": "#f3faff",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#00452e",
+                        "on-surface": "#001f29",
+                        "surface-container-high": "#ccedfe",
+                        "outline-variant": "#c1c8c2",
+                        "tertiary-fixed-dim": "#b3cdb7",
+                        "secondary-fixed": "#a1f4c8",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#e6f6ff",
+                        "primary-fixed": "#b1f0ce",
+                        "inverse-primary": "#95d4b3",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f3faff",
+                        "secondary-container": "#a1f4c8",
+                        "inverse-on-surface": "#dff4ff",
+                        "on-secondary-container": "#1b724f",
+                        "surface-tint": "#2c694e",
+                        "on-tertiary-fixed-variant": "#354c3b",
+                        "on-tertiary-fixed": "#092012",
+                        "tertiary": "#152b1c",
+                        "outline": "#717973",
+                        "tertiary-container": "#2a4131",
+                        "primary-fixed-dim": "#95d4b3",
+                        "tertiary-fixed": "#cee9d3",
+                        "on-secondary-fixed": "#002113"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased min-h-screen">
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 backdrop-blur-md shadow-[0px_20px_40px_rgba(0,31,41,0.06)] flex justify-between items-center px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-900" data-icon="landscape">landscape</span>
+<h1 class="font-manrope text-xl font-bold tracking-tight text-[#002d1c]">Topographic</h1>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high border-2 border-primary/10 overflow-hidden flex items-center justify-center">
+<img alt="User avatar" data-alt="close-up of a professional land surveyor in modern attire against a soft-focus mountain landscape background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD0hfZQxKwhTAzmJwVvRkadohOljunW-0qnq4mHZ0FHdtfnvj3mfn142WZDhEsfSU_XWdLkng0WW7DhGn9dlKEO_uag_sxW4XIqXfe-2O6fHBmsi4sVx7bVX0J_D1SNI-KxKlDp57a2XRvjfunixwDXgVTURBGsejyn8fqGhqJpSsWqoIL0KdOR6QUMs8jvtMazrOGmlLdpBqNLfZsJ5aiQLF6VtmKvtNdrdT0E0yMIdVrWqNKBJ9x-F2weXnBJDvPnsIuMHuO3V1M"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-4xl mx-auto">
+<div class="mb-10">
+<h2 class="text-4xl font-extrabold tracking-tighter text-primary uppercase mb-2">Saved Plots</h2>
+<p class="text-on-surface-variant font-label text-sm">Your curated collection of potential landscapes and investment opportunities.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0px_20px_40px_rgba(0,31,41,0.06)] group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="wide angle shot of rolling green hills in Scotland under a moody overcast sky with dramatic lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBivgh2cNUpLBY_-AsrFaldqYDx4PW7k9EvrhJeNe5omxLZXzG-mg94VSYuVUNaCbtm-FT9MwhFRtcNLmlfOcnj1iFlLTO_gzHQLOoAmfEwC574cD8EcSIQRFr9K07RCKmCMTLW8DB9AhKosRzLC5ep5kKn9amnVz61i6v-rkKnqzjmRHhjwp-64nSdWVo2pzx5lJFsqBNjZSOTp95ENRy_1K5L_mqPW5iwXJDCJ2olxw5PX2xjcOyjOZ6beN_KL9GcofSTSrmKuLMU"/>
+<button class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary leading-none mb-1">Highland Crest</h3>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Inverness, Scotland</p>
+</div>
+<div class="text-right">
+<p class="text-2xl font-extrabold text-primary tracking-tighter">$145,000</p>
+</div>
+</div>
+<div class="flex items-center gap-6 pt-4 border-t border-outline-variant/15">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="square_foot">square_foot</span>
+<span class="font-label text-sm font-semibold">12.5 Acres</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="terrain">terrain</span>
+<span class="font-label text-sm font-semibold">Sloped</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0px_20px_40px_rgba(0,31,41,0.06)] group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="serene lakeside meadow in the Alps with clear turquoise water and snow-capped peaks reflecting at sunset golden hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNO98AMBIBC8Nqrh1NfKfu4TPAqUrYKK21mtiG5pFo5nBCgf75_zk2249fUqazYmmIVMGURxHL1HxknUdke8n9NEUjegpyTFHxatQAxYWDsYW6eBgtw2KYZtqFHdYQ3Z_5S2bjNO3V1TQ209V9Vh77AQnXlS3XRwPPowVM7AJu5Tk_e9_KJhp7tb4rimkYI9Oy93im2Rovwz-ESag2mF54AKmYWYuz2_QdQ4TE11_WX9dA1xcnaz04VMw5_-RmskRhSu7uuVahWCoG"/>
+<button class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary leading-none mb-1">Mirror Lake Plot</h3>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Hallstatt, Austria</p>
+</div>
+<div class="text-right">
+<p class="text-2xl font-extrabold text-primary tracking-tighter">$320,000</p>
+</div>
+</div>
+<div class="flex items-center gap-6 pt-4 border-t border-outline-variant/15">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="square_foot">square_foot</span>
+<span class="font-label text-sm font-semibold">4.2 Acres</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="water">water</span>
+<span class="font-label text-sm font-semibold">Waterfront</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0px_20px_40px_rgba(0,31,41,0.06)] group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="vast mountain range landscape with pine forest in the foreground and majestic peaks disappearing into misty blue atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqJXqfJGGj9G4_cApWH7Uhw6u6YtHfgIrJnXHrYxObfWjcw9o728pJRbmQ3VPcwJHfpBdSb4EswrJwTQHbeeD0KNc-jgb83QtRcBlIO3alQzbR6DPtueqAIuNRn0bBU_Tp4b7sh6fgsesUoIvsQ32pyLL4Avizqq9K0lst6eMCvpz6C7S7a7NSTJKxIB3_NwPt9Y0b_ijMfMmYc3MUcsWAr5F7e3esC44tDNJnePtVPKd0frGKc2dFLqgya8afx4Vjb8XNATnkQQDR"/>
+<button class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary leading-none mb-1">Whispering Pines</h3>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Montana, USA</p>
+</div>
+<div class="text-right">
+<p class="text-2xl font-extrabold text-primary tracking-tighter">$89,500</p>
+</div>
+</div>
+<div class="flex items-center gap-6 pt-4 border-t border-outline-variant/15">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="square_foot">square_foot</span>
+<span class="font-label text-sm font-semibold">25.0 Acres</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="forest">forest</span>
+<span class="font-label text-sm font-semibold">Wooded</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-full border-2 border-dashed border-outline-variant/30 flex flex-col items-center justify-center p-8 group cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="w-16 h-16 rounded-full bg-white/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="add">add</span>
+</div>
+<p class="text-primary font-bold uppercase tracking-widest text-sm">Find more land</p>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/70 backdrop-blur-md shadow-[0_-4px_24px_rgba(0,31,41,0.04)] z-50 border-t-[0.5px] border-[#c1c8c2]/15">
+<div class="flex flex-col items-center justify-center text-[#001f29]/50 px-4 py-1.5 hover:text-[#116c4a] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined transition-transform group-active:scale-95" data-icon="explore">explore</span>
+<span class="font-inter text-[11px] font-semibold tracking-wide uppercase mt-1">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#a1f4c8]/20 text-[#002d1c] rounded-xl px-4 py-1.5 transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-inter text-[11px] font-semibold tracking-wide uppercase mt-1">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/50 px-4 py-1.5 hover:text-[#116c4a] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined transition-transform group-active:scale-95" data-icon="mail">mail</span>
+<span class="font-inter text-[11px] font-semibold tracking-wide uppercase mt-1">Messages</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/50 px-4 py-1.5 hover:text-[#116c4a] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined transition-transform group-active:scale-95" data-icon="person">person</span>
+<span class="font-inter text-[11px] font-semibold tracking-wide uppercase mt-1">Profile</span>
+</div>
+</nav>
+</body></html>

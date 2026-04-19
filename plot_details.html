@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#c6e8f8",
+                    "on-surface-variant": "#414844",
+                    "inverse-on-surface": "#dff4ff",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#c6e8f8",
+                    "outline": "#717973",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#76b394",
+                    "surface": "#f3faff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "surface-dim": "#bedfef",
+                    "primary-fixed": "#b1f0ce",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-secondary-fixed": "#002113",
+                    "secondary-fixed": "#a1f4c8",
+                    "on-tertiary-fixed": "#092012",
+                    "on-primary-fixed": "#002114",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-secondary-container": "#1b724f",
+                    "on-background": "#001f29",
+                    "tertiary": "#152b1c",
+                    "primary": "#002d1c",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "inverse-primary": "#95d4b3",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "tertiary-container": "#2a4131",
+                    "background": "#f3faff",
+                    "inverse-surface": "#123441",
+                    "surface-container": "#d8f2ff",
+                    "secondary-container": "#a1f4c8",
+                    "tertiary-fixed": "#cee9d3",
+                    "surface-tint": "#2c694e",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#001f29",
+                    "secondary": "#116c4a",
+                    "surface-container-low": "#e6f6ff",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#ccedfe",
+                    "primary-container": "#00452e",
+                    "outline-variant": "#c1c8c2",
+                    "surface-bright": "#f3faff",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#93ad98"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container">
+<!-- Top Navigation Shell (Contextual Back Version) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-xl flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="p-2 -ml-2 text-primary opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+<h1 class="text-emerald-950 dark:text-emerald-50 uppercase tracking-[0.2em] font-bold font-['Manrope']">Terra Nova</h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="text-slate-500 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<button class="text-slate-500 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</header>
+<main class="pb-24 pt-[72px]">
+<!-- Hero Section: Organic Asymmetry Layout -->
+<section class="relative px-4 md:px-8 lg:px-12 mb-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Large Feature Image -->
+<div class="lg:col-span-8 rounded-full overflow-hidden aspect-[16/10] shadow-[0px_20px_40px_rgba(0,31,41,0.06)]">
+<img class="w-full h-full object-cover" data-alt="Panoramic landscape of rolling green hills in the Scottish Highlands during sunrise with misty valleys and soft atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAesLwbI-Ad6xFQooDa8G9jMptDuLPbD0f1LBdPqqL6xedcSgcuyjP_9xRK_b0BzaX1pnvzZ4223dfmJzu9-3iBFV8MaPvL6i2Dfyrf2WTyip3Zf9Ap_PpKy79LoHvS_YvZ5AfAoYYwFG7IlUcM4Tl5JTgVplQmsNeV2HKsNXIqpXJcWZ2CQfYnBAyctW77Lo_YAhGuTZGxYQ4t0lTOqcdwSKxId8t6w_zjyJZHtomfkgI6f1Zm6amwnlICLtuOkLvfJPrl8QGsFrv6"/>
+</div>
+<!-- Floating Info Card (Editorial Style) -->
+<div class="lg:col-span-4 flex flex-col justify-end space-y-6 lg:pb-12">
+<div class="space-y-2">
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant font-semibold">Highlands Estate</span>
+<h2 class="font-headline text-4xl lg:text-5xl font-extrabold text-primary tracking-tighter leading-none">Glenmore Valley Plot 14</h2>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-full border border-outline-variant/15">
+<p class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant mb-1">Total Area</p>
+<p class="font-headline text-2xl font-bold text-primary">12.4 AC</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-full border border-outline-variant/15">
+<p class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant mb-1">Asking Price</p>
+<p class="font-headline text-2xl font-bold text-primary">£345,000</p>
+</div>
+</div>
+<button class="w-full py-4 px-8 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-full font-headline font-bold text-lg shadow-xl hover:opacity-90 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                        Contact Owner
+                    </button>
+</div>
+</div>
+</section>
+<!-- Details Grid -->
+<section class="px-4 md:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+<!-- Left: Description (Editorial White Space) -->
+<div class="lg:col-span-2 space-y-8">
+<div class="space-y-4">
+<h3 class="font-headline text-2xl font-bold text-primary">The Landscape Narrative</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed font-body">
+                        Situated at the confluence of the River Spey and the Glenmore forest, Plot 14 offers a rare topographic profile. The land features a 15-degree gradient sloping south-west, providing optimal solar gain and natural drainage. This is not merely an investment; it is a stewardship of the ancient Caledonian pine forest outskirts.
+                    </p>
+</div>
+<!-- Key Data Bento -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-low p-5 rounded-xl space-y-2">
+<span class="material-symbols-outlined text-secondary" data-icon="landscape">landscape</span>
+<p class="font-label text-xs font-semibold text-on-surface-variant">Topography</p>
+<p class="font-headline font-bold text-primary">Sloped</p>
+</div>
+<div class="bg-surface-container-low p-5 rounded-xl space-y-2">
+<span class="material-symbols-outlined text-secondary" data-icon="water_drop">water_drop</span>
+<p class="font-label text-xs font-semibold text-on-surface-variant">Utilities</p>
+<p class="font-headline font-bold text-primary">On-site</p>
+</div>
+<div class="bg-surface-container-low p-5 rounded-xl space-y-2">
+<span class="material-symbols-outlined text-secondary" data-icon="gavel">gavel</span>
+<p class="font-label text-xs font-semibold text-on-surface-variant">Planning</p>
+<p class="font-headline font-bold text-primary">Outline</p>
+</div>
+<div class="bg-surface-container-low p-5 rounded-xl space-y-2">
+<span class="material-symbols-outlined text-secondary" data-icon="directions_car">directions_car</span>
+<p class="font-label text-xs font-semibold text-on-surface-variant">Access</p>
+<p class="font-headline font-bold text-primary">Paved Road</p>
+</div>
+</div>
+</div>
+<!-- Right: Secondary Info / Stats -->
+<div class="space-y-6">
+<div class="bg-surface-container-high rounded-full p-8">
+<h4 class="font-headline text-xl font-bold text-primary mb-6">Investment Metric</h4>
+<div class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant/10 pb-2">
+<span class="font-label text-sm text-on-surface-variant">Price per Acre</span>
+<span class="font-headline font-bold text-primary">£27,822</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/10 pb-2">
+<span class="font-label text-sm text-on-surface-variant">Estimated Taxes</span>
+<span class="font-headline font-bold text-primary">£1,450/yr</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/10 pb-2">
+<span class="font-label text-sm text-on-surface-variant">Coordinates</span>
+<span class="font-headline font-bold text-primary">57.14°N, 3.72°W</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section (Boundary Visualization) -->
+<section class="px-4 md:px-8 lg:px-12 mb-16">
+<div class="relative w-full h-[500px] rounded-full overflow-hidden shadow-inner bg-surface-container-low">
+<img class="w-full h-full object-cover opacity-80" data-alt="Satellite map view of a green rural plot with clear digital boundary lines highlighted in emerald green neon glow" data-location="Inverness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNY7_MB0D8qTS0VJqd0OwcLCZHN-kYp0glU-qaJeX5_ONBSzldCGbUaItdS5A2pN3iTixhLVKpGSiZ5jGM8Ahx-Kd8VGnWGFNvNp7XDfAyTuzzNvMijvgHDo2wgzPBt22csSM0XtQr6_sVs_1BA9G6yO14j7xUyAXjIUIb7e3LD-x5sTd2sgDciCjyc7xa3VFnK6vRgfq2-j3Z_N9CzaNStKOHnAvVapCD2Zaf9DxgYjfdfTrJKL5xq7j9oR2c-JvkTwplhQWyMY0R"/>
+<!-- Map Overlay UI -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<!-- SVG Boundary Simulation -->
+<svg class="w-2/3 h-1/2 overflow-visible" viewbox="0 0 100 100">
+<path d="M10,20 L80,10 L90,80 L20,90 Z" fill="rgba(177, 240, 206, 0.15)" stroke="#116c4a" stroke-width="0.8"></path>
+<circle cx="10" cy="20" fill="#002d1c" r="1.5" stroke="#ffffff" stroke-width="0.5"></circle>
+<circle cx="80" cy="10" fill="#002d1c" r="1.5" stroke="#ffffff" stroke-width="0.5"></circle>
+<circle cx="90" cy="80" fill="#002d1c" r="1.5" stroke="#ffffff" stroke-width="0.5"></circle>
+<circle cx="20" cy="90" fill="#002d1c" r="1.5" stroke="#ffffff" stroke-width="0.5"></circle>
+</svg>
+</div>
+<div class="absolute bottom-6 left-6 flex gap-2">
+<button class="bg-surface-container-lowest/80 backdrop-blur-md p-3 rounded-xl shadow-lg pointer-events-auto">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+</button>
+<button class="bg-surface-container-lowest/80 backdrop-blur-md p-3 rounded-xl shadow-lg pointer-events-auto">
+<span class="material-symbols-outlined" data-icon="my_location">my_location</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell (No Tab Active Rule Applied) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-xl z-50 rounded-t-3xl shadow-[0px_-4px_20px_rgba(0,31,41,0.06)]">
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-4 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-800/30 scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-4 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-800/30 scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-4 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-800/30 scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Inquiries</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-4 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-800/30 scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Profile</span>
+</a>
+</nav>
+</body></html>

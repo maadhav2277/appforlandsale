@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>List Land - The Topographic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#95d4b3",
+                    "on-tertiary-fixed": "#092012",
+                    "outline": "#717973",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "surface-container-highest": "#c6e8f8",
+                    "surface-bright": "#f3faff",
+                    "surface": "#f3faff",
+                    "secondary-container": "#a1f4c8",
+                    "inverse-on-surface": "#dff4ff",
+                    "tertiary-container": "#2a4131",
+                    "secondary-fixed": "#a1f4c8",
+                    "primary-fixed": "#b1f0ce",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#002114",
+                    "surface-variant": "#c6e8f8",
+                    "secondary": "#116c4a",
+                    "on-surface-variant": "#414844",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "background": "#f3faff",
+                    "surface-container-high": "#ccedfe",
+                    "surface-container-low": "#e6f6ff",
+                    "on-secondary-container": "#1b724f",
+                    "surface-dim": "#bedfef",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-surface": "#001f29",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "surface-tint": "#2c694e",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#00452e",
+                    "primary": "#002d1c",
+                    "inverse-surface": "#123441",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-secondary-fixed-variant": "#005236",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#152b1c",
+                    "surface-container": "#d8f2ff",
+                    "on-tertiary-container": "#93ad98",
+                    "on-secondary-fixed": "#002113",
+                    "on-primary-container": "#76b394",
+                    "outline-variant": "#c1c8c2",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-background": "#001f29",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#95d4b3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .map-gradient-overlay {
+            background: linear-gradient(to bottom, rgba(243, 250, 255, 0.4) 0%, rgba(243, 250, 255, 0) 20%, rgba(243, 250, 255, 0) 80%, rgba(243, 250, 255, 0.4) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity duration-300 text-[#1B4332] dark:text-[#a1f4c8]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-manrope tracking-tight font-bold text-2xl uppercase text-[#1B4332] dark:text-[#a1f4c8]">List Land</h1>
+</div>
+<div class="h-10 w-10 rounded-full overflow-hidden bg-surface-container-high ring-2 ring-primary-fixed">
+<img alt="User Profile" data-alt="Close up professional portrait of a smiling man in high-end outdoor apparel with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYEpEM_9ydFZSM2LXXN2GyrBoJr8YH3mhAiEOMVxCB9HYO5EXHwU7EiA5_PpKgpGFAK49aky0Sl1gXCPoLQm5C6vl8LI5MJAkLXPoDZ6HLJYSRZTmZStJwUyxIcSYllRtzZzzdtqmappA_cKxDNu2UUmlkbSvbZYF4AqH3XiumRdXHGu8hzvuIwl6UWF5M4gcwyW2WvXqUxXdoBPX-RVa3g6AOvaMGFXpOCdBVc6al3GnFLBKpH1HhODQl0aGSVuTP7wSLE1PBNSRO"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-3xl mx-auto">
+<div class="flex flex-col gap-8">
+<!-- Map Section -->
+<section class="relative group">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-on-surface font-headline font-bold text-lg tracking-tight">Mark Boundaries</h2>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-semibold">Tap to add vertices</span>
+</div>
+<div class="relative w-full aspect-[4/3] md:aspect-video rounded-full overflow-hidden bg-surface-container-low shadow-[0px_20px_40px_rgba(0,31,41,0.06)]">
+<!-- Placeholder for Map Visualization -->
+<div class="absolute inset-0 grayscale opacity-40 mix-blend-multiply" data-alt="Aerial view of topographical map contours and green rural landscape with winding rivers and fields" data-location="Rural Montana Lands" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDEBP2OMm5HQ_Q8OZSv-jTLbwDDCLB7vm09rh_JAs9W9oenURrg4ZzTcvZGmzji9GrirzWZWQglG8Vya1OGK-hGBEgbGb8fDRmdsKlx07ymp4hlbMASz-0U7NzMdhjLchZ1uP8iBNqpMQPaimnwkPusyhIt0suVvIC8YIIxEAtZei7NL2R94hab8k10KiwiqeGMjp3HKKL0MrEQ8Qu3dsw7QCKK8-A825fmyJ1gfgCeofxE50aDiWb4NtznR3Up7zYKMurTuyI2wos2'); background-size: cover; background-position: center;">
+</div>
+<div class="absolute inset-0 map-gradient-overlay pointer-events-none"></div>
+<!-- Simulated Boundary Highlight -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" viewbox="0 0 400 300">
+<polygon fill="rgba(177, 240, 206, 0.15)" points="120,80 280,110 320,220 150,250" stroke="#116c4a" stroke-dasharray="6 4" stroke-width="2"></polygon>
+<circle cx="120" cy="80" fill="#002d1c" r="6" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="280" cy="110" fill="#002d1c" r="6" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="320" cy="220" fill="#002d1c" r="6" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="150" cy="250" fill="#002d1c" r="6" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+<!-- Map Controls Overlay -->
+<div class="absolute bottom-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 rounded-md bg-surface-container-lowest/80 backdrop-blur-md shadow-sm flex items-center justify-center text-primary hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+<button class="w-10 h-10 rounded-md bg-surface-container-lowest/80 backdrop-blur-md shadow-sm flex items-center justify-center text-primary hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined">layers</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Form Fields -->
+<section class="grid grid-cols-1 gap-6">
+<!-- Price Input -->
+<div class="flex flex-col gap-2">
+<label class="font-label text-sm font-semibold uppercase tracking-widest text-on-surface-variant ml-1" for="price">Asking Price</label>
+<div class="relative">
+<span class="absolute left-6 top-1/2 -translate-y-1/2 text-primary font-bold text-lg">$</span>
+<input class="w-full bg-surface-container-highest/50 border-none rounded-full py-4 pl-12 pr-6 focus:ring-2 focus:ring-primary-container text-on-surface font-headline font-bold text-xl placeholder:text-on-surface-variant/30" id="price" placeholder="0.00" type="number"/>
+</div>
+</div>
+<!-- Description Input -->
+<div class="flex flex-col gap-2">
+<label class="font-label text-sm font-semibold uppercase tracking-widest text-on-surface-variant ml-1" for="description">Description</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl p-6 focus:ring-2 focus:ring-primary-container text-on-surface font-body resize-none placeholder:text-on-surface-variant/40 leading-relaxed" id="description" placeholder="Tell us about the soil, the water rights, and the horizon..." rows="5"></textarea>
+</div>
+</section>
+<!-- Action Button -->
+<section class="mt-4">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-extrabold py-5 rounded-full shadow-lg hover:opacity-90 transition-all active:scale-95 flex items-center justify-center gap-3 text-lg uppercase tracking-wider">
+<span class="material-symbols-outlined" data-weight="fill">landscape</span>
+                    List My Plot
+                </button>
+<p class="text-center text-on-surface-variant text-xs mt-6 font-label leading-relaxed px-12">
+                    By listing your plot, you agree to our <span class="underline cursor-pointer">Terms of Service</span> and acknowledge that technical data will be verified by a local surveyor.
+                </p>
+</section>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl z-50 rounded-t-3xl shadow-[0px_-10px_30px_rgba(0,31,41,0.04)]">
+<a class="flex flex-col items-center justify-center text-[#001f29]/60 dark:text-slate-400 hover:bg-white/20 dark:hover:bg-black/20 px-4 py-1" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#001f29]/60 dark:text-slate-400 hover:bg-white/20 dark:hover:bg-black/20 px-4 py-1" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1B4332] dark:text-[#a1f4c8] bg-[#a1f4c8]/20 rounded-full px-4 py-1 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

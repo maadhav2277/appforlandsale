@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#95d4b3",
+                      "on-tertiary-fixed": "#092012",
+                      "outline": "#717973",
+                      "on-tertiary-fixed-variant": "#354c3b",
+                      "surface-container-highest": "#c6e8f8",
+                      "surface-bright": "#f3faff",
+                      "surface": "#f3faff",
+                      "secondary-container": "#a1f4c8",
+                      "inverse-on-surface": "#dff4ff",
+                      "tertiary-container": "#2a4131",
+                      "secondary-fixed": "#a1f4c8",
+                      "primary-fixed": "#b1f0ce",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed": "#002114",
+                      "surface-variant": "#c6e8f8",
+                      "secondary": "#116c4a",
+                      "on-surface-variant": "#414844",
+                      "on-primary-fixed-variant": "#0e5138",
+                      "background": "#f3faff",
+                      "surface-container-high": "#ccedfe",
+                      "surface-container-low": "#e6f6ff",
+                      "on-secondary-container": "#1b724f",
+                      "surface-dim": "#bedfef",
+                      "on-primary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-surface": "#001f29",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed-dim": "#b3cdb7",
+                      "surface-tint": "#2c694e",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-container": "#00452e",
+                      "primary": "#002d1c",
+                      "inverse-surface": "#123441",
+                      "secondary-fixed-dim": "#86d7ad",
+                      "on-secondary-fixed-variant": "#005236",
+                      "error-container": "#ffdad6",
+                      "tertiary": "#152b1c",
+                      "surface-container": "#d8f2ff",
+                      "on-tertiary-container": "#93ad98",
+                      "on-secondary-fixed": "#002113",
+                      "on-primary-container": "#76b394",
+                      "outline-variant": "#c1c8c2",
+                      "tertiary-fixed": "#cee9d3",
+                      "on-background": "#001f29",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "inverse-primary": "#95d4b3"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Manrope"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<title>Plot Details</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container antialiased">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity duration-300 text-on-surface">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-headline tracking-tight font-bold text-2xl uppercase text-[#1B4332]">Plot Details</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity duration-300 text-[#1B4332]">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed shadow-sm">
+<img alt="user profile" data-alt="professional portrait of a land surveyor or agent in natural outdoor lighting wearing casual business attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2v_LDlN0wnhXO7yWNwphiOaFeb4Dddf-dKSUSlBt5FLdJNGyZTNu0YYZGbUdSsmT7GFWh0Xt9d6QBavCSkUc73_smtzjzmyVsa7kpfRXO3-XSTymrthBAXtXY7AjnMc7u8NOjoIpIY16d8pOSAYk2_NYxpokLxXlOfPWYNOVELErWUEzCswG498NNb-x1Kdnj70suPG1tW8po13v7nl-k009DRMuRliTU9Z2CFKnt-_Gsu7klqis3eGtxhqFfHPeiRY-is5jMqgKb"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-20 pb-12 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+<!-- Image Hero -->
+<div class="md:col-span-8 relative aspect-[4/3] md:aspect-auto md:h-[600px] overflow-hidden rounded-full group">
+<img alt="North Hill Plot" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="wide angle shot of an expansive green field at sunset with rolling hills and a single oak tree in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC035L-h-FCke3ghsrAFoo9NrrrN_LKGAkdRpF4NVX0qne8bNfYwhQZ9toNFTeuStse3wlaGQWWKk4CW5xbuzyoYgawYArhFOtVKDRxDxWc2yi7SXBkfy_2KJ_DrHAfA3Lg0UeU1rirUw14pEUFyJjbOW0P-Qps9zWt0K398NVTudmH2rFkjRaW97b-0YGze0WY0ZI1cTQrX1JWO_nI2jQKSn0SQgX522GwnvlCybLW5b4JxvDJVI-XAT74rQgiCRsXUjKkV627EW8_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60"></div>
+<button class="absolute top-6 right-6 w-12 h-12 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary hover:bg-surface-container-lowest transition-colors shadow-lg">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+</button>
+</div>
+<!-- Essential Info Sidebar -->
+<div class="md:col-span-4 flex flex-col justify-between space-y-8">
+<div class="space-y-6">
+<div class="space-y-2">
+<span class="font-label text-sm uppercase tracking-[0.2em] text-on-surface-variant font-bold">Premium Listing</span>
+<h2 class="font-headline text-5xl font-extrabold text-primary tracking-tighter leading-none">North Hill Plot</h2>
+<p class="font-label text-lg text-secondary font-semibold">Derbyshire Peak District</p>
+</div>
+<!-- Bento Stat Cards -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-6 rounded-full flex flex-col gap-1">
+<span class="font-label text-[11px] uppercase tracking-widest text-on-surface-variant font-bold">Acreage</span>
+<span class="font-headline text-2xl font-bold text-on-surface">12.4 AC</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-full flex flex-col gap-1">
+<span class="font-label text-[11px] uppercase tracking-widest text-on-surface-variant font-bold">Price</span>
+<span class="font-headline text-2xl font-bold text-on-surface">£345,000</span>
+</div>
+</div>
+<!-- Map Preview -->
+<div class="bg-surface-container-high h-64 rounded-full overflow-hidden relative group">
+<div class="absolute inset-0 grayscale opacity-40 mix-blend-multiply transition-opacity group-hover:opacity-60">
+<img alt="Map View" class="w-full h-full object-cover" data-alt="top-down satellite imagery of green rural landscape with clearly defined property boundaries in light green lines" data-location="Peak District National Park" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDojhWxQJTc0hyESKMUxUtjRpfIkqO_xv6VfBHWGhnXqKpnWN6j0oxwRYwJHEgQ6FgBTPkqam6mLA44PqHOnFuzKmE3nr9Q6ndeROpyqLPGAxNADS1q780YRs2FmcUjz5ADvU1XuvkFE8vL1mN2ezRefmW73Jo5BqDHYzjwgsp0HIghwsJmSk8GH984t6Y-mDe72uUinSSqQmPRaUUzAaCWx4G2LElUVJVK_oH8w8qF5BpedfYBHVmLN5JeyQn79TYJjo11hU9IULIH"/>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary border-4 border-on-primary shadow-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary scale-90">location_on</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-surface-container-lowest/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm">
+<span class="font-label text-[10px] uppercase font-bold tracking-widest text-primary">View Full Survey</span>
+</div>
+</div>
+</div>
+<!-- CTA -->
+<div class="pt-4">
+<button class="w-full h-16 rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold text-lg hover:opacity-90 transition-all flex items-center justify-center gap-3 shadow-lg active:scale-95">
+<span class="material-symbols-outlined">mail</span>
+                        Contact Owner
+                    </button>
+</div>
+</div>
+</section>
+<!-- Minimal Details Section -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-outline-variant/15 pt-12">
+<div class="space-y-4">
+<h3 class="font-headline font-bold text-xl text-primary">Landscape Character</h3>
+<p class="text-on-surface-variant leading-relaxed">Gently sloping topography with high-yield soil composition and established perimeter hedgerows. Ideal for regenerative agriculture or luxury residential development.</p>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline font-bold text-xl text-primary">Infrastructure</h3>
+<ul class="space-y-2">
+<li class="flex items-center gap-3 text-on-surface-variant font-label text-sm">
+<span class="material-symbols-outlined text-secondary scale-75">check_circle</span>
+                        Direct road access via A512
+                    </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-label text-sm">
+<span class="material-symbols-outlined text-secondary scale-75">check_circle</span>
+                        Water connection ready
+                    </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-label text-sm">
+<span class="material-symbols-outlined text-secondary scale-75">check_circle</span>
+                        Grade II agricultural status
+                    </li>
+</ul>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline font-bold text-xl text-primary">Viewing Notes</h3>
+<p class="text-on-surface-variant leading-relaxed">Appointments required for on-site boundary tours. Seasonal accessibility remains consistent throughout the year.</p>
+</div>
+</section>
+</main>
+<!-- Suppressed BottomNavBar (Task-Focused Screen) -->
+<!-- Navigation is hidden as per "Destination Rule" for details sub-pages -->
+</body></html>

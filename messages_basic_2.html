@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Messages | Topographic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "surface": "#f3faff",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#93ad98",
+                    "inverse-surface": "#123441",
+                    "on-surface-variant": "#414844",
+                    "surface-dim": "#bedfef",
+                    "surface-container-highest": "#c6e8f8",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#c6e8f8",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "primary": "#002d1c",
+                    "on-primary-fixed": "#002114",
+                    "secondary": "#116c4a",
+                    "on-background": "#001f29",
+                    "on-primary-container": "#76b394",
+                    "surface-container": "#d8f2ff",
+                    "surface-bright": "#f3faff",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "primary-container": "#00452e",
+                    "on-surface": "#001f29",
+                    "surface-container-high": "#ccedfe",
+                    "outline-variant": "#c1c8c2",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "secondary-fixed": "#a1f4c8",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#e6f6ff",
+                    "primary-fixed": "#b1f0ce",
+                    "inverse-primary": "#95d4b3",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f3faff",
+                    "secondary-container": "#a1f4c8",
+                    "inverse-on-surface": "#dff4ff",
+                    "on-secondary-container": "#1b724f",
+                    "surface-tint": "#2c694e",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "on-tertiary-fixed": "#092012",
+                    "tertiary": "#152b1c",
+                    "outline": "#717973",
+                    "tertiary-container": "#2a4131",
+                    "primary-fixed-dim": "#95d4b3",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-secondary-fixed": "#002113"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-md shadow-[0px_20px_40px_rgba(0,31,41,0.06)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-500 text-2xl" data-icon="landscape">landscape</span>
+<h1 class="font-manrope text-xl font-bold tracking-tight text-[#002d1c] dark:text-[#f3faff]">Topographic</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex gap-8 mr-8">
+<a class="text-[#001f29]/60 hover:opacity-80 transition-opacity duration-300 font-label text-sm font-semibold uppercase tracking-wider" href="#">Explore</a>
+<a class="text-[#001f29]/60 hover:opacity-80 transition-opacity duration-300 font-label text-sm font-semibold uppercase tracking-wider" href="#">Saved</a>
+<a class="text-[#002d1c] font-bold transition-opacity duration-300 font-label text-sm font-semibold uppercase tracking-wider" href="#">Messages</a>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed shadow-sm hover:opacity-80 transition-opacity cursor-pointer">
+<img alt="User avatar" data-alt="Portrait of a professional land surveyor wearing a hat and glasses with a friendly expression in a modern flat illustration style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvcVtkyURhILg8g0uBjhvQSHPFS8T3_RfE4gv-FqWIxOeKgeFGFwLvWh-Fatxx-cTcMQEbMx7z4iMXqcy7wz6-4aVLH2qyRGzH33EFzcSZIRCkUMHHpASh_e_KdoWt4Bd00JAJ6YuDFeTsiiFclvEfMu3ppxdszQjyxhz8OlsNpJyZag8_Fit-8JWB5brUxv1KRWKWQdSrkdvq_lwfSS50z49lXuWXRNpL1k4SKVQkWFMGv8sV1HuTzuedlfwFXrBxezy_5DO56nfc"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<header class="mb-10">
+<h2 class="text-4xl font-headline font-extrabold tracking-tighter text-primary mb-2">Inquiries &amp; Discussions</h2>
+<p class="text-on-surface-variant font-label text-sm tracking-wide uppercase">Active Conversations with Landowners</p>
+</header>
+<!-- Message List Container -->
+<div class="space-y-4">
+<!-- Message Item 1: Active/New -->
+<div class="group relative flex flex-col md:flex-row items-start md:items-center p-5 rounded-full bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-300 shadow-sm">
+<div class="flex items-center w-full md:w-auto">
+<!-- Owner Avatar -->
+<div class="relative flex-shrink-0">
+<img alt="Landowner" class="w-14 h-14 rounded-full object-cover border-2 border-secondary-container" data-alt="Close-up portrait of a middle-aged male landowner with a warm smile outdoors in soft natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQZNofuXDwtVnfxOmmlTPAgao7OUSuCAmkuGeV2eA8LsHV1FQ0wP9PUVJRxQYsCPYu95-gDiJNzQ2zKUwJyr0UlslpHoP8ynOF5ZF8YEB5vHTYL7VY84f5-LhUgGChBvGSsdNDpqAtqIxKeMhgp-7V-YUGDHI9TVSlpgZYS-gX4pGc-UrDl2pWWDbgojb3uPwk6XpFzlCPHCPsQ9Nm7A0f2JNSDrrzOEZn1QTCYyJm5lz3o6iF-0iKgcn1Q-ipvYxGMYaso4dB8kcT"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-secondary rounded-full border-2 border-surface-container-lowest"></div>
+</div>
+<div class="ml-4 flex-grow">
+<div class="flex items-center gap-2">
+<h3 class="text-lg font-headline font-bold text-on-surface">Elias Thorne</h3>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-label font-bold rounded-md uppercase">New</span>
+</div>
+<p class="text-sm font-label text-on-surface-variant line-clamp-1">"The soil report for the North Ridge parcel is ready for your review."</p>
+</div>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto md:ml-auto mt-4 md:mt-0 gap-6">
+<!-- Property Thumbnail -->
+<div class="flex items-center gap-3 bg-surface-container p-2 pr-4 rounded-full">
+<img alt="Property" class="w-10 h-10 rounded-full object-cover" data-alt="Aerial view of a sprawling green meadow surrounded by ancient oak trees under a bright morning sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVJSLbbniHjTtxqXMUdEK5bv8rpVaTUDzKoT0Hy4hx32JnA1v0tUo35BeV167dpT-L0WMMRPzeV-sYn3ZMGtY6vvC8HEeKZ8sN1ig7NHJnAu8afBjYuFlAEDUE83PnO5QRx6ub7spkRLY2TFgXpcoIauOQXKaoEFGaxFAmIAD1thVjXIN6lIIKf7xRigZpjCzZjnPr43tLc-bCSBgzVhICYn1D8ZSRANW4rFnGB8uLV2nzctGcxVQpG-LJGyE_IlWMfG2lj_EiFSKK"/>
+<div class="text-xs">
+<p class="font-bold text-primary leading-none">Blue Oak Valley</p>
+<p class="text-on-surface-variant leading-none mt-1">42.5 Acres</p>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[11px] font-label font-bold text-secondary uppercase mb-1">2 mins ago</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Message Item 2 -->
+<div class="group relative flex flex-col md:flex-row items-start md:items-center p-5 rounded-full bg-surface-container-low/40 hover:bg-surface-container-low transition-all duration-300">
+<div class="flex items-center w-full md:w-auto">
+<div class="relative flex-shrink-0">
+<img alt="Landowner" class="w-14 h-14 rounded-full object-cover grayscale opacity-80" data-alt="Softly lit studio portrait of a woman landowner with short hair looking thoughtfully toward the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGuPV18hOrmyLsp04u9TERRje3vOruRijUHbNI8RRGv4-ZE1J6AK1kll6qQLgpRHWOFsihWq2czJzr0x7zBuY3_QtaKRaPjlfZCHtZghoUUBGsoaD8IBQY3Uosr1iWd877cf8vxUJ0hbVPBVosMWzOOwvtB7sN1tQj38CMPWruqXYtYoWz5f6CTHQ1t8KZaL0KRLpiNuLcniEQLATMBWQtYjndSuQ52OZaLFZBbpvx2z99sp5PbmLpvXvmaOXbNPzt3yxHSZiYDtbV"/>
+</div>
+<div class="ml-4 flex-grow">
+<h3 class="text-lg font-headline font-bold text-on-surface">Sarah Jenkins</h3>
+<p class="text-sm font-label text-on-surface-variant/70 line-clamp-1">You: I'll check the boundary markers tomorrow morning.</p>
+</div>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto md:ml-auto mt-4 md:mt-0 gap-6">
+<div class="flex items-center gap-3 bg-surface-container-high/50 p-2 pr-4 rounded-full">
+<img alt="Property" class="w-10 h-10 rounded-full object-cover" data-alt="Wide landscape of a rugged mountain terrain with a small wooden cabin at the base during twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChtoSv-tRw7DBDn9ak9AdGNKRxq51ZPmmAgOG5gULoBaubOleVlmORulh1tPjJHYSJchXlTAiw2PBR26eApa4bQLmQuKtKVVtVaufC-hDF04AI4WUAHndLA6vDTvJtuNpWUJPMk0YKbU28BGzxjysximE_-DyCwLWOu8SheL6RPTrQFroq30-ToKbXPOtvUEva1O4OyE5udJctv9EHbIZm6HnQ4roX2kdPF9x_XSz5L6IB7Jdcp_qioy4VKtcNly7GDh4K5ctbkaGo"/>
+<div class="text-xs">
+<p class="font-bold text-primary leading-none">Peak Watch Plot</p>
+<p class="text-on-surface-variant leading-none mt-1">12.0 Acres</p>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[11px] font-label font-medium text-on-surface-variant/60 uppercase mb-1">Yesterday</span>
+<span class="material-symbols-outlined text-outline transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Message Item 3 -->
+<div class="group relative flex flex-col md:flex-row items-start md:items-center p-5 rounded-full bg-surface-container-low/40 hover:bg-surface-container-low transition-all duration-300">
+<div class="flex items-center w-full md:w-auto">
+<div class="relative flex-shrink-0">
+<img alt="Landowner" class="w-14 h-14 rounded-full object-cover grayscale opacity-80" data-alt="Close-up of an elderly man with a weathered face and kind eyes wearing a denim shirt in a rural setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdTa6KHHzvlYjoIm7NQ0QbshTL0exJpApjimLZTIPF-CZeWybHqIbNPdSM-3PTF8iU8g7hT4ve1osCLJ1AOVVErvNsvgmFfa0UzzpEJrSE4Agax-0b6cq5MR8TuxP3DGvk4AyzQqVpZ8JfZWtKwUQmSalD3NITZhwIbKdXNnwmzCtq3nM1RqSTtOd36UqeITaEzcAcMhlKxtxisXvV6kPkIRToq_nvjQthgtMHRDDqaDFp7UTtJY6qOtxIcflb7nnFgKqZmDRw1U4C"/>
+</div>
+<div class="ml-4 flex-grow">
+<h3 class="text-lg font-headline font-bold text-on-surface">Marcus Vane</h3>
+<p class="text-sm font-label text-on-surface-variant/70 line-clamp-1">"The mineral rights are included in the asking price."</p>
+</div>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto md:ml-auto mt-4 md:mt-0 gap-6">
+<div class="flex items-center gap-3 bg-surface-container-high/50 p-2 pr-4 rounded-full">
+<img alt="Property" class="w-10 h-10 rounded-full object-cover" data-alt="Dramatic view of a rocky desert landscape with red sand and sparse desert plants under a hazy sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrGSlTcgH5fWe-snewXPBLKmS2cMZZTrSsLNjn0Rzt1QdteHZGzjForAndDS95dHLhuTPj5svRkaDhyb3XxEwPup0zIpWGnn-WMbhy0dZLSHNd1hbBwoPAcWqP6mc0tskW-_zd5WFz34fYqD_MGmFFCwiwqnb6dkTqmgdObUw_ysNux1_gsheC6qv8-J3JB5vL7Cou8Q6WJ_5G_IC6Ha1Tp0EYikqysy2rubk0IP3Mjp-_VtqL4MaXrmuuuEWrLiF9k-OeVC7yYdb4"/>
+<div class="text-xs">
+<p class="font-bold text-primary leading-none">Red Rock Basin</p>
+<p class="text-on-surface-variant leading-none mt-1">150.0 Acres</p>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[11px] font-label font-medium text-on-surface-variant/60 uppercase mb-1">3 Days Ago</span>
+<span class="material-symbols-outlined text-outline transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Message Item 4 -->
+<div class="group relative flex flex-col md:flex-row items-start md:items-center p-5 rounded-full bg-surface-container-low/40 hover:bg-surface-container-low transition-all duration-300">
+<div class="flex items-center w-full md:w-auto">
+<div class="relative flex-shrink-0">
+<img alt="Landowner" class="w-14 h-14 rounded-full object-cover grayscale opacity-80" data-alt="Candid portrait of a young woman with curly hair laughing in an outdoor sunlit meadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUEwU2nPI1JsFPzQPHMoKby9P2KrmnXXhXgZf_fiySMg7L78dtL6yTPz7wmUHt7x0Q7EuhyNNLCxVbQ7G6ujUo3BcE7NfpeWFHiD4SJ0hlMMaTdF3POVBjhSrWm7Uijej9xOIbv8-q4k9N8Cs28Lx3NyV7KYRwc-jmW3iom3p72Yw78stOkeXrclg8s-HPxdENQfmMgNTjuW2f8fF_YZOA5Kfcr_YPoP9IjKHhskBFoINsBdZceAmWqSup4OS0nUDh8vrWTOZakJtS"/>
+</div>
+<div class="ml-4 flex-grow">
+<h3 class="text-lg font-headline font-bold text-on-surface">Elena Rodriguez</h3>
+<p class="text-sm font-label text-on-surface-variant/70 line-clamp-1">You: Thank you for the access codes.</p>
+</div>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto md:ml-auto mt-4 md:mt-0 gap-6">
+<div class="flex items-center gap-3 bg-surface-container-high/50 p-2 pr-4 rounded-full">
+<img alt="Property" class="w-10 h-10 rounded-full object-cover" data-alt="Dense forest path with sunlight filtering through tall green trees and fern floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEmC0D22QJ1tUwXnL7W0fpQslr7Y1ZVMoHS8V4-DrLpdmt4CPwELsRRsh3d-8MecVOkz2LlVZZ1sUaIn2kX57K7RLkeJnfyFK3vMzz_QlwqDIXg_8ETG8CP80KtyK4u0ey69z7SAshdYeYbX-z4gFomT-EUD8TyFu7W9GEGH-hod3ouPz20x3BdMhY9Xscb6FRvf6gk51ir9jSDrSIh912cnd55Q0XKNjb2lj8jPOm8B4XfKwijPyvZ4m6xzeiS1Rr44VDIztcCL4w"/>
+<div class="text-xs">
+<p class="font-bold text-primary leading-none">Whispering Woods</p>
+<p class="text-on-surface-variant leading-none mt-1">5.4 Acres</p>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[11px] font-label font-medium text-on-surface-variant/60 uppercase mb-1">Oct 12</span>
+<span class="material-symbols-outlined text-outline transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination/Load More - Tonal Shift Style -->
+<div class="mt-12 flex justify-center">
+<button class="flex items-center gap-2 px-8 py-3 bg-surface-container-high text-primary font-label text-xs font-bold uppercase tracking-widest rounded-full hover:bg-surface-container-highest transition-colors">
+                Load Older Conversations
+                <span class="material-symbols-outlined text-sm" data-icon="history">history</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-white/70 dark:bg-[#001f29]/70 backdrop-blur-md border-t-[0.5px] border-[#c1c8c2]/15 shadow-[0_-4px_24px_rgba(0,31,41,0.04)]">
+<div class="w-full flex justify-around items-center px-4 pb-6 pt-3">
+<a class="flex flex-col items-center justify-center text-[#001f29]/50 dark:text-[#f3faff]/50 px-4 py-1.5 hover:text-[#116c4a] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-inter text-[11px] font-semibold tracking-wide uppercase">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#001f29]/50 dark:text-[#f3faff]/50 px-4 py-1.5 hover:text-[#116c4a] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bookmark">bookmark</span>
+<span class="font-inter text-[11px] font-semibold tracking-wide uppercase">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#a1f4c8]/20 text-[#002d1c] dark:text-[#a1f4c8] rounded-xl px-4 py-1.5 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="font-inter text-[11px] font-semibold tracking-wide uppercase">Inquiries</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#001f29]/50 dark:text-[#f3faff]/50 px-4 py-1.5 hover:text-[#116c4a] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-inter text-[11px] font-semibold tracking-wide uppercase">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

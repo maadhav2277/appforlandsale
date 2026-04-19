@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terra Nova - Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#1B4332",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f3faff",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#93ad98",
+                        "inverse-surface": "#123441",
+                        "on-surface-variant": "#414844",
+                        "surface-dim": "#bedfef",
+                        "surface-container-highest": "#c6e8f8",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#c6e8f8",
+                        "secondary-fixed-dim": "#86d7ad",
+                        "on-primary-fixed": "#002114",
+                        "secondary": "#116c4a",
+                        "on-background": "#001f29",
+                        "on-primary-container": "#76b394",
+                        "surface-container": "#d8f2ff",
+                        "surface-bright": "#f3faff",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#00452e",
+                        "on-surface": "#001f29",
+                        "surface-container-high": "#ccedfe",
+                        "outline-variant": "#c1c8c2",
+                        "tertiary-fixed-dim": "#b3cdb7",
+                        "secondary-fixed": "#a1f4c8",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#e6f6ff",
+                        "primary-fixed": "#b1f0ce",
+                        "inverse-primary": "#95d4b3",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f3faff",
+                        "secondary-container": "#a1f4c8",
+                        "inverse-on-surface": "#dff4ff",
+                        "on-secondary-container": "#1b724f",
+                        "surface-tint": "#1B4332",
+                        "on-tertiary-fixed-variant": "#354c3b",
+                        "on-tertiary-fixed": "#092012",
+                        "tertiary": "#152b1c",
+                        "outline": "#717973",
+                        "tertiary-container": "#2a4131",
+                        "primary-fixed-dim": "#95d4b3",
+                        "tertiary-fixed": "#cee9d3",
+                        "on-secondary-fixed": "#002113"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-md border-b border-primary/5 flex justify-between items-center px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary scale-95 active:scale-90 transition-transform">landscape</span>
+<span class="font-headline text-xl font-extrabold tracking-tight text-primary">Terra Nova</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden border-2 border-primary/10">
+<img alt="User avatar" class="w-full h-full object-cover" data-alt="Close-up portrait of a professional man in his 40s with a warm smile, soft natural outdoor lighting, high-end editorial photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUfq1t8ZDbSMFiuCT2Qb25IK3Q_P0R3gX9djaeKMx99WkkiDbVijsBnvV4Rl5uFsUmRWIg_y65kSKiZa-Xd-53DXgUx4gzAQR5hG3nK-AfvOhSYWun0fG32QDKu5OxmXypq0agKlVACbQThxif5i8CnzLXoDSATsaZ4rgWVOtnxi8z3sK4UNyLSwqCeYdTPNW0_7BdUa1e22eqfAToOit-QpN1ICnQwWu3OoQtZzpYN_bcKcKgCpnXF1jPRgKWtZBHOBTbfoCoZKhx"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Profile Header Section -->
+<section class="mb-10 text-center md:text-left flex flex-col md:flex-row items-center md:items-start gap-8">
+<div class="relative">
+<div class="w-32 h-32 rounded-3xl overflow-hidden shadow-2xl border-4 border-surface-container-lowest rotate-2 group hover:rotate-0 transition-transform duration-500">
+<img alt="User avatar" class="w-full h-full object-cover" data-alt="Professional headshot of a middle-aged man, relaxed outdoor mountain setting background, cinematic soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu0x_Sgnd6256DW-v11Kg4rSXe0L1WnxfoHYdbK6nPFgT6_5ZQQHTJMT6XTn7nOWUnkHasjc8JjBfmRb8ELxJrDba3ALpizDbCVPjnF7dd3mvkZyVjIDXtO6T-_srLwfQe2fUYG6JEObwcLY9m7FFhBc4xBprgPCy_bwK9__WEPI17utjZmMcbfk-Bg3UlGdD9FUnAUd7B30NFgBBA3ppUDHX_5DW4RWTiEHckIoiaRVYN4nWnyfm_m9ZR27pjGF8DKZLldoudLxfO"/>
+</div>
+<button class="absolute -bottom-2 -right-2 bg-primary text-on-primary p-2.5 rounded-xl shadow-xl hover:opacity-90 transition-all active:scale-90">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+<div class="flex-1">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-2">
+<h1 class="font-headline text-3xl font-extrabold tracking-tight text-primary">Julian H. Sterling</h1>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-2xl font-headline font-bold text-sm shadow-lg hover:shadow-primary/20 transition-all active:scale-95 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add_location</span>
+                    List New Land
+                </button>
+</div>
+<p class="font-body text-on-surface-variant font-medium mb-4">julian.sterling@terra-nova.io</p>
+<div class="flex flex-wrap gap-2 justify-center md:justify-start">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg text-[10px] font-bold uppercase tracking-widest">Premium Member</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant rounded-lg text-[10px] font-bold uppercase tracking-widest border border-primary/5">Verified Owner</span>
+</div>
+</div>
+</section>
+<!-- Stats Bento Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+<div class="bg-primary text-on-primary p-6 rounded-2xl text-center shadow-lg shadow-primary/10">
+<span class="block font-headline text-3xl font-extrabold">12</span>
+<span class="block font-label text-[10px] font-bold uppercase tracking-widest opacity-80 mt-1">Active Listings</span>
+</div>
+<div class="bg-surface-container-lowest border border-primary/5 p-6 rounded-2xl text-center shadow-sm">
+<span class="block font-headline text-3xl font-extrabold text-primary">482</span>
+<span class="block font-label text-[10px] font-bold uppercase tracking-widest text-on-surface-variant opacity-70 mt-1">Acres Managed</span>
+</div>
+<div class="bg-surface-container-lowest border border-primary/5 p-6 rounded-2xl text-center shadow-sm col-span-2 md:col-span-1">
+<span class="block font-headline text-3xl font-extrabold text-primary">4.9</span>
+<span class="block font-label text-[10px] font-bold uppercase tracking-widest text-on-surface-variant opacity-70 mt-1">Seller Rating</span>
+</div>
+</div>
+<!-- Settings List -->
+<div class="space-y-6">
+<h2 class="font-headline text-sm font-extrabold text-primary px-2 uppercase tracking-[0.2em] opacity-50 flex items-center gap-2">
+<span class="w-8 h-[1px] bg-primary"></span> Account Explorer
+        </h2>
+<div class="space-y-3">
+<!-- Setting Item: My Listings (Prominent) -->
+<a class="group flex items-center justify-between p-5 bg-primary/5 border border-primary/10 hover:bg-primary/10 rounded-2xl transition-all duration-300" href="#">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-2xl">map</span>
+</div>
+<div>
+<span class="block font-headline font-extrabold text-primary text-lg">My Listings</span>
+<span class="block font-label text-xs text-on-surface-variant">Manage your 12 active land surveyed plots</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-0.5 rounded-full">ACTION REQUIRED</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</a>
+<!-- Setting Item -->
+<a class="group flex items-center justify-between p-4 bg-surface-container-lowest border border-transparent hover:border-primary/5 rounded-2xl transition-all duration-300" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</div>
+<div>
+<span class="block font-headline font-bold text-on-surface">Account Settings</span>
+<span class="block font-label text-xs text-on-surface-variant">Privacy, notifications, and security</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">chevron_right</span>
+</a>
+<!-- Setting Item -->
+<a class="group flex items-center justify-between p-4 bg-surface-container-lowest border border-transparent hover:border-primary/5 rounded-2xl transition-all duration-300" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div>
+<span class="block font-headline font-bold text-on-surface">Help &amp; Support</span>
+<span class="block font-label text-xs text-on-surface-variant">Contact our surveying experts</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">chevron_right</span>
+</a>
+<!-- Logout -->
+<button class="w-full group flex items-center justify-between p-4 mt-4 bg-error-container/10 hover:bg-error-container/20 rounded-2xl transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-error-container/20 flex items-center justify-center text-error">
+<span class="material-symbols-outlined">logout</span>
+</div>
+<div>
+<span class="block font-headline font-bold text-error">Logout</span>
+</div>
+</div>
+</button>
+</div>
+</div>
+<!-- Decorative Horizon Line -->
+<div class="mt-16 text-center opacity-20">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 0;">horizontal_rule</span>
+<p class="font-label text-[10px] font-bold uppercase tracking-[0.4em] text-primary mt-2">Terra Nova Frontier</p>
+</div>
+</main>
+<!-- BottomNavBar from COMPONENTS_56 -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#ffffff]/70 dark:bg-[#001f29]/70 backdrop-blur-md shadow-[0px_-10px_30px_rgba(0,31,41,0.04)] border-t border-white/10 z-50">
+<!-- Explore -->
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:bg-slate-100/50 dark:hover:bg-white/5 rounded-2xl transition-all" href="#">
+<span class="material-symbols-outlined mb-1">explore</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider">Explore</span>
+</a>
+<!-- Saved -->
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:bg-slate-100/50 dark:hover:bg-white/5 rounded-2xl transition-all" href="#">
+<span class="material-symbols-outlined mb-1">bookmark</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider">Saved</span>
+</a>
+<!-- Inquiries (Messages) -->
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:bg-slate-100/50 dark:hover:bg-white/5 rounded-2xl transition-all" href="#">
+<span class="material-symbols-outlined mb-1">chat_bubble</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider">Inquiries</span>
+</a>
+<!-- Profile (Active) -->
+<a class="flex flex-col items-center justify-center bg-[#a1f4c8] dark:bg-[#116c4a] text-[#1B4332] dark:text-[#f3faff] rounded-2xl px-5 py-2 scale-95 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>

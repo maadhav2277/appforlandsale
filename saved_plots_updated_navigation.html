@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#bedfef",
+                    "surface": "#f3faff",
+                    "surface-variant": "#c6e8f8",
+                    "outline-variant": "#c1c8c2",
+                    "on-tertiary-fixed": "#092012",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#123441",
+                    "secondary-fixed": "#a1f4c8",
+                    "secondary-container": "#a1f4c8",
+                    "primary-container": "#00452e",
+                    "secondary": "#116c4a",
+                    "inverse-on-surface": "#dff4ff",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#95d4b3",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-surface-variant": "#414844",
+                    "on-background": "#001f29",
+                    "on-secondary-fixed-variant": "#005236",
+                    "surface-tint": "#2c694e",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#d8f2ff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "surface-container-low": "#e6f6ff",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#76b394",
+                    "outline": "#717973",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#b1f0ce",
+                    "on-tertiary-container": "#93ad98",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "background": "#f3faff",
+                    "surface-bright": "#f3faff",
+                    "surface-container-high": "#ccedfe",
+                    "tertiary": "#152b1c",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#001f29",
+                    "on-secondary-fixed": "#002113",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#c6e8f8",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "primary": "#002d1c",
+                    "on-secondary-container": "#1b724f",
+                    "on-primary-fixed": "#002114",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "tertiary-container": "#2a4131"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/70 dark:bg-emerald-950/70 backdrop-blur-xl">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-50" data-icon="landscape">landscape</span>
+</div>
+<h1 class="text-xl font-extrabold tracking-[0.2em] text-emerald-900 dark:text-emerald-100 font-['Manrope']">TERRA NOVA</h1>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-50" data-icon="search">search</span>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-5xl mx-auto">
+<!-- Editorial Header -->
+<section class="mb-12">
+<p class="font-label text-xs uppercase tracking-widest text-on-secondary-container mb-2">Collection</p>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary tracking-tight leading-none mb-4">Saved Plots</h2>
+<p class="text-on-surface-variant max-w-md">Curated land opportunities, from fertile valleys to secluded forest ridges.</p>
+</section>
+<!-- Bento Grid Layout for Plots -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Hero Card (Asymmetric Layout) -->
+<div class="md:col-span-8 bg-surface-container-low rounded-full overflow-hidden group">
+<div class="relative h-96 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="expansive rolling green hills in a valley with soft morning mist and dramatic sunlight breaking through clouds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaSuhabtB4k3iS2Uuy3-VsXz5NOqwIenhtwRIPtUML9-tYV7n8tkBBcysr7bnxCGHi9eHf1tg_ad_hvBLumOP19byCNwR5zNneV1FFW7P26RCISTgboPCCxQAFz9PY8Wv37GJ-hBkmhPpR6whLdtrkw2Eh8v_6wySYJAI1lI9BlsXom5gTMpfdRbYVD-HHPR4FW6G9jzIyPJ1xndk1I43zD7nF6a0haKLD8sxxtjGxoUrmj5QGrjslJfUjRM2ShR1A6aDnYfuAZgrv"/>
+<div class="absolute top-4 right-4 bg-surface-container-lowest/80 backdrop-blur-md p-2 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary text-on-primary font-label text-[10px] px-3 py-1 rounded-md uppercase tracking-wider">Premium Listing</span>
+</div>
+</div>
+<div class="p-8 bg-surface-container-lowest">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-headline font-bold text-on-surface">Silverwood Creek Basin</h3>
+<p class="text-xl font-headline font-bold text-secondary">$420,000</p>
+</div>
+<div class="flex gap-6 text-on-surface-variant font-label text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs" data-icon="square_foot">square_foot</span> 42.5 Acres</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span> Montana, USA</span>
+</div>
+</div>
+</div>
+<!-- Side Card Stack -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<!-- Small Card 1 -->
+<div class="bg-surface-container-low rounded-full overflow-hidden">
+<div class="relative h-48 w-full">
+<img class="w-full h-full object-cover" data-alt="stunning mountain range with pine forest in foreground at dusk with cool blue and violet tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPoMyBnkmG_pjwKM_RhO982jiYQ1_Ql0WpR6LlrUzoYeYAZqfw4YqoR3p6T5xN7PiMIR0rpSp7JbWbleBlnjZC4OI_5cNNFAeI0-E3Ir43RkEnZsCHqry4lhERpdI_iyE91d9frStI0nhE_5RhlRZbHqXAGU5KCCt6XBnWgulxi9KSqgTOycAl70t8PNVce_dVsS--5LM4Dex2T_hS4-oj-hvc20UScpOn9O87iF98LH0sEVPKItc4FRKz0nqx2soff3LTFcDS4YfW"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/80 backdrop-blur-md p-1.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+</div>
+<div class="p-5 bg-surface-container-lowest">
+<h3 class="font-headline font-bold text-on-surface">Ridgeview Peaks</h3>
+<p class="text-secondary font-label font-bold">$185,000</p>
+<p class="text-xs text-on-surface-variant mt-1 font-label">12.2 Acres • High Terrain</p>
+</div>
+</div>
+<!-- Small Card 2 -->
+<div class="bg-surface-container-low rounded-full overflow-hidden">
+<div class="relative h-48 w-full">
+<img class="w-full h-full object-cover" data-alt="aerial view of a winding river through a dense deciduous forest in autumn with vibrant orange and red leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJC2oxWBAgG7VFYVxXvDRuikQiLXv9_k0itop34w7lmvE5YFZarOajU8TDRgiUlgk1ZZZtjegjXqWy23S8uTrDJHYLiygibrX2_wXgB0gEDIika_6Sp5RKKmgHU0qJ0K-dsy9n8W3_Yl71vjmVBWq0uVPwJHUNmH2pwCVbv376cVtSvBEox0Qwx5QXNbSslUCxZB1xGmUSlCWjJgvxpo0hF-Ar_Xly_apJ1NzslTNlYMsNg2h7DwvrBbRaSm4VMxov0x6XRfRy1qeI"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/80 backdrop-blur-md p-1.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+</div>
+<div class="p-5 bg-surface-container-lowest">
+<h3 class="font-headline font-bold text-on-surface">Autumn River Bend</h3>
+<p class="text-secondary font-label font-bold">$290,000</p>
+<p class="text-xs text-on-surface-variant mt-1 font-label">28.0 Acres • Waterfront</p>
+</div>
+</div>
+</div>
+<!-- Bottom Row Bento Items -->
+<div class="md:col-span-6 bg-surface-container-low rounded-full overflow-hidden flex">
+<div class="w-1/3 h-full overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="tranquil forest path with sunlight filtering through tall redwood trees creating long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzZi7xAQaBUAWz58IjscQTx9uGu1dyvOuTTNau2ezVpQJeNIHCK9S2fER2mudhOfMvrIDZyWZRxO5DzM_mE9_r2Eop_CgqQ1LP2f---cs2EptINHuiOBTpwQqKPVvryaifq3IGfKliR5UiMglh0eElXxIaln0jXFvW2KKZSoJMuyY7DwvOXHlcEYKMxJApbah2ZO-B_OScXQXAl-ZqM76IaTbJhMkQn1s1MkcLPp2pvkBUZ3tUrK9aaDduwMqjUFN4faVNwf2Qw1Nq"/>
+</div>
+<div class="w-2/3 p-6 bg-surface-container-lowest flex flex-col justify-center">
+<h3 class="font-headline font-bold text-lg text-on-surface">Eldwood Grove</h3>
+<p class="text-on-surface-variant font-label text-xs mb-3">Ancient woodland preservation plot.</p>
+<div class="flex justify-between items-center">
+<p class="text-secondary font-bold">$115,000</p>
+<button class="text-on-primary-fixed-variant font-label text-xs font-semibold underline underline-offset-4 hover:opacity-70 transition-opacity">View Details</button>
+</div>
+</div>
+</div>
+<div class="md:col-span-6 bg-surface-container-low rounded-full overflow-hidden flex">
+<div class="w-1/3 h-full overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="desert landscape with unique rock formations and saguaro cacti at sunset under a golden sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjkcBBJa5Itca-4uRAjIVqJoJxhKE044ujB8TslYjLdtCY70-K8ECiEUXz6JP2rcyZKn43Q98tO6eu94CNUG1FruPp18nKI7YDsh5kzuXqncXpoyH5Z8Gw25sD3MwgqysV2NsJgvCL4bNMROzo1O7NIHqXkrZEQ0Nn8bf-tiHZCCJylpWhYUDZ3sLUvHfA8HAbIxP6wNjYANJ-UoMLhKz7fqcloZhbW_pAeqKuksujX1O_l4CFVUhXxNxcuE6O6jug_T7UPwWCIKFK"/>
+</div>
+<div class="w-2/3 p-6 bg-surface-container-lowest flex flex-col justify-center">
+<h3 class="font-headline font-bold text-lg text-on-surface">High Desert Plateau</h3>
+<p class="text-on-surface-variant font-label text-xs mb-3">Arid horizon with buildable rock shelf.</p>
+<div class="flex justify-between items-center">
+<p class="text-secondary font-bold">$98,000</p>
+<button class="text-on-primary-fixed-variant font-label text-xs font-semibold underline underline-offset-4 hover:opacity-70 transition-opacity">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-slate-50/80 dark:bg-emerald-950/80 backdrop-blur-xl z-50 rounded-t-3xl shadow-[0_-10px_40px_rgba(0,31,41,0.06)]">
+<!-- Explore -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-emerald-700 px-4 py-1 hover:text-emerald-800 dark:hover:text-emerald-300 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase">Explore</span>
+</a>
+<!-- Saved (Active) -->
+<a class="flex flex-col items-center justify-center text-emerald-900 dark:text-emerald-400 bg-emerald-500/10 rounded-xl px-4 py-1 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase">Saved</span>
+</a>
+<!-- Inquiries -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-emerald-700 px-4 py-1 hover:text-emerald-800 dark:hover:text-emerald-300 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase">Inquiries</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-emerald-700 px-4 py-1 hover:text-emerald-800 dark:hover:text-emerald-300 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase">Profile</span>
+</a>
+</nav>
+</body></html>

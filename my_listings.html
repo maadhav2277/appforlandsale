@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#2a4131",
+                    "surface-container": "#d8f2ff",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "tertiary": "#152b1c",
+                    "surface-dim": "#bedfef",
+                    "outline-variant": "#c1c8c2",
+                    "secondary-container": "#a1f4c8",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-low": "#e6f6ff",
+                    "secondary-fixed": "#a1f4c8",
+                    "primary-fixed-dim": "#95d4b3",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "background": "#f3faff",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#c6e8f8",
+                    "on-primary-container": "#76b394",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#95d4b3",
+                    "on-surface": "#001f29",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#b1f0ce",
+                    "on-secondary-fixed-variant": "#005236",
+                    "tertiary-fixed": "#cee9d3",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#dff4ff",
+                    "surface-container-highest": "#c6e8f8",
+                    "primary": "#002d1c",
+                    "on-tertiary-fixed": "#092012",
+                    "on-tertiary-container": "#93ad98",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "surface-bright": "#f3faff",
+                    "secondary": "#116c4a",
+                    "on-background": "#001f29",
+                    "outline": "#717973",
+                    "on-secondary-container": "#1b724f",
+                    "on-secondary-fixed": "#002113",
+                    "inverse-surface": "#123441",
+                    "surface-tint": "#2c694e",
+                    "on-primary-fixed": "#002114",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#00452e",
+                    "on-surface-variant": "#414844",
+                    "surface-container-high": "#ccedfe",
+                    "surface": "#f3faff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            background: linear-gradient(180deg, rgba(243, 250, 255, 0.7) 0%, rgba(243, 250, 255, 0.9) 100%);
+        }
+        .horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-[#1B4332] hover:opacity-80 transition-opacity active:scale-95 duration-150">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-2xl font-extrabold tracking-tighter text-[#1B4332]">Terra Nova</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center gap-8 mr-8">
+<a class="text-slate-500 font-semibold hover:opacity-80" href="#">Explore</a>
+<a class="text-slate-500 font-semibold hover:opacity-80" href="#">Saved</a>
+<a class="text-slate-500 font-semibold hover:opacity-80" href="#">Inquiries</a>
+<a class="text-[#1B4332] font-bold hover:opacity-80 border-b-2 border-[#1B4332]" href="#">Profile</a>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed cursor-pointer active:scale-95 duration-150">
+<img alt="User profile photo" class="w-full h-full object-cover" data-alt="close-up portrait of a professional man in outdoor attire with a soft forest background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnLs6O3t_xBNmFcgWSKuVd_pFshYjv92kNRbhjZB5WDbA7OLA2rCtZ-crbcrQFlOmwM37lS3B22szDAEV5xUr_xaUGx0JWiDRXMqrPTgyTSh21bzZZz8GK_-3Zp6t4Hf2kLjk4TfPu2drBN2JBf4y8HZ9wID8iHHEmMo9IhGvu0WAxf_S1DHDx7buZpkITZqOC7n5WnFF1MUv__ZVZ0fokkO6i3Aw3q4xe7aGArtfDdsGA7MxCVUuqOnMCQjR8wcN009K4DfsOKrVf"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Editorial Header Section -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="font-label text-on-surface-variant uppercase tracking-widest text-xs font-semibold mb-2 block">The Surveyor's Dashboard</span>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary tracking-tight">My Listings</h2>
+<p class="text-on-surface-variant mt-4 max-w-xl">Manage your private estates and land parcels. Oversee inquiries, adjust valuations, and monitor market performance.</p>
+</div>
+<button class="horizon-gradient text-on-primary px-8 py-4 rounded-full flex items-center gap-3 shadow-lg hover:opacity-90 active:scale-95 transition-all w-fit">
+<span class="material-symbols-outlined">add</span>
+<span class="font-label font-bold uppercase tracking-wider text-sm">List New Land</span>
+</button>
+</div>
+</section>
+<!-- Listing Grid (Editorial Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Listing Item 1: Active -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="aerial view of a vast lush green valley with a meandering river at sunset, soft golden hour lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHBquLl7eGfMDTHod5fkjK4d-8e902c1GlDFt8gxtpBhQwghrY6c4ws-nKv6w5ehb6NOS4ZU3p4w2b9TgzPByY9A7h1zRN6NONUcMl5frfNdB9nAj6NSZSZ6VVyx3bcRp6neFEz17-xqEct2fFzDKgJTwk68eN07SqbVwZKQGxZd7ZdffDbczuFLx0TnWznh6r4f7jQH_JBpXxagEaX5XUEG9vt75ZrXvGP_9lBInNYfUNsRonQedfYAlfhuoGn58y1hZJrQ1ij2fC"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md text-[10px] font-label font-black uppercase tracking-widest">Active</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-headline font-bold text-primary">Green Valley Plot</h3>
+<span class="text-primary font-bold text-lg">$425,000</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-label text-xs mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">grid_view</span> 12.4 Acres</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Oregon, US</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-2 rounded-xl border border-outline-variant/15 text-primary font-label text-xs font-bold uppercase tracking-tighter hover:bg-surface-container-low transition-colors">Edit Details</button>
+<button class="px-3 py-2 rounded-xl border border-outline-variant/15 text-primary hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">analytics</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Listing Item 2: Pending -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="dramatic mountain range peaks reflected in a calm alpine lake with early morning mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoT7Vun7iJvvEzHep2lEz6sYAGzlCIrIJKIruJC_8J-TGbJPr3Iid0MgJxOZ2awZ5OftbyxIwLCiHWGrL8MrUtmF9erSIdabfcex8xkyN2gOHoh71vPM7E0rT0WA2IWCbJKK2haNO_z8fcjzWkCbgp3IXSVtCLXw1ewo7IZjrtgaJq7xuFz2z_XxD6gmyxgz7c3DB9d5eebxZnWkBTT95SR3lTh1zpr9Lh7csrRxhKlevUilZJ-ZdD-ZQzimlGxI5OoZKvBeT5tIBH"/>
+<div class="absolute top-4 left-4">
+<span class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-md text-[10px] font-label font-black uppercase tracking-widest">Pending Sale</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-headline font-bold text-primary">High Ridge Estate</h3>
+<span class="text-primary font-bold text-lg">$1,280,000</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-label text-xs mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">grid_view</span> 45.0 Acres</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Montana, US</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-2 rounded-xl border border-outline-variant/15 text-primary font-label text-xs font-bold uppercase tracking-tighter hover:bg-surface-container-low transition-colors">View Offer</button>
+<button class="px-3 py-2 rounded-xl border border-outline-variant/15 text-primary hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Listing Item 3: Active (Drafting style) -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="rolling golden wheat fields under a wide blue sky with a single oak tree on the horizon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw-ZeIXA7Ot4SBmV3Lc-tujz8QtDTqFTSKfQHj51cWQzw9iQaD4lx89Bz1QzOTPYu9wTfonR3sd2lZyB7ZpsHmZcp12kAmtyflXh4Y2J5N1-YH6nwLxQ2HFoWmGrbXCobWlh1cI78M2WMzFOfD_xESoTgCNHGXn2AF4dzwB5gtwy6z-u6qb3W4HWFR8vsCAvoo5M7yyWULRDTIMySabpwWmaT1mnAFwy13hDmAZBrM8kMVRiWRlokW60AJu7aUR4O8t7DNMprVQlBz"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md text-[10px] font-label font-black uppercase tracking-widest">Active</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-headline font-bold text-primary">Amber Fields</h3>
+<span class="text-primary font-bold text-lg">$210,000</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-label text-xs mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">grid_view</span> 8.2 Acres</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Kansas, US</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-2 rounded-xl border border-outline-variant/15 text-primary font-label text-xs font-bold uppercase tracking-tighter hover:bg-surface-container-low transition-colors">Edit Details</button>
+<button class="px-3 py-2 rounded-xl border border-outline-variant/15 text-primary hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">analytics</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Add New Placeholder (Asymmetric UI Pattern) -->
+<div class="border-2 border-dashed border-outline-variant/30 rounded-xl flex flex-col items-center justify-center p-8 min-h-[400px] group cursor-pointer hover:bg-surface-container-low transition-all">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">add_photo_alternate</span>
+</div>
+<span class="font-headline font-bold text-primary text-lg">List Another Plot</span>
+<p class="text-on-surface-variant text-center mt-2 font-label text-xs max-w-[180px]">Expand your portfolio and reach thousands of investors.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#ffffff]/70 dark:bg-[#001f29]/70 backdrop-blur-md z-50 rounded-t-3xl border-t border-white/10 shadow-[0px_-10px_30px_rgba(0,31,41,0.04)]">
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:bg-slate-100/50 transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:bg-slate-100/50 transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider mt-1">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:bg-slate-100/50 transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider mt-1">Inquiries</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#a1f4c8] text-[#1B4332] rounded-2xl px-5 py-2 active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider mt-1">Profile</span>
+</a>
+</nav>
+<!-- Mobile FAB (Re-contextualized for List My Land) -->
+<button class="md:hidden fixed bottom-28 right-6 w-14 h-14 horizon-gradient text-on-primary rounded-full shadow-2xl flex items-center justify-center active:scale-90 transition-all z-40">
+<span class="material-symbols-outlined">add</span>
+</button>
+</body></html>

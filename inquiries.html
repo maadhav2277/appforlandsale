@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#c6e8f8",
+                    "on-surface-variant": "#414844",
+                    "inverse-on-surface": "#dff4ff",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#c6e8f8",
+                    "outline": "#717973",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#76b394",
+                    "surface": "#f3faff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "surface-dim": "#bedfef",
+                    "primary-fixed": "#b1f0ce",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-secondary-fixed": "#002113",
+                    "secondary-fixed": "#a1f4c8",
+                    "on-tertiary-fixed": "#092012",
+                    "on-primary-fixed": "#002114",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-secondary-container": "#1b724f",
+                    "on-background": "#001f29",
+                    "tertiary": "#152b1c",
+                    "primary": "#002d1c",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "inverse-primary": "#95d4b3",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "tertiary-container": "#2a4131",
+                    "background": "#f3faff",
+                    "inverse-surface": "#123441",
+                    "surface-container": "#d8f2ff",
+                    "secondary-container": "#a1f4c8",
+                    "tertiary-fixed": "#cee9d3",
+                    "surface-tint": "#2c694e",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#001f29",
+                    "secondary": "#116c4a",
+                    "surface-container-low": "#e6f6ff",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#ccedfe",
+                    "primary-container": "#00452e",
+                    "outline-variant": "#c1c8c2",
+                    "surface-bright": "#f3faff",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#93ad98"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .font-label { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<header class="fixed top-0 w-full z-50 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-emerald-950 dark:text-emerald-500" data-icon="search">search</span>
+<h1 class="font-['Manrope'] font-extrabold text-2xl tracking-tighter text-emerald-950 dark:text-emerald-50 uppercase tracking-[0.2em]">Inquiries</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User profile avatar" data-alt="Close-up professional portrait of a person with friendly expression, soft natural studio lighting, neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCm4RUi9mX8VpH9n8Fq19zq7WwEUpaWCazeWynNR_LAJKW4HllETdh6dFDEdpszJWIUBtqhlHEgpZ5SBaYb11Z_vBxOvLYBqdS54qr8P8QWNljUXgPhkYMdJ_FxB-4U4dAm7FdXhCsZqNSsbv4OuEngVqgOO6gYapaUuTrufxT1es8wckBsVFrR6eR8hzl2smfrBh_vKaWsXwFfD13LX1qh23K4OCUiQaaajGT2q_4FC2eNjWdXTWxaMo0rRTSwOh9RvqHVKjhpJr7"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-3xl mx-auto">
+<div class="flex flex-col gap-4">
+<div class="mb-2">
+<p class="font-label text-sm text-on-surface-variant font-medium">Ongoing Conversations</p>
+</div>
+<!-- Chat Item 1 -->
+<div class="group relative flex items-center gap-4 p-4 rounded-full bg-surface-container-lowest hover:bg-surface-container transition-colors duration-300">
+<div class="relative flex-shrink-0">
+<img alt="Plot thumbnail" class="w-16 h-16 rounded-full object-cover" data-alt="Lush green expansive meadow with a single ancient oak tree under a clear blue sky, wide angle landscape photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrzRZyqs_zFlUum3CI5kfPkMDA7vr4VjZu2Zs8IMoz6IPRc7Imi-sX90QmjAwEXUvma987ZBS7f7afgzpyMglI52sNi_dDEmfM9Mv9qNjYzx80uIlh-80vBogIQ_8_x6GfUwFYjsva0AYgYatJgoNdTfk7REn9QT1eBr4azQspT-iwnYpQUtbUelH3DoQMufyG43tykGNXbjiMiJxvvjjZWhctA6skqTNjKjB4L8pZ4QSxtHBYibUvwSTXHouJU1eHFAeioUK_pHAv"/>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full border-2 border-surface-container-lowest overflow-hidden">
+<img alt="Landowner" data-alt="Portrait of a middle-aged man with graying hair, wearing a flannel shirt, smiling outdoors in soft light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXkUOqs-IUkB6xfu60LjErxDGToFDs6JXZnMaG-KzZiBgP-YeCZgQM87DI8wW1srHNzAZasNOTC9ZiVjBwKBgAPJQQJ6uXf-fgPHBXEapyTVhdWRG8qufLjUQ27w_gK3cq2N70eRTXn80xDRMVkVxrmv3ss4vB2mfy0I4wQzovSMWEE1kbMCLau82ptg8SmjRbiOr6Ym2TECG3uQiFSbzoPf_FpXCCHntZQJSK-IRuyKi0TzVNnbC3fnTp9UJtUgAFG08Y66YyuBap"/>
+</div>
+</div>
+<div class="flex-grow min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="font-bold text-primary truncate">Julian Thorne</h3>
+<span class="font-label text-[10px] uppercase tracking-wider text-outline">2m ago</span>
+</div>
+<p class="text-sm font-medium text-on-surface truncate">Highland Valley Plot #402</p>
+<p class="text-xs text-on-surface-variant truncate">Is the soil survey available for the northern quadrant yet?</p>
+</div>
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+</div>
+<!-- Chat Item 2 -->
+<div class="group relative flex items-center gap-4 p-4 rounded-full bg-surface-container-lowest hover:bg-surface-container transition-colors duration-300">
+<div class="relative flex-shrink-0">
+<img alt="Plot thumbnail" class="w-16 h-16 rounded-full object-cover" data-alt="Aerial view of pine forest meeting a crystal clear lake, misty mountains in the background, cinematic nature lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIpUKQtFXguThk2UIsri53_0_7-q4aNvE4o994dcH_O1DJZ1ye3yHYBudStXcnTF2ga058U_QKWr4NLRYHR9a0qwmh1UU9Zs9li94RmY_s2k8my_vbtA4WFwmQ5qRknqlK69jqto5ZhlMHGTtSwBzoHMf_zbo1BctWoRSm9-5vlXQXtVwmInoPiVfUQvtNmu_K8DN0LH9x9e_ClQKgiMQx5BE12bX2Zie-YhaRCQx3Mm41VQ9p87SRD6EpVHHwU6lDznCgxxZp4mgd"/>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full border-2 border-surface-container-lowest overflow-hidden">
+<img alt="Landowner" data-alt="Close up portrait of a woman with braided hair wearing a tactical vest, focused expression, outdoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9pxzdbEBN5bfNciwUifCMOOFPpyG5dZ7LB1NLzczRwyux9PlD4FoEP-6eZc6_2goRGmjTI2vL17W5j5GFJqnuCzXIu6apw1sMdMuUt6nK1606JY4mS0R5UMxlslgJjXA05LxJ4HURnCU59jod69jhhlFpzgmfgCrsu4drmjrj7jLbTCTLQitdBDAB-BmvvQgd-8_Qk74L2QXPKdm5ONkQne3Kdm6V0npVwlQ1K_69XVN601Sc5qZc39m7VrqZdQ3epFt49njeJlhR"/>
+</div>
+</div>
+<div class="flex-grow min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="font-bold text-primary truncate">Elena Rodriguez</h3>
+<span class="font-label text-[10px] uppercase tracking-wider text-outline">1h ago</span>
+</div>
+<p class="text-sm font-medium text-on-surface truncate">Silver Lake Peninsula</p>
+<p class="text-xs text-on-surface-variant truncate">The boundary lines were updated on the map. Take a look...</p>
+</div>
+</div>
+<!-- Chat Item 3 -->
+<div class="group relative flex items-center gap-4 p-4 rounded-full bg-surface-container-lowest hover:bg-surface-container transition-colors duration-300">
+<div class="relative flex-shrink-0">
+<img alt="Plot thumbnail" class="w-16 h-16 rounded-full object-cover" data-alt="Idyllic countryside valley with rolling hills and a winding dirt road at sunset, warm golden glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLH34vFcTOEnczKrzfTLyDbbPiRGHozbF4bo3ZdYdNfzN-ksm-CsZwKqOfY6XgB4lkVVtBM1wFgYgTxn1I4XXvuqAwsmnCdjDBu_uCb8rNhoHA_X6N2mXytk75uSvYMfmt2hQP0wona8DtcuSNP9YO9Vg2xFeswTS3Eg3bzkKZel6VIWX6BHw03Lqbs5zL7KwMPkwTOXq1odlipOtiXJBTt2bgVfB0Aid3w_nQs-1WzLRKEV-GJcC6oIbTuUOEusR3FIjXlpfGScVj"/>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full border-2 border-surface-container-lowest overflow-hidden">
+<img alt="Landowner" data-alt="Portrait of a young man with glasses, professional attire, standing in a brightly lit modern office space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTPXH3KeXgTgxZEp4Gim2HXBGxjigZB9zI-2LNsusDcheMWCDhZqRjcO00RGikUbupt3wyEgsmJPK0l4YZT_66Cku9qhdhjYrUXsqOGo01kYQzB2gaUErl-Qj6q0YdazXWywnCRBtorABGFEmbny24db_vpYtSfHzi-oGVLfXNWUkO8oRMXbf6NBeK2CP9Ya9rYWWSzpcNbqmOtNvs0vo8fyFwjQoHEnn1Y_mcXK7tGty7UoJu1A4OEiNomRF4MyZgOyT1P2jii5u_"/>
+</div>
+</div>
+<div class="flex-grow min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="font-bold text-primary truncate">Marcus Chen</h3>
+<span class="font-label text-[10px] uppercase tracking-wider text-outline">3h ago</span>
+</div>
+<p class="text-sm font-medium text-on-surface truncate">The Ridge - Parcel B</p>
+<p class="text-xs text-on-surface-variant truncate">Let's schedule a site visit for Tuesday morning.</p>
+</div>
+</div>
+<!-- Chat Item 4 -->
+<div class="group relative flex items-center gap-4 p-4 rounded-full bg-surface-container-lowest hover:bg-surface-container transition-colors duration-300">
+<div class="relative flex-shrink-0">
+<img alt="Plot thumbnail" class="w-16 h-16 rounded-full object-cover" data-alt="Close up of lush green forest floor with mossy rocks and ferns, dappled sunlight filtering through canopy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLmv1Aki1d3kMbzjLkBIXdxL59QhPJGRsrPmvqhd_eYQLA4HWj5_xLo44ZA1blivJhHpEybETm1x86z2NAK4UkZW_UbzEJghk7W4HcPka_8YGYWS9ZkR2IN3vEtgEkS_uPg7cSLQYdW99d2h_URrBdZG83XlgvjSsdfDJdrBdQAaaRWYHpPmYKk1mLACoAduKiq5DS8vy_iogDWnZx_H3XaQ3uYIb1MYiwLqNDuGKdeYaJ6ZHJ-WP7mMNgmtcAkFLktzV5XUytgAgd"/>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full border-2 border-surface-container-lowest overflow-hidden">
+<img alt="Landowner" data-alt="Portrait of a man with a beard, wearing a brimmed hat and denim jacket, smiling warmly, bokeh forest background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmzR1771qlPuuHlkihd-ZonRxD2BxZqvaffI0ecIPzditfphHAAOfq2ZYRUtuAg6w7U62wSp7YdUS9xXNOnIcwEFeB2MLUtltYIgR_XKeGmaWaIszltM-fjqdb1QnMXxMomHb7ohWdF1rqXROwfo1m-gGt6VWijUOKDs1P5PwsMju4qewDo8YU0cnO-VP7Rao_mrHT0tprFidolcEsNAIyPBnz8ext_hobDQoaQ5O4eMXoLNrmac8vscEFCm_4zrGiGBDedEF6T9u4"/>
+</div>
+</div>
+<div class="flex-grow min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="font-bold text-primary truncate">Silas Vane</h3>
+<span class="font-label text-[10px] uppercase tracking-wider text-outline">Yesterday</span>
+</div>
+<p class="text-sm font-medium text-on-surface truncate">Deepwood Sanctuary</p>
+<p class="text-xs text-on-surface-variant truncate">Thank you for the inquiry. I've sent the deeds.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-xl z-50 rounded-t-3xl shadow-[0px_-4px_20px_rgba(0,31,41,0.06)]">
+<!-- Explore -->
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-4 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-800/30 transition-all scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Explore</span>
+</a>
+<!-- Saved -->
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-4 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-800/30 transition-all scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="favorite">favorite</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Saved</span>
+</a>
+<!-- Inquiries (Active State) -->
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-950 dark:text-emerald-100 rounded-2xl px-4 py-1.5 transition-all scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="forum" style="font-variation-settings: 'FILL' 1;">forum</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Inquiries</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-4 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-800/30 transition-all scale-95 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-tight">Profile</span>
+</a>
+</nav>
+</body></html>
