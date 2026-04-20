@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inquiries &amp; Discussions CRM</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#a1f4c8",
+                    "surface-dim": "#bedfef",
+                    "surface-container-low": "#e6f6ff",
+                    "primary-container": "#00452e",
+                    "surface-variant": "#c6e8f8",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "on-tertiary-fixed": "#092012",
+                    "surface-container-highest": "#c6e8f8",
+                    "tertiary": "#152b1c",
+                    "surface-tint": "#2c694e",
+                    "on-primary-fixed": "#002114",
+                    "inverse-surface": "#123441",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#414844",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "on-tertiary-container": "#93ad98",
+                    "error-container": "#ffdad6",
+                    "surface": "#f3faff",
+                    "outline-variant": "#c1c8c2",
+                    "outline": "#717973",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "on-surface": "#001f29",
+                    "inverse-primary": "#95d4b3",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#d8f2ff",
+                    "tertiary-container": "#2a4131",
+                    "inverse-on-surface": "#dff4ff",
+                    "primary-fixed": "#b1f0ce",
+                    "tertiary-fixed": "#cee9d3",
+                    "background": "#f3faff",
+                    "secondary-fixed": "#a1f4c8",
+                    "on-secondary-fixed": "#002113",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "on-error": "#ffffff",
+                    "secondary": "#116c4a",
+                    "surface-bright": "#f3faff",
+                    "surface-container-high": "#ccedfe",
+                    "primary": "#002d1c",
+                    "on-primary-container": "#76b394",
+                    "on-secondary-container": "#1b724f",
+                    "on-error-container": "#93000a",
+                    "on-background": "#001f29",
+                    "on-secondary-fixed-variant": "#005236"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .swiped-row {
+            transform: translateX(-240px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto relative">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#1B4332] p-2 hover:bg-[#e6f6ff] transition-colors rounded-full active:scale-90">menu</button>
+<h1 class="font-['Manrope'] font-extrabold text-[#1B4332] tracking-tighter text-xl">Territory CRM</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Manrope'] tracking-tight font-bold text-lg text-[#001f29]/60 hover:text-[#1B4332] transition-colors" href="#">Market</a>
+<a class="font-['Manrope'] tracking-tight font-bold text-lg text-[#1B4332]" href="#">Inquiries</a>
+<a class="font-['Manrope'] tracking-tight font-bold text-lg text-[#001f29]/60 hover:text-[#1B4332] transition-colors" href="#">Saved</a>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/10">
+<img alt="User" class="w-full h-full object-cover" data-alt="close-up portrait of a professional land surveyor in outdoor gear with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4a9wpXaGngFxAaUoIuWrkb9M8WR9XQjHOrWptgp3Jm4MmBEkkTrEcPyYCD5hpDG-ZtQHopTq9x0zN8j7iCTkiA1DPT_IS15kzqoVDMJAYc0lGGXG-Ba_F9DZmzOX26j-Urck-RbUdJV-xOJTt9iLdYZ5J5fXr9DQBow0QOTi0rBgL5O0Z-cfRcDlLF_ZcGTMQfRk0xkkxUSRPXjI08jV0Vi7P4LIBTYWPYMH8TfqgEP70SdbQDzxWtvnRuTZqa19kvutohZl8Z1f9"/>
+</div>
+</div>
+<div class="bg-[#e6f6ff] h-[1px] w-full absolute bottom-0 opacity-10"></div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-4 md:px-8 max-w-5xl mx-auto min-h-screen">
+<!-- Header Section -->
+<section class="mb-8">
+<div class="flex flex-col gap-1 mb-6">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight text-primary">Inquiries</h2>
+<p class="text-on-surface-variant font-medium">Manage discussions and plot interests</p>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-label text-sm font-semibold whitespace-nowrap">All</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-label text-sm font-semibold hover:bg-surface-container transition-colors whitespace-nowrap">Unread</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-label text-sm font-semibold hover:bg-surface-container transition-colors whitespace-nowrap">My Listings</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-label text-sm font-semibold hover:bg-surface-container transition-colors whitespace-nowrap">My Inquiries</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-label text-sm font-semibold hover:bg-surface-container transition-colors whitespace-nowrap">Archived</button>
+</div>
+</section>
+<!-- Conversation List -->
+<div class="space-y-4">
+<!-- Conversation Row: Marcus Thorne -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low">
+<div class="flex items-center p-4 gap-4 bg-surface-container-lowest transition-transform duration-300">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover border border-outline-variant/20" data-alt="professional headshot of a middle-aged man with sharp features against a minimalist studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGzayGYo7z8FMzboON2eDa-ftlfjJByaxZ0-rMOvxw8jkyOHKmpR6RHin3HTuMZDSvpGvXBUWXRO4RsXW0KMhyKXhXqE8pYu7AOU2WOWhNb5xGScrh2KCGzNJj7BIM2J9dkU3S5TobYgqS1IPVu1Fwyy7SVWWAedbHq6axN0rKmKlKUiNgm1n7KUrl0wVrZMlCiJaSSY8CVc1qk2RK7S_ItddlFS5E4cRk20tx-emqGSEyQLYwJiAkeSCtVWlXW9gysxlTLlZmG50T"/>
+<div class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-secondary border-2 border-surface-container-lowest rounded-full"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-0.5">
+<span class="font-bold text-on-surface truncate">Marcus Thorne</span>
+<span class="font-label text-xs text-outline">12:45 PM</span>
+</div>
+<div class="flex justify-between items-start gap-2">
+<p class="text-sm text-on-surface-variant font-medium truncate">Is the 40-acre parcel in Montana still available for boundary surveying?</p>
+<span class="px-2 py-0.5 bg-primary-container text-on-primary-container text-[10px] font-bold rounded-md uppercase tracking-wider">Urgent</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Conversation Row: SWIPED STATE (Ethan Turner) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low">
+<!-- Swipe Actions Layer -->
+<div class="absolute inset-y-0 right-0 flex w-[240px]">
+<button class="flex-1 flex flex-col items-center justify-center bg-secondary text-on-secondary hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined mb-1">archive</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-tighter">Archive</span>
+</button>
+<button class="flex-1 flex flex-col items-center justify-center bg-inverse-surface text-inverse-on-surface hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined mb-1">mark_as_unread</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-tighter">Unread</span>
+</button>
+<button class="flex-1 flex flex-col items-center justify-center bg-error text-on-error hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined mb-1">delete</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-tighter">Delete</span>
+</button>
+</div>
+<!-- Front Layer Content -->
+<div class="swiped-row flex items-center p-4 gap-4 bg-surface-container-lowest relative z-10 transition-transform duration-300">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover border border-outline-variant/20" data-alt="portrait of a young man with glasses and friendly expression in an office setting with natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIz7K78zABfqEhJ6Hx3VkxCwQzrpaUjbgsS1dkyuO2XjIP83M4wsND_Ey6nTFBs0mHnu-kUVpqrEVwghpSIpfY1SMqGd9vCf9Il5SkV8N7YtfzWyWajzOgZRM5jS7Mo0s4AW2-cS0sdnZsKd3c6N900jWb8qIEMtQnjCPh7ylahI-gKoZZTjYermdK1M7SgjbEkvaIsv8gyEt4yW6SEfEhphcBsESnSJOJzsGpUJV20KqPrdOb4l3truH52s1RGsY9ZwQIfmrKe9f9"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-0.5">
+<span class="font-bold text-on-surface truncate">Ethan Turner</span>
+<span class="font-label text-xs text-outline">Yesterday</span>
+</div>
+<div class="flex justify-between items-start gap-2">
+<p class="text-sm text-on-surface font-bold truncate">Let's finalize the topographic report for the Crestview development site.</p>
+<div class="w-2.5 h-2.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Conversation Row: Sarah Jenkins -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low">
+<div class="flex items-center p-4 gap-4 bg-surface-container-lowest transition-transform duration-300">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover border border-outline-variant/20" data-alt="professional woman with a calm expression in a modern architectural office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqFMHKEQ4d6eLwO1-BS8XhiYOM_0-_TYrDSBrRivJ3kRQSVp_565Dzg6_S8pCjXIkfAbWma0sMQ_KH2ETtRb-8f01bEgYSctAK9rVNhMJrQqxvMhH01iXC005_1dDxT_D-ydzeTeTCICJN1iukyClTXc32VaJ5_HoGPCcKz67GI7SMxmYYt9IL8LQlY28LMKde5UYwp-l91FEAouC014HTjwwHi-HYbRz6l-yKiF_h8nZdOjBOMmv9KA1HWnveguF6WrK6IhhnfrHX"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-0.5">
+<span class="font-bold text-on-surface truncate">Sarah Jenkins</span>
+<span class="font-label text-xs text-outline">Mar 12</span>
+</div>
+<div class="flex justify-between items-start gap-2">
+<p class="text-sm text-on-surface-variant font-medium truncate">The plat map you sent last week has been approved by the county.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Conversation Row: David Miller -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low">
+<div class="flex items-center p-4 gap-4 bg-surface-container-lowest transition-transform duration-300">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover border border-outline-variant/20" data-alt="older man with distinguished features looking thoughtful against a bookshelf backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzIIbxyaLhqMINDAEbxEQFTSX3tpXcuhlRB49sr1MkDO3hkcpSLXuiuq-ljnY7VLRB0KJbjDSMaILWDE3T5rxoZrqyry8EAvblQAN4wiftuqc09nXJgkvwGWNf_CdUwzJigNNvQilBQo3MKdNKMVpz9EL1_uS5yit9t_eVElpJCK4jL7U8Qa26TIancx828a32tPQ7f_l81xtOVlwi5UbbFXJjJt8F_a7cCtTmpFbq4xqFH4BF-T-Epb1J2hJkzlhIgdsb-GGRuKAU"/>
+<div class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-secondary border-2 border-surface-container-lowest rounded-full"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-0.5">
+<span class="font-bold text-on-surface truncate">David Miller</span>
+<span class="font-label text-xs text-outline">Mar 10</span>
+</div>
+<div class="flex justify-between items-start gap-2">
+<p class="text-sm text-on-surface-variant font-medium truncate">Could you provide a quote for an ALTA survey for the warehouse plot?</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 w-full rounded-t-[24px] z-50 bg-[#f3faff]/80 backdrop-blur-2xl shadow-[0px_-10px_30px_rgba(0,31,41,0.04)] md:hidden">
+<div class="flex justify-around items-center pt-3 pb-8 px-4 w-full">
+<button class="flex flex-col items-center gap-1 text-[#001f29]/50 px-5 py-2 transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-['Inter'] text-[11px] uppercase tracking-widest font-semibold">Market</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#1B4332] dark:text-[#a1f4c8] bg-[#a1f4c8]/20 rounded-2xl px-5 py-2 transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+<span class="font-['Inter'] text-[11px] uppercase tracking-widest font-semibold">Inquiries</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#001f29]/50 px-5 py-2 transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined">landscape</span>
+<span class="font-['Inter'] text-[11px] uppercase tracking-widest font-semibold">Saved</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#001f29]/50 px-5 py-2 transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Inter'] text-[11px] uppercase tracking-widest font-semibold">Account</span>
+</button>
+</div>
+</nav>
+<!-- Floating Action Button -->
+<button class="fixed right-6 bottom-24 md:bottom-12 w-14 h-14 bg-primary text-on-primary rounded-full shadow-2xl flex items-center justify-center active:scale-90 transition-transform z-40">
+<span class="material-symbols-outlined">edit_square</span>
+</button>
+</body></html>
