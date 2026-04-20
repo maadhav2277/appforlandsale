@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-fixed": "#092012",
+                "on-tertiary-container": "#93ad98",
+                "on-secondary-container": "#1b724f",
+                "on-secondary": "#ffffff",
+                "outline": "#717973",
+                "on-primary-container": "#76b394",
+                "outline-variant": "#c1c8c2",
+                "on-primary-fixed-variant": "#0e5138",
+                "on-secondary-fixed-variant": "#005236",
+                "inverse-on-surface": "#dff4ff",
+                "error": "#ba1a1a",
+                "tertiary-container": "#2a4131",
+                "surface-bright": "#f3faff",
+                "on-tertiary": "#ffffff",
+                "on-error-container": "#93000a",
+                "on-error": "#ffffff",
+                "secondary": "#116c4a",
+                "surface-tint": "#2c694e",
+                "surface-container-low": "#e6f6ff",
+                "tertiary-fixed-dim": "#b3cdb7",
+                "secondary-fixed-dim": "#86d7ad",
+                "tertiary": "#152b1c",
+                "inverse-primary": "#95d4b3",
+                "surface-container": "#d8f2ff",
+                "primary-fixed-dim": "#95d4b3",
+                "on-primary": "#ffffff",
+                "surface": "#f3faff",
+                "secondary-fixed": "#a1f4c8",
+                "primary-container": "#00452e",
+                "surface-variant": "#c6e8f8",
+                "on-tertiary-fixed-variant": "#354c3b",
+                "surface-container-high": "#ccedfe",
+                "primary": "#002d1c",
+                "on-surface-variant": "#414844",
+                "surface-container-lowest": "#ffffff",
+                "error-container": "#ffdad6",
+                "tertiary-fixed": "#cee9d3",
+                "on-primary-fixed": "#002114",
+                "on-secondary-fixed": "#002113",
+                "primary-fixed": "#b1f0ce",
+                "on-surface": "#001f29",
+                "surface-dim": "#bedfef",
+                "surface-container-highest": "#c6e8f8",
+                "background": "#f3faff",
+                "inverse-surface": "#123441",
+                "secondary-container": "#a1f4c8",
+                "on-background": "#001f29"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Manrope"],
+                "body": ["Manrope"],
+                "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Background Texture/Aesthetic -->
+<div class="absolute inset-0 z-0 opacity-40 pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] rounded-full bg-secondary-container/20 blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-primary-fixed/20 blur-[100px]"></div>
+</div>
+<!-- Top Navigation Anchor (Manual for non-nav screens but consistent branding) -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 backdrop-blur-xl">
+<div class="flex items-center px-6 h-16 w-full max-w-xl mx-auto justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#1B4332]" data-icon="arrow_back">arrow_back</span>
+<span class="font-manrope font-bold tracking-tight text-lg text-[#1B4332]">Security Settings</span>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="relative z-10 w-full max-w-md px-6 flex flex-col items-center text-center">
+<!-- Success State Bento-Card -->
+<div class="w-full p-8 rounded-[2rem] bg-surface-container-lowest shadow-[0px_20px_40px_rgba(0,31,41,0.06)] flex flex-col items-center gap-8">
+<!-- Success Icon with Halo Layering -->
+<div class="relative">
+<div class="absolute inset-0 bg-secondary-container/50 blur-2xl rounded-full scale-125"></div>
+<div class="relative w-24 h-24 bg-gradient-to-br from-primary to-primary-container rounded-full flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-on-secondary text-5xl font-bold" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Typography Content -->
+<div class="space-y-3">
+<h1 class="font-headline font-extrabold text-3xl text-primary leading-tight tracking-tight">
+                    Email Verified &amp; Updated
+                </h1>
+<p class="font-body text-on-surface-variant leading-relaxed text-sm md:text-base px-2">
+                    Your account has been successfully updated with your new email address.
+                </p>
+</div>
+<!-- Detail Confirmation Section (Subtle background shift) -->
+<div class="w-full bg-surface-container-low rounded-xl p-4 flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+</div>
+<div class="text-left">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">New Primary Email</p>
+<p class="font-body text-on-surface font-semibold truncate">alex.surveyor@example.land</p>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold rounded-xl shadow-lg hover:opacity-90 active:scale-[0.98] transition-all duration-200">
+                Done
+            </button>
+</div>
+<!-- Supportive Feedback -->
+<p class="mt-8 font-label text-xs text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="shield_check">shield</span>
+            Secure update complete
+        </p>
+</main>
+<!-- Visual Anchor / Decorative Element -->
+<div class="mt-12 flex items-center gap-1 opacity-20">
+<div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+<div class="w-8 h-1 rounded-full bg-primary"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+</div>
+</body></html>

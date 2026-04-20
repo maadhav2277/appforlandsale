@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Support | The Topographic Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#cee9d3",
+                      "error": "#ba1a1a",
+                      "primary-fixed-dim": "#95d4b3",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#a1f4c8",
+                      "primary-container": "#00452e",
+                      "secondary-fixed": "#a1f4c8",
+                      "inverse-on-surface": "#dff4ff",
+                      "tertiary-fixed-dim": "#b3cdb7",
+                      "on-error-container": "#93000a",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed": "#b1f0ce",
+                      "outline-variant": "#c1c8c2",
+                      "on-secondary-fixed": "#002113",
+                      "tertiary-container": "#2a4131",
+                      "on-tertiary-container": "#93ad98",
+                      "surface-container-low": "#e6f6ff",
+                      "surface-container": "#d8f2ff",
+                      "on-primary": "#ffffff",
+                      "surface-tint": "#2c694e",
+                      "on-secondary-fixed-variant": "#005236",
+                      "on-secondary-container": "#1b724f",
+                      "surface-container-highest": "#c6e8f8",
+                      "on-surface": "#001f29",
+                      "surface-variant": "#c6e8f8",
+                      "on-primary-fixed-variant": "#0e5138",
+                      "surface-bright": "#f3faff",
+                      "background": "#f3faff",
+                      "outline": "#717973",
+                      "inverse-primary": "#95d4b3",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "on-surface-variant": "#414844",
+                      "secondary": "#116c4a",
+                      "on-primary-fixed": "#002114",
+                      "surface-container-high": "#ccedfe",
+                      "on-tertiary-fixed": "#092012",
+                      "primary": "#002d1c",
+                      "surface": "#f3faff",
+                      "inverse-surface": "#123441",
+                      "secondary-fixed-dim": "#86d7ad",
+                      "surface-dim": "#bedfef",
+                      "on-primary-container": "#76b394",
+                      "on-error": "#ffffff",
+                      "on-background": "#001f29",
+                      "tertiary": "#152b1c",
+                      "on-tertiary-fixed-variant": "#354c3b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Manrope"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+        }
+        .tonal-shift-bg {
+            background-color: #e6f6ff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
+<div class="flex items-center justify-between px-6 py-4 max-w-full">
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-emerald-50/50 transition-colors scale-95 duration-150 rounded-full">
+<span class="material-symbols-outlined text-[#1B4332]" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-manrope font-bold text-lg tracking-tight text-[#1B4332]">Support</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 hover:bg-emerald-50/50 transition-colors scale-95 duration-150 rounded-full">
+<span class="material-symbols-outlined text-[#1B4332]" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+</div>
+<div class="bg-slate-100 h-[1px] opacity-20"></div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row items-end justify-between gap-6">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="headset_mic">headset_mic</span>
+<h2 class="text-5xl font-extrabold text-primary tracking-tight font-headline">Support</h2>
+</div>
+<p class="text-on-surface-variant text-lg font-medium">How can we help you today?</p>
+</div>
+<div class="w-full md:w-72">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary" data-icon="search">search</span>
+<input class="w-full bg-surface-container-highest border-none rounded-full py-3 pl-10 pr-4 focus:ring-2 focus:ring-primary text-sm font-label" placeholder="Search for help..." type="text"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Quick Help (Bento Grid) -->
+<section class="mb-16">
+<h3 class="text-xs font-label uppercase tracking-widest text-on-surface-variant mb-6 px-1">Quick Help</h3>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+<div class="md:col-span-3 bg-surface-container-lowest p-8 rounded-full border border-outline-variant/15 hover:shadow-lg transition-all group cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="quiz">quiz</span>
+<h4 class="text-xl font-bold text-primary mb-2">FAQs</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Find immediate answers to our most commonly asked questions about land acquisition.</p>
+</div>
+<div class="md:col-span-3 bg-surface-container-lowest p-8 rounded-full border border-outline-variant/15 hover:shadow-lg transition-all group cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="map">map</span>
+<h4 class="text-xl font-bold text-primary mb-2">How It Works</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Understand the digital surveyor ecosystem from browsing to legal title transfer.</p>
+</div>
+<div class="md:col-span-2 bg-primary-container p-6 rounded-full text-on-primary group cursor-pointer">
+<span class="material-symbols-outlined text-primary-fixed text-2xl mb-4" data-icon="add_location_alt">add_location_alt</span>
+<h4 class="text-lg font-bold mb-1">How to List Land</h4>
+<span class="material-symbols-outlined float-right group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="md:col-span-2 bg-surface-container-low p-6 rounded-full border border-outline-variant/15 hover:bg-surface-container transition-all cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-2xl mb-4" data-icon="contact_mail">contact_mail</span>
+<h4 class="text-lg font-bold text-primary mb-1">Contact Seller</h4>
+<p class="text-xs text-on-surface-variant font-label">Direct communication guide</p>
+</div>
+<div class="md:col-span-2 bg-surface-container-low p-6 rounded-full border border-outline-variant/15 hover:bg-surface-container transition-all cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-2xl mb-4" data-icon="loyalty">loyalty</span>
+<h4 class="text-lg font-bold text-primary mb-1">Subscription Help</h4>
+<p class="text-xs text-on-surface-variant font-label">Manage your pro membership</p>
+</div>
+</div>
+</section>
+<!-- Section 2: Contact Us -->
+<section class="mb-16">
+<div class="bg-surface-container-low rounded-full p-10">
+<h3 class="text-xs font-label uppercase tracking-widest text-on-surface-variant mb-8 text-center">Get in Touch</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="forum">forum</span>
+</div>
+<p class="font-bold text-primary">Live Chat</p>
+<p class="text-xs text-on-surface-variant font-label">2 min wait</p>
+</div>
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+</div>
+<p class="font-bold text-primary">Email Support</p>
+<p class="text-xs text-on-surface-variant font-label">Reply in 24h</p>
+</div>
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+</div>
+<p class="font-bold text-primary">Call Support</p>
+<p class="text-xs text-on-surface-variant font-label">Mon-Fri, 9-6</p>
+</div>
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="chat">chat</span>
+</div>
+<p class="font-bold text-primary">WhatsApp</p>
+<p class="text-xs text-on-surface-variant font-label">Instant access</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Report Problem -->
+<section class="mb-16 grid md:grid-cols-2 gap-12 items-center">
+<div class="relative rounded-full overflow-hidden h-[400px] hidden md:block">
+<img alt="Topographic land view" class="w-full h-full object-cover" data-alt="Stunning aerial view of rolling green hills and geometric farm plots under a misty morning sky with professional editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc3xVdf-1pIQhbX_SvetVNdpvrJtKxLh-R2xJqILV5OzgWZadZWknfjYwz9Cww-pITOR1Y8Kjgu2PsKNQNj6AsUaA4nGWVQO12JQqm0RimO5mMh4gGNTrZpaL7kgHoEWFV_hiJ9747-6mJfWUICqeTN3zLnl3ujzz5nkGeAfEJ1rEIT-skEy5W82GKYmH-1eU8FmcgBWebb5F8Cqoe8vujoGRZIwD9xpg5jKke1jeMB8EB3QIpmEB9ujoCvKj4qM7vXlnuMCMMWJmg"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary mb-6">Report a Problem</h3>
+<div class="space-y-4">
+<p class="text-on-surface-variant text-sm mb-6">Experiencing an issue? Select a category below to notify our engineering team.</p>
+<div class="grid grid-cols-2 gap-3">
+<button class="flex items-center gap-3 p-4 rounded-xl border border-outline-variant/15 bg-surface-container-lowest text-sm font-medium hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="bug_report">bug_report</span> App Bug
+                        </button>
+<button class="flex items-center gap-3 p-4 rounded-xl border border-outline-variant/15 bg-surface-container-lowest text-sm font-medium hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="payments">payments</span> Payment Issue
+                        </button>
+<button class="flex items-center gap-3 p-4 rounded-xl border border-outline-variant/15 bg-surface-container-lowest text-sm font-medium hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="list_alt">list_alt</span> Listing Issue
+                        </button>
+<button class="flex items-center gap-3 p-4 rounded-xl border border-outline-variant/15 bg-surface-container-lowest text-sm font-medium hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="gpp_maybe">gpp_maybe</span> Fake Property
+                        </button>
+<button class="flex items-center gap-3 p-4 rounded-xl border border-outline-variant/15 bg-surface-container-lowest text-sm font-medium hover:bg-surface-container-high transition-colors md:col-span-2">
+<span class="material-symbols-outlined text-primary" data-icon="report">report</span> Abuse / Spam Report
+                        </button>
+</div>
+<button class="w-full mt-6 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold py-4 rounded-full shadow-lg hover:opacity-90 transition-opacity">
+                        Submit Issue
+                    </button>
+</div>
+</div>
+</section>
+<!-- Section 4: Legal & Policies -->
+<section class="mb-16">
+<h3 class="text-xs font-label uppercase tracking-widest text-on-surface-variant mb-6">Legal &amp; Policies</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<a class="p-6 bg-surface-container rounded-full flex flex-col justify-between hover:bg-surface-container-highest transition-colors" href="#">
+<p class="font-bold text-primary">Privacy Policy</p>
+<span class="material-symbols-outlined text-primary mt-4" data-icon="policy">policy</span>
+</a>
+<a class="p-6 bg-surface-container rounded-full flex flex-col justify-between hover:bg-surface-container-highest transition-colors" href="#">
+<p class="font-bold text-primary">Terms of Service</p>
+<span class="material-symbols-outlined text-primary mt-4" data-icon="gavel">gavel</span>
+</a>
+<a class="p-6 bg-surface-container rounded-full flex flex-col justify-between hover:bg-surface-container-highest transition-colors" href="#">
+<p class="font-bold text-primary">Refund Policy</p>
+<span class="material-symbols-outlined text-primary mt-4" data-icon="currency_exchange">currency_exchange</span>
+</a>
+<a class="p-6 bg-surface-container rounded-full flex flex-col justify-between hover:bg-surface-container-highest transition-colors" href="#">
+<p class="font-bold text-primary">Community Guidelines</p>
+<span class="material-symbols-outlined text-primary mt-4" data-icon="groups">groups</span>
+</a>
+</div>
+</section>
+<!-- Section 5: App Info -->
+<section class="flex flex-col md:flex-row items-center justify-between p-8 bg-surface-container-high rounded-full gap-6">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center rotate-3">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="landscape">landscape</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Terra Nova v2.4.1</h4>
+<p class="text-sm font-label text-on-surface-variant">Last Updated: Oct 24, 2024</p>
+</div>
+</div>
+<button class="flex items-center gap-3 bg-primary-container text-on-primary px-8 py-3 rounded-full hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">Rate Our App</span>
+</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-[#e6f6ff] text-[#1B4332]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 gap-6 w-full">
+<div class="flex flex-col items-center md:items-start">
+<h2 class="font-manrope font-bold text-[#1B4332] text-xl mb-2">The Topographic Editorial</h2>
+<p class="font-inter text-xs leading-relaxed text-slate-500">© 2024 The Topographic Editorial. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-xs leading-relaxed text-slate-500 hover:text-[#1B4332] underline transition-all" href="#">Privacy Policy</a>
+<a class="font-inter text-xs leading-relaxed text-slate-500 hover:text-[#1B4332] underline transition-all" href="#">Terms of Service</a>
+<a class="font-inter text-xs leading-relaxed text-slate-500 hover:text-[#1B4332] underline transition-all" href="#">Legal Notices</a>
+<a class="font-inter text-xs leading-relaxed text-slate-500 hover:text-[#1B4332] underline transition-all" href="#">Accessibility</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-[0.75rem] bg-white/90 backdrop-blur-xl shadow-[0_-10px_30px_rgba(0,31,41,0.04)]">
+<div class="flex justify-around items-center w-full px-2 py-3 pb-safe">
+<div class="flex flex-col items-center justify-center text-slate-400 px-5 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="terrain">terrain</span>
+<span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Land</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 px-5 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 px-5 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-emerald-100 text-[#1B4332] rounded-[0.75rem] px-5 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="help_center" style="font-variation-settings: 'FILL' 1;">help_center</span>
+<span class="font-inter text-[11px] font-semibold tracking-wide uppercase mt-1">Support</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 px-5 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Profile</span>
+</div>
+</div>
+</nav>
+</body></html>

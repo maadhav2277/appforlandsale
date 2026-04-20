@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#092012",
+                    "on-tertiary-container": "#93ad98",
+                    "on-secondary-container": "#1b724f",
+                    "on-secondary": "#ffffff",
+                    "outline": "#717973",
+                    "on-primary-container": "#76b394",
+                    "outline-variant": "#c1c8c2",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "on-secondary-fixed-variant": "#005236",
+                    "inverse-on-surface": "#dff4ff",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#2a4131",
+                    "surface-bright": "#f3faff",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "secondary": "#116c4a",
+                    "surface-tint": "#2c694e",
+                    "surface-container-low": "#e6f6ff",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "tertiary": "#152b1c",
+                    "inverse-primary": "#95d4b3",
+                    "surface-container": "#d8f2ff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "on-primary": "#ffffff",
+                    "surface": "#f3faff",
+                    "secondary-fixed": "#a1f4c8",
+                    "primary-container": "#00452e",
+                    "surface-variant": "#c6e8f8",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "surface-container-high": "#ccedfe",
+                    "primary": "#002d1c",
+                    "on-surface-variant": "#414844",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-primary-fixed": "#002114",
+                    "on-secondary-fixed": "#002113",
+                    "primary-fixed": "#b1f0ce",
+                    "on-surface": "#001f29",
+                    "surface-dim": "#bedfef",
+                    "surface-container-highest": "#c6e8f8",
+                    "background": "#f3faff",
+                    "inverse-surface": "#123441",
+                    "secondary-container": "#a1f4c8",
+                    "on-background": "#001f29"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .otp-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #002d1c;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl fixed top-0 w-full z-50">
+<div class="flex items-center px-6 h-16 w-full max-w-xl mx-auto">
+<button class="hover:opacity-80 transition-opacity active:scale-95 duration-200 mr-4">
+<span class="material-symbols-outlined text-[#1B4332] dark:text-[#a1f4c8]" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-manrope font-bold tracking-tight text-lg text-[#1B4332] dark:text-[#a1f4c8]">Security Settings</h1>
+</div>
+</header>
+<!-- Content Canvas -->
+<main class="flex-grow pt-24 pb-12 px-6 w-full max-w-xl mx-auto">
+<!-- Progress Indicator -->
+<div class="mb-12 flex items-center justify-center gap-2">
+<div class="h-1.5 w-12 rounded-full bg-secondary"></div>
+<div class="h-1.5 w-12 rounded-full bg-secondary"></div>
+<div class="h-1.5 w-12 rounded-full bg-secondary"></div>
+<div class="h-1.5 w-12 rounded-full bg-surface-container-highest"></div>
+</div>
+<!-- Editorial Header Section -->
+<section class="mb-10 text-center">
+<h2 class="font-headline font-extrabold text-primary text-3xl tracking-tight mb-3">Verify New Number</h2>
+<p class="font-body text-on-surface-variant text-md leading-relaxed">
+                Enter 6-digit OTP sent to <span class="font-bold text-on-surface">+91 XXXXXXX890</span>
+</p>
+</section>
+<!-- Verification Area -->
+<div class="bg-surface-container-low rounded-3xl p-8 shadow-sm">
+<!-- OTP Input Grid -->
+<div class="grid grid-cols-6 gap-3 mb-10">
+<input class="otp-input w-full h-14 bg-surface-container-lowest text-center text-xl font-bold rounded-xl border-none focus:ring-2 focus:ring-primary text-primary" maxlength="1" placeholder="•" type="text"/>
+<input class="otp-input w-full h-14 bg-surface-container-lowest text-center text-xl font-bold rounded-xl border-none focus:ring-2 focus:ring-primary text-primary" maxlength="1" placeholder="•" type="text"/>
+<input class="otp-input w-full h-14 bg-surface-container-lowest text-center text-xl font-bold rounded-xl border-none focus:ring-2 focus:ring-primary text-primary" maxlength="1" placeholder="•" type="text"/>
+<input class="otp-input w-full h-14 bg-surface-container-lowest text-center text-xl font-bold rounded-xl border-none focus:ring-2 focus:ring-primary text-primary" maxlength="1" placeholder="•" type="text"/>
+<input class="otp-input w-full h-14 bg-surface-container-lowest text-center text-xl font-bold rounded-xl border-none focus:ring-2 focus:ring-primary text-primary" maxlength="1" placeholder="•" type="text"/>
+<input class="otp-input w-full h-14 bg-surface-container-lowest text-center text-xl font-bold rounded-xl border-none focus:ring-2 focus:ring-primary text-primary" maxlength="1" placeholder="•" type="text"/>
+</div>
+<!-- Primary Action -->
+<button class="w-full h-14 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded-xl shadow-lg active:scale-95 transition-all duration-200 mb-6 flex items-center justify-center gap-2">
+<span>Verify &amp; Update</span>
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+</button>
+<!-- Secondary Options -->
+<div class="flex flex-col gap-4 items-center">
+<button class="group flex items-center gap-2 font-label text-sm text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="refresh">refresh</span>
+<span>Resend OTP <span class="font-bold text-primary">(30s timer)</span></span>
+</button>
+<div class="w-8 h-px bg-outline-variant/30"></div>
+<button class="group flex items-center gap-2 font-label text-sm text-on-secondary-fixed-variant hover:underline decoration-2 underline-offset-4 transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+<span>Edit Number</span>
+</button>
+</div>
+</div>
+<!-- Decorative Illustration Element -->
+<div class="mt-12 relative overflow-hidden rounded-3xl h-48 w-full">
+<img alt="abstract" class="absolute inset-0 w-full h-full object-cover" data-alt="abstract flowing topographical lines in shades of deep forest green and light slate blue with grain texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsbd-0A5YTgiJc0iDaZ3lt8-g-RSwXQL3sWVROvlEcgBZME88V7QC5zBaXc8E7WlJyalOGsjHEW4jjZl3-zElnWYPWAmhEkR-QAj-tTdN6_4zB-MgI4tdVC0JM0AqcVY1Xkbdf5xjFvVAE9GpXPBxw4TMmgwcVZ00TN1ExuJW7E8sUXZeu68-nodQFtEYbUb4n0efQrzkqL7TZB6eYce4WQfK3aXc0nCRdC0l1eq0hEdkmIjhLIkYAga9eTzSko9NHtrswGRfpLCgu"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px] flex items-center justify-center p-8">
+<div class="text-on-primary text-center">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="shield_person" style="font-variation-settings: 'FILL' 1;">shield_person</span>
+<p class="font-headline font-semibold text-sm">Secure Verification Protocol</p>
+<p class="font-body text-xs opacity-80">Keeping your land assets safe and updated.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Suppressed as per task-focused journey rule, but included in layout if needed for broader app context) -->
+<!-- Since this is a "Step 3" of a flow, we prioritize the focused task and suppress global nav as per "The Destination Rule" -->
+</body></html>

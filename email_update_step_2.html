@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Email Update - Security Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#092012",
+                    "on-tertiary-container": "#93ad98",
+                    "on-secondary-container": "#1b724f",
+                    "on-secondary": "#ffffff",
+                    "outline": "#717973",
+                    "on-primary-container": "#76b394",
+                    "outline-variant": "#c1c8c2",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "on-secondary-fixed-variant": "#005236",
+                    "inverse-on-surface": "#dff4ff",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#2a4131",
+                    "surface-bright": "#f3faff",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "secondary": "#116c4a",
+                    "surface-tint": "#2c694e",
+                    "surface-container-low": "#e6f6ff",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "tertiary": "#152b1c",
+                    "inverse-primary": "#95d4b3",
+                    "surface-container": "#d8f2ff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "on-primary": "#ffffff",
+                    "surface": "#f3faff",
+                    "secondary-fixed": "#a1f4c8",
+                    "primary-container": "#00452e",
+                    "surface-variant": "#c6e8f8",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "surface-container-high": "#ccedfe",
+                    "primary": "#002d1c",
+                    "on-surface-variant": "#414844",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-primary-fixed": "#002114",
+                    "on-secondary-fixed": "#002113",
+                    "primary-fixed": "#b1f0ce",
+                    "on-surface": "#001f29",
+                    "surface-dim": "#bedfef",
+                    "surface-container-highest": "#c6e8f8",
+                    "background": "#f3faff",
+                    "inverse-surface": "#123441",
+                    "secondary-container": "#a1f4c8",
+                    "on-background": "#001f29"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f3faff;
+            color: #001f29;
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col items-center">
+<!-- TopAppBar -->
+<header class="bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl fixed top-0 w-full z-50">
+<div class="flex items-center px-6 h-16 w-full max-w-xl mx-auto justify-between">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#1B4332] dark:text-[#a1f4c8]" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-manrope font-bold tracking-tight text-lg text-[#1B4332] dark:text-[#a1f4c8]">Security Settings</h1>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="Professional portrait of a male land surveyor with a calm expression in natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH7ax0bhugsOq3ETi1TYC7I0YmXNkABbGO3xy_3fYjg3w7jKqI8NHQeCh1iNaRTm3ypcvzduMThMssIQnF-A1z2kJEiSf7857wHuGs7PSPYx_Cgu43apjGc-OKemkvkdx5_XIEuc1R5eS7L3B8rAc2P3VOehSoroE1j5XiFJ1HMQytHnc4CXgDAGRaWRxUNcLZNE-DnVwxT2miVazLDqNXinjt2tu8RARzp5jLpU0GzNkzEOUMu2oZ091wcKaNdct16pOCmxZ45JBB"/>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 w-full max-w-xl px-6 pt-24 pb-12">
+<!-- Progress Stepper -->
+<div class="mb-10 flex items-center justify-between w-full">
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="h-1 w-full bg-secondary-fixed rounded-full overflow-hidden">
+<div class="h-full bg-primary w-full"></div>
+</div>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-semibold">Step 1: Identity</span>
+</div>
+<div class="w-4"></div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="h-1 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/2"></div>
+</div>
+<span class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">Step 2: Enter New Email</span>
+</div>
+<div class="w-4"></div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="h-1 w-full bg-surface-container-highest rounded-full overflow-hidden"></div>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant/40">Step 3: Verification</span>
+</div>
+</div>
+<!-- Editorial Header -->
+<section class="mb-12">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight text-primary mb-4">Enter New Email</h2>
+<p class="text-on-surface-variant leading-relaxed">To ensure your land portfolio remains secure, please provide a valid new email address. We will send a verification link to this inbox.</p>
+</section>
+<!-- Form Card Layered Design -->
+<section class="bg-surface-container-low rounded-3xl p-1 mb-8">
+<div class="bg-surface-container-lowest rounded-[1.4rem] p-8">
+<div class="space-y-8">
+<!-- Email Input Group -->
+<div class="space-y-3">
+<label class="font-label text-sm font-semibold text-primary/80 ml-1" for="new-email">New Email Address</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-primary/40">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+</div>
+<input class="w-full bg-surface-container-highest/30 border-0 rounded-2xl py-4 pl-12 pr-4 text-on-surface placeholder:text-on-surface-variant/30 focus:ring-2 focus:ring-primary/20 transition-all font-body" id="new-email" name="new-email" placeholder="example@surveyor.com" type="email"/>
+</div>
+</div>
+<!-- Security Badge Bento -->
+<div class="grid grid-cols-1 gap-4">
+<div class="flex items-start gap-4 p-5 bg-surface-container-low/50 rounded-2xl">
+<div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined" data-icon="verified_user" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary text-sm mb-1">Bank-Grade Encryption</h4>
+<p class="font-label text-xs text-on-surface-variant leading-normal">Your data is secured with AES-256 bit encryption, ensuring your identity and assets remain protected during this update.</p>
+</div>
+</div>
+</div>
+<!-- Action Area -->
+<div class="pt-4">
+<button class="w-full py-4 rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold text-lg shadow-[0px_20px_40px_rgba(0,31,41,0.1)] active:scale-[0.98] transition-transform flex items-center justify-center gap-2 group">
+                            Send Verification Link
+                            <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Helpful Context Footer -->
+<footer class="space-y-6">
+<div class="p-6 rounded-2xl border border-outline-variant/15 flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="info">info</span>
+<p class="text-xs text-on-surface-variant font-medium leading-relaxed">
+                    Once you click send, a link will be delivered to your new address. You must click that link within <span class="text-primary font-bold">24 hours</span> to finalize the change.
+                </p>
+</div>
+<div class="text-center">
+<button class="font-label text-xs font-bold text-on-primary-fixed-variant uppercase tracking-widest hover:opacity-70 transition-opacity">
+                    Cancel and keep current email
+                </button>
+</div>
+</footer>
+</main>
+<!-- Visual Anchor Background Elements -->
+<div class="fixed top-20 right-[-10%] w-96 h-96 bg-secondary-container/10 rounded-full blur-[120px] -z-10"></div>
+<div class="fixed bottom-20 left-[-10%] w-80 h-80 bg-primary-fixed-dim/5 rounded-full blur-[100px] -z-10"></div>
+</body></html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#092012",
+                    "on-tertiary-container": "#93ad98",
+                    "on-secondary-container": "#1b724f",
+                    "on-secondary": "#ffffff",
+                    "outline": "#717973",
+                    "on-primary-container": "#76b394",
+                    "outline-variant": "#c1c8c2",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "on-secondary-fixed-variant": "#005236",
+                    "inverse-on-surface": "#dff4ff",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#2a4131",
+                    "surface-bright": "#f3faff",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "secondary": "#116c4a",
+                    "surface-tint": "#2c694e",
+                    "surface-container-low": "#e6f6ff",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "tertiary": "#152b1c",
+                    "inverse-primary": "#95d4b3",
+                    "surface-container": "#d8f2ff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "on-primary": "#ffffff",
+                    "surface": "#f3faff",
+                    "secondary-fixed": "#a1f4c8",
+                    "primary-container": "#00452e",
+                    "surface-variant": "#c6e8f8",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "surface-container-high": "#ccedfe",
+                    "primary": "#002d1c",
+                    "on-surface-variant": "#414844",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-primary-fixed": "#002114",
+                    "on-secondary-fixed": "#002113",
+                    "primary-fixed": "#b1f0ce",
+                    "on-surface": "#001f29",
+                    "surface-dim": "#bedfef",
+                    "surface-container-highest": "#c6e8f8",
+                    "background": "#f3faff",
+                    "inverse-surface": "#123441",
+                    "secondary-container": "#a1f4c8",
+                    "on-background": "#001f29"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        .glass-panel {
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl">
+<div class="flex items-center px-6 h-16 w-full max-w-xl mx-auto">
+<button class="mr-4 text-[#1B4332] dark:text-[#a1f4c8] active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-manrope font-bold tracking-tight text-lg text-[#1B4332] dark:text-[#a1f4c8]">Security Settings</h1>
+</div>
+</header>
+<main class="pt-24 pb-12 px-6 max-w-xl mx-auto">
+<!-- Step Indicator -->
+<div class="mb-10">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-semibold">Step 02 of 03</span>
+<div class="flex gap-1.5 mt-3">
+<div class="h-1 w-12 rounded-full bg-primary"></div>
+<div class="h-1 w-12 rounded-full bg-primary"></div>
+<div class="h-1 w-12 rounded-full bg-surface-container-highest"></div>
+</div>
+</div>
+<!-- Section: Update Mobile Number -->
+<section class="space-y-8">
+<header>
+<h2 class="font-headline text-2xl font-bold text-primary">Update Mobile Number</h2>
+<p class="text-on-surface-variant text-sm mt-2 leading-relaxed">Provide your new primary mobile number for account recovery.</p>
+</header>
+<div class="space-y-6">
+<!-- Phone Input Field -->
+<div class="group">
+<label class="block font-label text-xs font-bold text-primary mb-2 ml-1 uppercase tracking-wider">New Mobile Number</label>
+<div class="relative">
+<div class="absolute left-4 top-1/2 -translate-y-1/2 flex items-center gap-2 pr-3 border-r border-outline-variant/30">
+<span class="font-label text-sm font-medium text-on-surface">+1</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant" data-icon="expand_more">expand_more</span>
+</div>
+<input class="w-full pl-20 pr-4 py-4 bg-surface-container-highest border-none rounded-xl focus:ring-2 focus:ring-secondary/20 transition-all font-label text-on-surface placeholder:text-on-surface-variant/40" placeholder="(555) 000-0000" type="tel"/>
+</div>
+<!-- Validation Hints -->
+<div class="mt-3 flex flex-wrap gap-4 px-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label text-[11px] font-medium text-on-surface-variant">Valid format</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label text-[11px] font-medium text-on-surface-variant">Correct country code</span>
+</div>
+</div>
+</div>
+<!-- Action Section -->
+<div class="pt-4">
+<button class="horizon-gradient w-full py-4 px-6 rounded-full text-on-primary font-headline font-bold text-base shadow-xl flex items-center justify-center gap-2 active:scale-[0.98] transition-all">
+                        Send OTP
+                        <span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center font-label text-[11px] text-on-surface-variant mt-4 px-8 leading-relaxed">
+                        Standard carrier messaging and data rates may apply. By continuing, you agree to receive an automated verification text.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Informational Card -->
+<article class="mt-12 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl overflow-hidden">
+<img alt="Lush green land" class="w-full h-full object-cover" data-alt="Abstract aerial view of green rolling hills and farmland with soft natural light and organic patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA-gSgBnFsNy1nF_d2sCoblzrvuBBRDMNkWtmCN-OjdfKcJDlvaNMcrCewpTHVXHysL31bto7uZDBaI2Pq064N2tCm5nIn4AuLmqfKGNna-kgHAUXqGRUOY8SN5Fbb3P3DB2oXxqfsKX_ASLw7t1JQfeLC_ntarvbOKQk8AYlefSgDSffXx6BvkoJKzxGgb_Rbwta5VdKcdnCsQyzNeQqCjpGjIvDTo0Y02QvFjLHkMkhacd6GkBA3eGNVlCKyz-OKTNjwUiNbej1-"/>
+</div>
+<div class="flex-1">
+<h4 class="font-headline text-sm font-bold text-primary">Why update your number?</h4>
+<p class="font-label text-[12px] text-on-surface-variant mt-1 leading-normal">Ensuring your contact data is current allows for seamless property acquisitions and immediate notifications on land boundary changes.</p>
+</div>
+</div>
+</article>
+</main>
+<!-- Visual Support Elements -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-30">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-fixed/20 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary-fixed/20 blur-[120px] rounded-full"></div>
+</div>
+</body></html>

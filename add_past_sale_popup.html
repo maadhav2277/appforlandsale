@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Topographic Editorial - Record Property</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#c6e8f8",
+                        "background": "#f3faff",
+                        "on-tertiary-fixed": "#092012",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#001f29",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#bedfef",
+                        "secondary-fixed-dim": "#86d7ad",
+                        "secondary": "#116c4a",
+                        "on-secondary-fixed-variant": "#005236",
+                        "primary-fixed": "#b1f0ce",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "tertiary-fixed-dim": "#b3cdb7",
+                        "surface-tint": "#2c694e",
+                        "outline": "#717973",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#95d4b3",
+                        "surface-container-low": "#e6f6ff",
+                        "on-primary-container": "#76b394",
+                        "tertiary-fixed": "#cee9d3",
+                        "tertiary": "#152b1c",
+                        "on-background": "#001f29",
+                        "surface-container-high": "#ccedfe",
+                        "inverse-on-surface": "#dff4ff",
+                        "tertiary-container": "#2a4131",
+                        "primary-fixed-dim": "#95d4b3",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#002d1c",
+                        "surface-bright": "#f3faff",
+                        "surface-variant": "#c6e8f8",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#1b724f",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#002114",
+                        "secondary-fixed": "#a1f4c8",
+                        "on-tertiary-container": "#93ad98",
+                        "on-surface-variant": "#414844",
+                        "primary-container": "#00452e",
+                        "on-tertiary-fixed-variant": "#354c3b",
+                        "surface-container": "#d8f2ff",
+                        "surface": "#f3faff",
+                        "inverse-surface": "#123441",
+                        "on-secondary-fixed": "#002113",
+                        "secondary-container": "#a1f4c8",
+                        "outline-variant": "#c1c8c2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .label-text { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col overflow-hidden">
+<!-- Top App Bar -->
+<header class="bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-md flex justify-between items-center px-6 py-4 w-full z-40 fixed top-0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden">
+<img alt="Land Agent Profile" data-alt="Close-up portrait of a professional land agent in outdoor gear with a friendly expression and natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFsGMGn4bphk9Ms1pYp5XSNaMHo1T-NHBKw9E6XOrWjE3can-2R44Xc3ia94Es2bPd15HzE1etKCN7XtgYO9HUkwzZ93UvG8LwarLJsGHZc1ko3T47rEjJH-HYOOkIPFZSBu8YKYPS5GE1TXVOpQ8a58Qwmo9hYp9-2X-1HI_iVO0uue3CROzaN67EAUjUIiRe0Bd6BwI4NZff52qnSlax1BdFeTfRxTmBel4s5vPzRyyjcuEwaTIQA6x9blrnpk-YQQ5K3Oil4bQ3"/>
+</div>
+<h1 class="text-lg font-black text-[#002d1c] dark:text-[#f3faff] tracking-tighter font-headline uppercase">THE TOPOGRAPHIC EDITORIAL</h1>
+</div>
+<button class="text-[#002d1c] dark:text-[#a1f4c8] hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<!-- Main Content Canvas (Blurred Background) -->
+<main class="flex-grow pt-24 pb-32 px-6 overflow-y-auto filter blur-sm pointer-events-none">
+<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Simulated Background Content -->
+<div class="bg-surface-container-low p-8 rounded-xl h-64 flex flex-col justify-end">
+<h2 class="text-3xl font-headline font-bold text-primary mb-2">Montana Valley Plot</h2>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Active Survey • 450 Acres</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl h-64 flex flex-col justify-end">
+<h2 class="text-3xl font-headline font-bold text-primary mb-2">Blue Ridge Timber</h2>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Portfolio • 1,200 Acres</p>
+</div>
+</div>
+</main>
+<!-- Modal Backdrop -->
+<div class="fixed inset-0 bg-on-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+<!-- Record Sale Modal -->
+<div class="bg-surface-container-lowest w-full max-w-2xl rounded-xl shadow-[0px_20px_40px_rgba(0,31,41,0.06)] overflow-hidden flex flex-col max-h-[795px]">
+<!-- Modal Header -->
+<div class="px-8 py-6 flex justify-between items-center bg-surface-container-low">
+<div>
+<h2 class="text-2xl font-headline font-extrabold text-primary tracking-tight">Record Past Sale</h2>
+<p class="text-on-surface-variant font-label text-xs uppercase tracking-widest mt-1">Archive land transaction details</p>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors text-on-surface">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<!-- Form Body -->
+<div class="flex-grow overflow-y-auto px-8 py-8 space-y-8">
+<!-- Photo Upload Area -->
+<div class="group relative aspect-video w-full rounded-xl bg-surface-container-high border-2 border-dashed border-outline-variant/30 flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-highest transition-colors">
+<div class="flex flex-col items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-4xl" data-icon="add_a_photo">add_a_photo</span>
+<p class="font-label text-sm font-semibold">Upload Property Imagery</p>
+<p class="font-label text-xs opacity-60">High-resolution drone or survey shots preferred</p>
+</div>
+<!-- Hidden background image placeholder style -->
+<div class="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity rounded-xl overflow-hidden">
+<img alt="Land Landscape" class="w-full h-full object-cover" data-alt="Wide expansive field of green grass stretching to the horizon under a soft hazy blue sky at dawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWevJ_IIzePJ468g0YisEmBwLHolWXHZwnjijpPrylI4sPgD01Kiw--4LIz1Wida-uiVdlhTfZ4PRwAzBlv_bVBSleXrgclFpn3mKzcltQ9ekcQfdjOHbXXz_0ZE_fIkuE_N0PEdTjCxwRwYFyIjhUDjiJ81eGmDMcACZmXXbR8HbQsJHAa6Cbk7aHC2Ssn34_OvRHu49AcIPqbk2z-Q-nVkVcFt_mdXctuOwAizYQMgwECBIGMKqfLdbhDMc5tfqllHLhc9tBKiv2"/>
+</div>
+</div>
+<!-- Location Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label text-[11px] font-bold text-on-surface-variant uppercase tracking-widest block ml-1">City</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary-container text-on-surface font-body placeholder:text-outline/50" placeholder="e.g. Bozeman" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[11px] font-bold text-on-surface-variant uppercase tracking-widest block ml-1">State</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary-container text-on-surface font-body placeholder:text-outline/50" placeholder="e.g. Montana" type="text"/>
+</div>
+</div>
+<!-- Property Details Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label text-[11px] font-bold text-on-surface-variant uppercase tracking-widest block ml-1">Acres</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary-container text-on-surface font-body placeholder:text-outline/50" placeholder="0.00" type="number"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 font-label text-xs font-bold text-outline-variant">AC</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[11px] font-bold text-on-surface-variant uppercase tracking-widest block ml-1">Sold Year</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary-container text-on-surface font-body placeholder:text-outline/50" placeholder="2023" type="text"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline-variant" data-icon="calendar_today">calendar_today</span>
+</div>
+</div>
+</div>
+<!-- Property Type Chips -->
+<div class="space-y-3">
+<label class="font-label text-[11px] font-bold text-on-surface-variant uppercase tracking-widest block ml-1">Property Type</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-label text-xs font-bold transition-all shadow-md">Residential</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-xs font-bold hover:bg-surface-container-highest transition-all">Farm</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-xs font-bold hover:bg-surface-container-highest transition-all">Plots</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-xs font-bold hover:bg-surface-container-highest transition-all">Commercial</button>
+</div>
+</div>
+<!-- Price Field -->
+<div class="space-y-2">
+<label class="font-label text-[11px] font-bold text-on-surface-variant uppercase tracking-widest block ml-1">Sold Price <span class="opacity-40 italic lowercase font-normal">(Optional)</span></label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 font-label text-primary font-bold">$</span>
+<input class="w-full bg-surface-container-low border-none rounded-lg pl-8 pr-4 py-4 focus:ring-2 focus:ring-primary-container text-on-surface font-headline font-bold text-xl placeholder:text-outline/30 tracking-tight" placeholder="0.00" type="number"/>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-8 py-6 bg-surface-container-lowest border-t border-outline-variant/10 flex justify-end gap-4">
+<button class="px-8 py-4 rounded-xl text-primary font-headline font-bold text-sm hover:bg-surface-container-low transition-colors">
+                    Discard Draft
+                </button>
+<button class="px-10 py-4 rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold text-sm shadow-xl shadow-primary/20 active:scale-95 transition-all">
+                    Add Property
+                </button>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#f3faff]/80 dark:bg-[#001f29]/80 backdrop-blur-xl border-t border-[#c1c8c2]/10 shadow-[0_-10px_40px_rgba(0,31,41,0.04)] rounded-t-3xl">
+<button class="flex flex-col items-center gap-1 text-[#001f29]/50 dark:text-[#f3faff]/50 px-3 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-label text-[11px] font-semibold tracking-wide uppercase">Survey</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#001f29]/50 dark:text-[#f3faff]/50 px-3 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="landscape">landscape</span>
+<span class="font-label text-[11px] font-semibold tracking-wide uppercase">Portfolio</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#002d1c] dark:text-[#a1f4c8] bg-[#a1f4c8]/20 rounded-xl px-3 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="add_box" style="font-variation-settings: 'FILL' 1;">add_box</span>
+<span class="font-label text-[11px] font-semibold tracking-wide uppercase text-primary">Record</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#001f29]/50 dark:text-[#f3faff]/50 px-3 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-label text-[11px] font-semibold tracking-wide uppercase">Vitals</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#001f29]/50 dark:text-[#f3faff]/50 px-3 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label text-[11px] font-semibold tracking-wide uppercase">Account</span>
+</button>
+</nav>
+</body></html>

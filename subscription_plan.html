@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#2a4131",
+                    "secondary-fixed": "#a1f4c8",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "background": "#f3faff",
+                    "surface-container-high": "#ccedfe",
+                    "surface-container": "#d8f2ff",
+                    "surface-bright": "#f3faff",
+                    "primary-container": "#00452e",
+                    "inverse-primary": "#95d4b3",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-secondary-container": "#1b724f",
+                    "surface": "#f3faff",
+                    "on-surface": "#001f29",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "on-primary-container": "#76b394",
+                    "inverse-surface": "#123441",
+                    "on-background": "#001f29",
+                    "on-secondary-fixed-variant": "#005236",
+                    "tertiary": "#152b1c",
+                    "inverse-on-surface": "#dff4ff",
+                    "secondary-container": "#a1f4c8",
+                    "on-secondary-fixed": "#002113",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-surface-variant": "#414844",
+                    "primary-fixed-dim": "#95d4b3",
+                    "primary": "#002d1c",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#c6e8f8",
+                    "primary-fixed": "#b1f0ce",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#2c694e",
+                    "surface-container-highest": "#c6e8f8",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#002114",
+                    "tertiary-fixed": "#cee9d3",
+                    "secondary": "#116c4a",
+                    "surface-dim": "#bedfef",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#c1c8c2",
+                    "on-tertiary-fixed": "#092012",
+                    "surface-container-low": "#e6f6ff",
+                    "on-tertiary-container": "#93ad98",
+                    "outline": "#717973",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f3faff;
+            color: #001f29;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-blue-50/70 dark:bg-slate-900/70 backdrop-blur-xl flex items-center justify-between px-6 h-16 w-full fixed top-0 z-50 shadow-sm">
+<div class="flex items-center gap-4">
+<button class="text-emerald-950 dark:text-emerald-50 hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-manrope font-bold tracking-tight text-lg text-emerald-950 dark:text-emerald-50">Subscription</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-950 dark:text-emerald-50" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-5xl mx-auto">
+<!-- Current Plan Status Section -->
+<section class="mb-12">
+<div class="bg-surface-container-low rounded-full p-8 relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-64 h-64 bg-primary-fixed opacity-10 rounded-full blur-3xl"></div>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 relative z-10">
+<div>
+<span class="font-label text-on-surface-variant text-[10px] uppercase tracking-widest font-semibold mb-2 block">Active Membership</span>
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-1">Pro Seller</h2>
+<p class="font-label text-sm text-on-surface-variant">Billed monthly since Jan 2024</p>
+</div>
+<div class="flex flex-col gap-4 w-full md:w-auto">
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-[0_4px_20px_rgba(0,31,41,0.04)]">
+<div class="flex items-center justify-between gap-12">
+<div>
+<p class="font-label text-[10px] text-on-surface-variant uppercase font-bold">Expiry Date</p>
+<p class="font-headline font-bold text-on-surface">Oct 24, 2024</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label text-xs font-medium text-on-surface">Auto-renew</span>
+<button class="w-10 h-5 bg-primary rounded-full relative flex items-center px-1">
+<div class="w-3 h-3 bg-white rounded-full translate-x-5 transition-transform"></div>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Plan Selection / Benefits Bento -->
+<section class="mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+<div>
+<h3 class="font-headline text-3xl font-bold tracking-tight text-primary">Maximize Your Reach</h3>
+<p class="text-on-surface-variant mt-2 max-w-md">Unlock professional tools designed for serious land surveyors and investment brokers.</p>
+</div>
+<div class="hidden md:block">
+<span class="text-xs font-label text-on-surface-variant">Secure checkout with Stripe</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Pro Seller Upgrade Card -->
+<div class="md:col-span-7 bg-surface-container-low rounded-full overflow-hidden flex flex-col justify-between group">
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<div>
+<div class="bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider mb-2 inline-block">Recommended</div>
+<h4 class="font-headline text-2xl font-bold text-primary">Pro Seller</h4>
+</div>
+<div class="text-right">
+<span class="font-headline text-3xl font-black text-primary">$49</span>
+<span class="text-sm text-on-surface-variant block">/month</span>
+</div>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span>
+<span class="font-label text-sm font-medium">Unlimited listings across all regions</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span>
+<span class="font-label text-sm font-medium">Top search ranking for property results</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span>
+<span class="font-label text-sm font-medium">Verified Seller badge on profile</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined text-lg" data-icon="lock">lock</span>
+<span class="font-label text-sm">Advanced topography map tools</span>
+</li>
+</ul>
+</div>
+<div class="px-8 pb-8">
+<button class="w-full horizon-gradient text-on-primary font-headline font-bold py-4 rounded-xl shadow-lg hover:opacity-90 transition-all active:scale-[0.98]">
+                            Manage Plan
+                        </button>
+</div>
+</div>
+<!-- Premium Broker Card -->
+<div class="md:col-span-5 bg-primary-container rounded-full p-8 text-on-primary-container flex flex-col justify-between relative overflow-hidden border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay" data-alt="aerial drone photography of rolling green farmland hills with geometric patterns of crops at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdfoFJ5IOCtcI7ZQ4hKDT6OBWR4-at_itgg7W9suA7pqzzu2HmMT5Y_6zfgyml_4Dt3-Fa46L1KfnI-cKy_ZZjbPITej4va8QeTcwTSE0WCUXV9frl55Ijb3OuUFY7-X88NeJkfh9u7FGX5QkHEMjy_uX27RcaoqoyT_dK8Jp6PowKGqiXPSOKDNg74fdEW7v2aUVaao5dGxR69Csuj4Ukuxe-c_0U3DNOOsEB5FRSyMj8xm0F389hVZG7PPcp3DT20RZ3koHkjkRg"/>
+<div class="relative z-10">
+<h4 class="font-headline text-2xl font-bold text-white mb-2">Premium Broker</h4>
+<p class="text-white/70 text-sm mb-6 leading-relaxed">The ultimate toolkit for agencies and high-volume land investors.</p>
+<div class="space-y-4 mb-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" data-icon="verified">verified</span>
+<span class="font-label text-sm text-white/90">Priority inquiry routing</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" data-icon="layers">layers</span>
+<span class="font-label text-sm text-white/90">Advanced map tools &amp; data overlays</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" data-icon="analytics">analytics</span>
+<span class="font-label text-sm text-white/90">Real-time market analytics</span>
+</div>
+</div>
+</div>
+<div class="relative z-10 mt-auto">
+<div class="mb-4">
+<span class="font-headline text-3xl font-black text-white">$129</span>
+<span class="text-xs text-white/60">/month</span>
+</div>
+<button class="w-full bg-white text-primary font-headline font-bold py-4 rounded-xl hover:bg-white/90 transition-colors active:scale-[0.98]">
+                            Upgrade to Premium
+                        </button>
+</div>
+</div>
+</div>
+</div></section>
+<!-- Billing History -->
+<section class="mb-20">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline text-xl font-bold text-primary">Billing History</h3>
+<button class="text-secondary text-xs font-label font-bold uppercase tracking-wider hover:underline transition-all">Download All PDF</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<div class="divide-y divide-surface-container">
+<div class="p-5 flex items-center justify-between hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="receipt_long">receipt_long</span>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Pro Seller - Monthly Subscription</p>
+<p class="font-label text-xs text-on-surface-variant">September 24, 2024</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-headline font-bold text-on-surface">$49.00</p>
+<span class="text-[10px] font-label font-bold text-secondary uppercase">Paid</span>
+</div>
+</div>
+<div class="p-5 flex items-center justify-between hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="receipt_long">receipt_long</span>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Pro Seller - Monthly Subscription</p>
+<p class="font-label text-xs text-on-surface-variant">August 24, 2024</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-headline font-bold text-on-surface">$49.00</p>
+<span class="text-[10px] font-label font-bold text-secondary uppercase">Paid</span>
+</div>
+</div>
+<div class="p-5 flex items-center justify-between hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="receipt_long">receipt_long</span>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Pro Seller - Monthly Subscription</p>
+<p class="font-label text-xs text-on-surface-variant">July 24, 2024</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-headline font-bold text-on-surface">$49.00</p>
+<span class="text-[10px] font-label font-bold text-secondary uppercase">Paid</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 text-center">
+<p class="text-xs font-label text-on-surface-variant">Need help? <a class="text-primary font-bold hover:underline" href="#">Contact Support</a></p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pt-3 pb-8 bg-white/80 dark:bg-slate-950/80 backdrop-blur-2xl shadow-[0_-10px_30px_rgba(0,31,41,0.04)] rounded-t-[24px]">
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-1.5 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide uppercase">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-1.5 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bookmark">bookmark</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide uppercase">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-100 rounded-xl px-5 py-1.5 transform scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="loyalty" style="font-variation-settings: 'FILL' 1;">loyalty</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide uppercase">Plans</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-1.5 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide uppercase">Profile</span>
+</a>
+</nav>
+</body></html>
