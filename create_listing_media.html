@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create Listing - Media Upload</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#95d4b3",
+                        "on-tertiary-container": "#93ad98",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#414844",
+                        "on-primary-fixed": "#002114",
+                        "inverse-surface": "#123441",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#001f29",
+                        "inverse-primary": "#95d4b3",
+                        "surface": "#f3faff",
+                        "outline-variant": "#c1c8c2",
+                        "outline": "#717973",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "surface-variant": "#c6e8f8",
+                        "on-tertiary-fixed-variant": "#354c3b",
+                        "on-tertiary-fixed": "#092012",
+                        "primary-container": "#00452e",
+                        "surface-container-low": "#e6f6ff",
+                        "secondary-container": "#a1f4c8",
+                        "surface-dim": "#bedfef",
+                        "tertiary": "#152b1c",
+                        "surface-tint": "#2c694e",
+                        "surface-container-highest": "#c6e8f8",
+                        "surface-container-high": "#ccedfe",
+                        "secondary": "#116c4a",
+                        "surface-bright": "#f3faff",
+                        "secondary-fixed-dim": "#86d7ad",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#b3cdb7",
+                        "on-error": "#ffffff",
+                        "on-background": "#001f29",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-secondary-container": "#1b724f",
+                        "on-error-container": "#93000a",
+                        "primary": "#002d1c",
+                        "on-primary-container": "#76b394",
+                        "inverse-on-surface": "#dff4ff",
+                        "surface-container": "#d8f2ff",
+                        "tertiary-container": "#2a4131",
+                        "background": "#f3faff",
+                        "secondary-fixed": "#a1f4c8",
+                        "on-secondary-fixed": "#002113",
+                        "primary-fixed": "#b1f0ce",
+                        "tertiary-fixed": "#cee9d3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        .ghost-border {
+            border: 1px solid rgba(193, 200, 194, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#002d1c] dark:text-[#a1f4c8]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold tracking-tight text-lg text-[#002d1c] dark:text-[#a1f4c8]">Create Listing</h1>
+</div>
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#002d1c] dark:text-[#a1f4c8]">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Progress Bar -->
+<div class="mb-12">
+<div class="flex justify-between items-end mb-3">
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-semibold">Step 03 of 05</p>
+<h2 class="font-headline text-3xl font-extrabold text-primary mt-1">Media Upload</h2>
+</div>
+<span class="font-label text-sm font-bold text-secondary">60%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 60%"></div>
+</div>
+</div>
+<!-- Layout Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Primary Dropzone: Photos -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative aspect-[16/9] rounded-full overflow-hidden bg-surface-container-low ghost-border p-1 transition-all hover:bg-surface-container">
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-8 z-10">
+<div class="w-16 h-16 bg-primary-fixed-dim/30 rounded-full flex items-center justify-center mb-4 transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="add_a_photo">add_a_photo</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-2">Photos</h3>
+<p class="text-on-surface-variant max-w-xs text-sm">High-resolution landscapes, soil quality close-ups, and perimeter views.</p>
+</div>
+<!-- Mock Thumbnails overlay -->
+<div class="absolute bottom-6 left-6 right-6 flex gap-3 z-20">
+<div class="w-20 h-20 rounded-xl overflow-hidden shadow-lg border-2 border-surface-container-lowest">
+<img alt="" class="w-full h-full object-cover" data-alt="aerial photography of a vast green rolling hill farm landscape during a clear bright day" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHoFMYhPLq_3DtUFRAx6qqUSnsuNDEjQV_nDO2i3FZmKc0HI45mAZQcG94-CzvNvffB8ycr3d6y0meLLnUrgiI_539tjjwoHQN3kjHG1u50UjhVoTXjEsnbBv8i6-U6Ycutb43M2R4XePb6QAtt_Zqdo3gtM_dzoHKfsxwsfIvrlxRhzTIEYoslhyDVVUWSqz2ftZ1agc9HRoKTsf1zneI9bPMoRvHAGBQvtUFiUrkkTGULajbqADDa7HwsjPtjxx0fgGIqswx5fLQ"/>
+</div>
+<div class="w-20 h-20 rounded-xl overflow-hidden shadow-lg border-2 border-surface-container-lowest">
+<img alt="" class="w-full h-full object-cover" data-alt="textured soil detail with small pebbles and earthy brown tones in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt6usThnaxbwOzpJuPfbp58eaDAAjeA54cUEKWKlSDS7znCz9v1jdPn_PukJILyroMPt1lYToWiEe-LV06SqiDE0Kd0HixRa8edVgF0xHWoHiPHw2jWm3B_2cJ5aj5pBEBVhyvE2tIsFMBHmJ0Ps0pLdRJ29FGqXKXwU9CboFRdq-cyjXxuF9aOMaXsw2q7bmELFg94B3VCpe6vDN0ovx3UIQmjTF4mb4cJ4v8fXE73PQ11PxxpQfy4mMm7d5sSzfSSoLnksrvitsb"/>
+</div>
+<div class="w-20 h-20 rounded-xl overflow-hidden flex items-center justify-center bg-primary/80 backdrop-blur-sm text-on-primary font-bold text-xs">
+                            +12
+                        </div>
+</div>
+</div>
+</div>
+<!-- Drone Shots -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="h-full rounded-full bg-surface-container-lowest ghost-border p-8 flex flex-col items-center justify-center text-center transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center mb-4 transition-transform group-hover:rotate-12">
+<span class="material-symbols-outlined text-on-secondary-container text-2xl" data-icon="rocket">rocket</span>
+</div>
+<h3 class="font-headline text-lg font-bold text-primary mb-2">Drone shots</h3>
+<p class="text-on-surface-variant text-xs font-label px-4">4K aerial footage providing a birds-eye view of topography.</p>
+</div>
+</div>
+<!-- Video Walkthrough -->
+<div class="md:col-span-6 group cursor-pointer">
+<div class="aspect-[4/3] md:aspect-auto md:h-64 rounded-full bg-surface-container-lowest ghost-border p-8 flex flex-col items-start justify-end relative overflow-hidden transition-all hover:bg-surface-container-low">
+<div class="absolute top-8 left-8">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-2xl" data-icon="videocam">videocam</span>
+</div>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline text-lg font-bold text-primary mb-1">Video walkthrough</h3>
+<p class="text-on-surface-variant text-sm max-w-[200px]">Cinematic property tour showing accessibility and borders.</p>
+</div>
+</div>
+</div>
+<!-- Survey Map PDF -->
+<div class="md:col-span-6 group cursor-pointer">
+<div class="aspect-[4/3] md:aspect-auto md:h-64 rounded-full bg-surface-container-low ghost-border p-8 flex flex-col items-start justify-end relative overflow-hidden transition-all hover:bg-surface-container-highest">
+<div class="absolute top-8 right-8">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="description">description</span>
+</div>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline text-lg font-bold text-primary mb-1">Survey map PDF</h3>
+<p class="text-on-surface-variant text-sm max-w-[200px]">Official boundaries, easement details, and plot markers.</p>
+</div>
+<!-- Visual decoration: faint lines -->
+<div class="absolute inset-0 pointer-events-none opacity-20">
+<svg class="w-full h-full" viewbox="0 0 100 100">
+<path class="text-primary" d="M0,20 Q30,10 50,40 T100,30" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+<path class="text-primary" d="M0,50 Q40,40 60,70 T100,60" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="mt-16 flex items-center justify-between gap-6">
+<button class="px-8 py-3.5 font-headline font-bold text-primary flex items-center gap-2 group transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
+                Back
+            </button>
+<div class="flex gap-4">
+<button class="px-8 py-3.5 rounded-full font-headline font-bold text-on-secondary-container ghost-border hover:bg-surface-container-low transition-colors">
+                    Save Draft
+                </button>
+<button class="px-12 py-3.5 rounded-full font-headline font-bold text-on-primary bg-gradient-primary shadow-lg shadow-primary/20 hover:opacity-90 active:scale-[0.98] transition-all">
+                    Continue
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Visible on Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-[#f3faff] dark:bg-[#001f29] rounded-t-[0.75rem] shadow-[0px_-4px_20px_rgba(0,31,41,0.04)] z-50">
+<div class="flex flex-col items-center justify-center text-[#001f29]/50 dark:text-[#f3faff]/50 px-5 py-2 hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] transition-colors">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Inter'] font-medium text-[11px]">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#a1f4c8] dark:bg-[#116c4a] text-[#002d1c] dark:text-[#f3faff] rounded-[0.75rem] px-5 py-2">
+<span class="material-symbols-outlined" data-icon="landscape">landscape</span>
+<span class="font-['Inter'] font-medium text-[11px]">Listings</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/50 dark:text-[#f3faff]/50 px-5 py-2 hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] transition-colors">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-['Inter'] font-medium text-[11px]">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/50 dark:text-[#f3faff]/50 px-5 py-2 hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] transition-colors">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] font-medium text-[11px]">Profile</span>
+</div>
+</nav>
+</body></html>

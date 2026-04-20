@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create New Listing - The Topographic Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        .ghost-border {
+            border: 1px solid rgba(193, 200, 194, 0.15);
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#95d4b3",
+                      "on-tertiary-container": "#93ad98",
+                      "error-container": "#ffdad6",
+                      "error": "#ba1a1a",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#414844",
+                      "on-primary-fixed": "#002114",
+                      "inverse-surface": "#123441",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "on-surface": "#001f29",
+                      "inverse-primary": "#95d4b3",
+                      "surface": "#f3faff",
+                      "outline-variant": "#c1c8c2",
+                      "outline": "#717973",
+                      "on-primary-fixed-variant": "#0e5138",
+                      "surface-variant": "#c6e8f8",
+                      "on-tertiary-fixed-variant": "#354c3b",
+                      "on-tertiary-fixed": "#092012",
+                      "primary-container": "#00452e",
+                      "surface-container-low": "#e6f6ff",
+                      "secondary-container": "#a1f4c8",
+                      "surface-dim": "#bedfef",
+                      "tertiary": "#152b1c",
+                      "surface-tint": "#2c694e",
+                      "surface-container-highest": "#c6e8f8",
+                      "surface-container-high": "#ccedfe",
+                      "secondary": "#116c4a",
+                      "surface-bright": "#f3faff",
+                      "secondary-fixed-dim": "#86d7ad",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#b3cdb7",
+                      "on-error": "#ffffff",
+                      "on-background": "#001f29",
+                      "on-secondary-fixed-variant": "#005236",
+                      "on-secondary-container": "#1b724f",
+                      "on-error-container": "#93000a",
+                      "primary": "#002d1c",
+                      "on-primary-container": "#76b394",
+                      "inverse-on-surface": "#dff4ff",
+                      "surface-container": "#d8f2ff",
+                      "tertiary-container": "#2a4131",
+                      "background": "#f3faff",
+                      "secondary-fixed": "#a1f4c8",
+                      "on-secondary-fixed": "#002113",
+                      "primary-fixed": "#b1f0ce",
+                      "tertiary-fixed": "#cee9d3"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Manrope"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen">
+<!-- TopAppBar from Shared Components JSON -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#002d1c] dark:text-[#a1f4c8]">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold tracking-tight text-lg text-[#002d1c] dark:text-[#a1f4c8]">Create Listing</h1>
+</div>
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#002d1c] dark:text-[#a1f4c8]">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-20 px-6 max-w-5xl mx-auto">
+<!-- Progress Header Section -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-1">
+<h2 class="text-primary font-headline text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">Create New Listing</h2>
+<p class="text-on-surface-variant font-body text-lg opacity-80">Start surveying your territory</p>
+</div>
+<div class="flex flex-col items-end gap-2 w-full md:w-64">
+<div class="flex justify-between w-full font-label text-xs uppercase tracking-widest font-semibold text-primary/60">
+<span>Progress</span>
+<span>20%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 20%;"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Interaction Canvas -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Map Visualization Card -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-full p-2 group overflow-hidden relative shadow-[0px_20px_40px_rgba(0,31,41,0.06)]">
+<div class="aspect-[4/3] rounded-[0.5rem] overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Aerial view of vast green pastoral farmland with rolling hills and distant forest under a clear morning sky" data-location="Montana, USA" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqIGhsACZ67TOWzLeYZM3bVONnkYPtjoKAMi94m8hfJBD2A3OXhwG6Kr4xT78DvDekPqDY6xz6jw9Mm8tE8jrJOjhzzZIUXgwHI81qO7i-8FX-yehVGBnNZHEWLwv3d4D_7SGjmw4-x7uIUyML6qSj8ruf31pHLY5XvqLEEEXuFRFH8vAVwxzmDy3RUVIT0Trvpu-54U9RDx9Ji2EgTU9otFHLi4zobEQuT1goNxMj0yg0VmwVFfi4XlFOaOa1mVoKt1SOfmqZGN6g"/>
+<!-- Overlay Controls -->
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-12 h-12 bg-surface/70 backdrop-blur-xl rounded-xl flex items-center justify-center text-primary shadow-sm hover:bg-surface transition-colors">
+<span class="material-symbols-outlined">layers</span>
+</button>
+<button class="w-12 h-12 bg-surface/70 backdrop-blur-xl rounded-xl flex items-center justify-center text-primary shadow-sm hover:bg-surface transition-colors">
+<span class="material-symbols-outlined">zoom_in</span>
+</button>
+<button class="w-12 h-12 bg-surface/70 backdrop-blur-xl rounded-xl flex items-center justify-center text-primary shadow-sm hover:bg-surface transition-colors">
+<span class="material-symbols-outlined">zoom_out</span>
+</button>
+</div>
+<!-- Map Pin Simulation -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+<div class="w-8 h-8 bg-primary border-4 border-on-primary rounded-full shadow-lg relative z-10">
+<div class="absolute inset-0 rounded-full bg-secondary-container/40 animate-ping scale-150 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Options Sidebar -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<div class="bg-surface-container-low rounded-full p-8 flex flex-col gap-6">
+<h3 class="font-headline text-2xl font-bold text-primary">Property Location</h3>
+<div class="flex flex-col gap-3">
+<!-- Drop Pin Option -->
+<button class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-container transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="text-left">
+<span class="block font-headline font-bold text-on-surface">Drop pin on map</span>
+<span class="block font-label text-xs text-on-surface-variant">Manually mark your property center</span>
+</div>
+</button>
+<!-- Draw Boundary Option -->
+<button class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-container transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">draw</span>
+</div>
+<div class="text-left">
+<span class="block font-headline font-bold text-on-surface">Draw boundary</span>
+<span class="block font-label text-xs text-on-surface-variant">Define the exact acreage on the grid</span>
+</div>
+</button>
+<!-- Enter Address Option -->
+<button class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-container transition-all group border-2 border-transparent focus:border-primary/20">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</div>
+<div class="text-left">
+<span class="block font-headline font-bold text-on-surface">Enter address</span>
+<span class="block font-label text-xs text-on-surface-variant">Search by parcel ID or street address</span>
+</div>
+</button>
+<!-- Use Location Option -->
+<button class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-container transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">my_location</span>
+</div>
+<div class="text-left">
+<span class="block font-headline font-bold text-on-surface">Use current location</span>
+<span class="block font-label text-xs text-on-surface-variant">If you are currently on site</span>
+</div>
+</button>
+</div>
+<div class="pt-6">
+<button class="w-full bg-horizon-gradient text-on-primary py-5 rounded-full font-headline font-bold text-lg shadow-lg hover:opacity-90 active:scale-95 transition-all">
+                            Next
+                        </button>
+<button class="w-full text-on-primary-fixed-variant mt-4 py-2 font-label font-semibold text-sm hover:underline underline-offset-4 transition-all">
+                            Save draft for later
+                        </button>
+</div>
+</div>
+<!-- Accessibility/Info Note -->
+<div class="px-8 py-4 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary/40 text-sm mt-0.5">info</span>
+<p class="font-label text-xs text-on-surface-variant/80 leading-relaxed">
+                        Accurate boundary surveying ensures higher buyer confidence and listing visibility. You can always refine these details in the next step.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Contextual FAB (Suppressed as per rules for Transactional screen) -->
+</body></html>

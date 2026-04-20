@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@300..700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#95d4b3",
+                    "on-tertiary-container": "#93ad98",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#414844",
+                    "on-primary-fixed": "#002114",
+                    "inverse-surface": "#123441",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#001f29",
+                    "inverse-primary": "#95d4b3",
+                    "surface": "#f3faff",
+                    "outline-variant": "#c1c8c2",
+                    "outline": "#717973",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "surface-variant": "#c6e8f8",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "on-tertiary-fixed": "#092012",
+                    "primary-container": "#00452e",
+                    "surface-container-low": "#e6f6ff",
+                    "secondary-container": "#a1f4c8",
+                    "surface-dim": "#bedfef",
+                    "tertiary": "#152b1c",
+                    "surface-tint": "#2c694e",
+                    "surface-container-highest": "#c6e8f8",
+                    "surface-container-high": "#ccedfe",
+                    "secondary": "#116c4a",
+                    "surface-bright": "#f3faff",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "on-error": "#ffffff",
+                    "on-background": "#001f29",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-secondary-container": "#1b724f",
+                    "on-error-container": "#93000a",
+                    "primary": "#002d1c",
+                    "on-primary-container": "#76b394",
+                    "inverse-on-surface": "#dff4ff",
+                    "surface-container": "#d8f2ff",
+                    "tertiary-container": "#2a4131",
+                    "background": "#f3faff",
+                    "secondary-fixed": "#a1f4c8",
+                    "on-secondary-fixed": "#002113",
+                    "primary-fixed": "#b1f0ce",
+                    "tertiary-fixed": "#cee9d3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .step-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-[#002d1c] dark:text-[#a1f4c8] hover:opacity-80 transition-opacity active:scale-95">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold tracking-tight text-lg text-[#002d1c] dark:text-[#a1f4c8]">Create Listing</h1>
+</div>
+<button class="text-[#002d1c] dark:text-[#a1f4c8] hover:opacity-80 transition-opacity active:scale-95">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-12 px-6 max-w-2xl mx-auto min-h-screen">
+<!-- Progress Indicator -->
+<div class="mb-12">
+<div class="flex justify-between items-end mb-4">
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Step 2 of 5</p>
+<h2 class="font-headline text-3xl font-extrabold text-primary tracking-tight mt-1">Land Details</h2>
+</div>
+<span class="font-label text-sm font-bold text-secondary">40%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[40%] rounded-full"></div>
+</div>
+</div>
+<div class="space-y-10">
+<!-- Form Section: Identity -->
+<section class="space-y-6">
+<div class="bg-surface-container-low p-1 rounded-full">
+<div class="bg-surface-container-lowest p-8 rounded-full shadow-[0px_20px_40px_rgba(0,31,41,0.03)]">
+<label class="block font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-3 ml-1">Listing Title</label>
+<input class="w-full bg-transparent border-none text-xl font-headline font-semibold text-on-surface placeholder:text-outline-variant focus:ring-0 p-0" placeholder="e.g. Whispering Pines Estate" type="text"/>
+</div>
+</div>
+<div class="bg-surface-container-low p-1 rounded-full">
+<div class="bg-surface-container-lowest p-8 rounded-full shadow-[0px_20px_40px_rgba(0,31,41,0.03)] flex items-center">
+<div class="flex-grow">
+<label class="block font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-1 ml-1">Acres / Sq Ft</label>
+<input class="w-full bg-transparent border-none text-xl font-headline font-semibold text-on-surface placeholder:text-outline-variant focus:ring-0 p-0" placeholder="0.00" type="number"/>
+</div>
+<div class="flex gap-2 bg-surface-container-low p-1 rounded-full">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary text-sm font-bold transition-all">Acres</button>
+<button class="px-6 py-2 rounded-full text-on-surface-variant text-sm font-bold hover:bg-surface-container-high transition-all">Sq Ft</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Property Type Selection -->
+<section>
+<h3 class="font-headline text-lg font-bold text-primary mb-6 ml-1">Property Type</h3>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-4 rounded-full bg-secondary-container text-on-secondary-container font-headline font-bold text-sm flex items-center gap-2 border border-secondary/10 transition-all active:scale-95 shadow-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">home</span>
+                        Residential
+                    </button>
+<button class="px-6 py-4 rounded-full bg-surface-container-lowest text-on-surface-variant font-headline font-bold text-sm flex items-center gap-2 border border-outline-variant/10 hover:bg-surface-container-low transition-all active:scale-95">
+<span class="material-symbols-outlined text-lg">agriculture</span>
+                        Farm
+                    </button>
+<button class="px-6 py-4 rounded-full bg-surface-container-lowest text-on-surface-variant font-headline font-bold text-sm flex items-center gap-2 border border-outline-variant/10 hover:bg-surface-container-low transition-all active:scale-95">
+<span class="material-symbols-outlined text-lg">business</span>
+                        Commercial
+                    </button>
+<button class="px-6 py-4 rounded-full bg-surface-container-lowest text-on-surface-variant font-headline font-bold text-sm flex items-center gap-2 border border-outline-variant/10 hover:bg-surface-container-low transition-all active:scale-95">
+<span class="material-symbols-outlined text-lg">potted_plant</span>
+                        Ranch
+                    </button>
+<button class="px-6 py-4 rounded-full bg-surface-container-lowest text-on-surface-variant font-headline font-bold text-sm flex items-center gap-2 border border-outline-variant/10 hover:bg-surface-container-low transition-all active:scale-95">
+<span class="material-symbols-outlined text-lg">kayaking</span>
+                        Recreational
+                    </button>
+</div>
+</section>
+<!-- Terrain Selection -->
+<section>
+<h3 class="font-headline text-lg font-bold text-primary mb-6 ml-1">Terrain Characteristics</h3>
+<div class="grid grid-cols-2 gap-4">
+<button class="p-6 rounded-full bg-surface-container-lowest text-on-surface-variant font-headline font-bold border border-outline-variant/10 flex flex-col items-center gap-3 hover:bg-surface-container-low transition-all group active:scale-95">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">straighten</span>
+</div>
+<span class="text-sm">Flat</span>
+</button>
+<button class="p-6 rounded-full bg-secondary-container text-on-secondary-container font-headline font-bold border border-secondary/20 flex flex-col items-center gap-3 transition-all active:scale-95 shadow-md">
+<div class="w-12 h-12 rounded-full bg-on-secondary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-2xl" style="font-variation-settings: 'FILL' 1;">landscape</span>
+</div>
+<span class="text-sm">Hill</span>
+</button>
+<button class="p-6 rounded-full bg-surface-container-lowest text-on-surface-variant font-headline font-bold border border-outline-variant/10 flex flex-col items-center gap-3 hover:bg-surface-container-low transition-all group active:scale-95">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">forest</span>
+</div>
+<span class="text-sm">Forest</span>
+</button>
+<button class="p-6 rounded-full bg-surface-container-lowest text-on-surface-variant font-headline font-bold border border-outline-variant/10 flex flex-col items-center gap-3 hover:bg-surface-container-low transition-all group active:scale-95">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">waves</span>
+</div>
+<span class="text-sm">Waterfront</span>
+</button>
+</div>
+</section>
+<!-- Visual Context - The "Surveyor" Feel -->
+<div class="pt-8">
+<div class="relative h-48 w-full rounded-full overflow-hidden group">
+<img class="w-full h-full object-cover brightness-90 group-hover:scale-105 transition-transform duration-700" data-alt="wide angle shot of rolling green hills under a bright clear sky, symbolizing open land and potential for development" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMnlSyeB_cZc9S-1p67-VJ0y56CwiTyuU8WAAGT2OGPPCYeQgct-J9dsDCpqM0mj9W9RAra9Sf9glWzOGZ9yZQkcqxDVQHmRJUoHq-iGdofTd_eD2rLlLlh1k4MPS7jIJX0lWwMAyoh148NZZ9zg6_E7h42j-y9llJcckkmAbfH92PY6wGmMMNY7w9jDwP3J2gHW3nPLRg_LiO0bOF2io5o_DpYD7O0d99qncmZpb-JSW6UY7Inimcx7kjCVzOOB1hUcXsvjwb0crB"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-8">
+<p class="text-on-primary font-headline font-medium text-sm leading-relaxed max-w-xs">Define the soul of your property. Buyers look for terrain that matches their vision.</p>
+</div>
+</div>
+</div>
+<!-- Footer Action Bar -->
+<div class="pt-12 flex items-center justify-between">
+<button class="text-on-surface-variant font-headline font-bold px-8 py-4 rounded-full hover:bg-surface-container-low transition-all">
+                    Save Draft
+                </button>
+<button class="step-gradient text-on-primary font-headline font-extrabold px-12 py-4 rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all flex items-center gap-2">
+                    Next Step
+                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation suppressed as per "The Destination Rule" - Task Focused Page -->
+</body></html>

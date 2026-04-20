@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terra Nova | Sell</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@400;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "on-primary-container": "#76b394",
+                    "surface-variant": "#c6e8f8",
+                    "secondary": "#116c4a",
+                    "inverse-primary": "#95d4b3",
+                    "inverse-surface": "#123441",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-secondary-container": "#1b724f",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-surface-variant": "#414844",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-background": "#001f29",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "background": "#f3faff",
+                    "surface-dim": "#bedfef",
+                    "on-error-container": "#93000a",
+                    "primary": "#002d1c",
+                    "on-tertiary-container": "#93ad98",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "surface-container-high": "#ccedfe",
+                    "primary-container": "#00452e",
+                    "on-primary-fixed": "#002114",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#a1f4c8",
+                    "outline": "#717973",
+                    "tertiary": "#152b1c",
+                    "inverse-on-surface": "#dff4ff",
+                    "surface-container": "#d8f2ff",
+                    "on-secondary-fixed": "#002113",
+                    "surface-tint": "#2c694e",
+                    "on-surface": "#001f29",
+                    "secondary-fixed": "#a1f4c8",
+                    "surface": "#f3faff",
+                    "surface-container-highest": "#c6e8f8",
+                    "outline-variant": "#c1c8c2",
+                    "on-tertiary-fixed": "#092012",
+                    "surface-bright": "#f3faff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "primary-fixed": "#b1f0ce",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#2a4131",
+                    "surface-container-low": "#e6f6ff",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        .backdrop-blur-xl {
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="docked w-full top-0 z-40 bg-[#f3faff] dark:bg-slate-950 flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="Professional headshot of a person with a friendly expression in soft natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWP_KUyiAIDfVVkNmy8FZNCFb2aKuY1ZEkWAN9tfqb7QBa8FyQgQw6NT8mOMHWxdnRlzCqxVFXzqcgs2o67zwst0xisgPMF30AcjXAQRISLViW22ckL-BXgh6bA3xL-bj3EJ4f3fITxTe7dWYkBy14Y9JipNsvqsgsQSO5Z1_TmkR5NuQFTrn8kmUtXFFtWOa_IaRPNpg7XtyyoATFFIF0KALtHgJlidxpSajfPvoHaVUwbsKJGSRhfzv_N0FgLAuktbRdkfW90io8"/>
+</div>
+<span class="text-lg font-black text-[#1B4332] dark:text-emerald-100 uppercase tracking-tighter">The Topographic</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-slate-500 hover:opacity-70 transition-opacity p-2">settings</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col px-6 pt-12 pb-32 max-w-2xl mx-auto w-full">
+<!-- Editorial Header Section -->
+<section class="mb-12">
+<p class="font-label text-on-surface-variant uppercase tracking-[0.2em] text-[10px] mb-2">Marketplace</p>
+<h1 class="font-headline text-5xl font-extrabold text-primary tracking-tight leading-none mb-6">Terra Nova Sell</h1>
+<div class="h-1 w-12 bg-secondary rounded-full"></div>
+</section>
+<!-- Asymmetric Action Grid -->
+<div class="grid grid-cols-1 gap-6">
+<!-- Primary Action: Create Listing -->
+<button class="group relative overflow-hidden hero-gradient rounded-3xl p-8 text-left transition-transform active:scale-[0.98] duration-200 shadow-[0px_20px_40px_rgba(0,31,41,0.06)]">
+<div class="flex justify-between items-start mb-12">
+<div class="bg-on-primary/10 p-4 rounded-2xl backdrop-blur-md">
+<span class="material-symbols-outlined text-on-primary text-4xl" data-icon="add">add</span>
+</div>
+<span class="material-symbols-outlined text-on-primary/20 text-6xl group-hover:text-on-primary/40 transition-colors">east</span>
+</div>
+<div>
+<h2 class="text-on-primary font-headline text-3xl font-bold tracking-tight">Create New Listing</h2>
+<p class="text-on-primary/60 font-label text-sm mt-1 uppercase tracking-wider">Start surveying your territory</p>
+</div>
+<!-- Decorative Layer -->
+<div class="absolute -right-8 -top-8 w-48 h-48 bg-secondary-container/5 rounded-full blur-3xl"></div>
+</button>
+<!-- Secondary Action: My Listings -->
+<button class="group relative bg-surface-container-lowest border border-outline-variant/15 rounded-3xl p-8 text-left transition-transform active:scale-[0.98] duration-200">
+<div class="flex justify-between items-start mb-12">
+<div class="bg-primary/5 p-4 rounded-2xl">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="landscape">landscape</span>
+</div>
+<span class="material-symbols-outlined text-primary/10 text-6xl group-hover:text-primary/20 transition-colors">arrow_outward</span>
+</div>
+<div>
+<h2 class="text-primary font-headline text-3xl font-bold tracking-tight">My Listings</h2>
+<p class="text-on-surface-variant font-label text-sm mt-1 uppercase tracking-wider">Manage 12 active properties</p>
+</div>
+</button>
+</div>
+<!-- Editorial Footnote (Minimalist) -->
+<div class="mt-auto pt-16 flex justify-center opacity-30">
+<div class="flex items-center gap-4">
+<div class="h-[1px] w-8 bg-on-surface"></div>
+<span class="font-label text-[10px] uppercase tracking-[0.3em]">Curated Land Stewardship</span>
+<div class="h-[1px] w-8 bg-on-surface"></div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-4 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0px_-10px_40px_rgba(0,31,41,0.06)] rounded-t-3xl">
+<!-- Explore -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-inter text-[10px] font-semibold tracking-wider uppercase">Explore</span>
+</a>
+<!-- Saved -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bookmark">bookmark</span>
+<span class="font-inter text-[10px] font-semibold tracking-wider uppercase">Saved</span>
+</a>
+<!-- Inquiries -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-inter text-[10px] font-semibold tracking-wider uppercase">Inquiries</span>
+</a>
+<!-- Sell (ACTIVE) -->
+<a class="flex flex-col items-center justify-center bg-[#e6f6ff] dark:bg-emerald-900/40 text-[#1B4332] dark:text-emerald-200 rounded-xl px-4 py-2 shadow-sm" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="sell" style="font-variation-settings: 'FILL' 1;">sell</span>
+<span class="font-inter text-[10px] font-semibold tracking-wider uppercase">Sell</span>
+</a>
+</nav>
+<!-- Background Decoration (Topographic Vibe) -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-20">
+<svg class="w-full h-full opacity-30" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 200 C 200 150, 400 350, 600 250 S 800 100, 1000 150" fill="transparent" stroke="#002d1c" stroke-width="0.5"></path>
+<path d="M0 400 C 200 350, 400 550, 600 450 S 800 300, 1000 350" fill="transparent" stroke="#002d1c" stroke-width="0.5"></path>
+<path d="M0 600 C 200 550, 400 750, 600 650 S 800 500, 1000 550" fill="transparent" stroke="#002d1c" stroke-width="0.5"></path>
+</svg>
+</div>
+</body></html>

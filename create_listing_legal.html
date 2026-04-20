@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#95d4b3",
+                    "on-tertiary-container": "#93ad98",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#414844",
+                    "on-primary-fixed": "#002114",
+                    "inverse-surface": "#123441",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#001f29",
+                    "inverse-primary": "#95d4b3",
+                    "surface": "#f3faff",
+                    "outline-variant": "#c1c8c2",
+                    "outline": "#717973",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "surface-variant": "#c6e8f8",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "on-tertiary-fixed": "#092012",
+                    "primary-container": "#00452e",
+                    "surface-container-low": "#e6f6ff",
+                    "secondary-container": "#a1f4c8",
+                    "surface-dim": "#bedfef",
+                    "tertiary": "#152b1c",
+                    "surface-tint": "#2c694e",
+                    "surface-container-highest": "#c6e8f8",
+                    "surface-container-high": "#ccedfe",
+                    "secondary": "#116c4a",
+                    "surface-bright": "#f3faff",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "on-error": "#ffffff",
+                    "on-background": "#001f29",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-secondary-container": "#1b724f",
+                    "on-error-container": "#93000a",
+                    "primary": "#002d1c",
+                    "on-primary-container": "#76b394",
+                    "inverse-on-surface": "#dff4ff",
+                    "surface-container": "#d8f2ff",
+                    "tertiary-container": "#2a4131",
+                    "background": "#f3faff",
+                    "secondary-fixed": "#a1f4c8",
+                    "on-secondary-fixed": "#002113",
+                    "primary-fixed": "#b1f0ce",
+                    "tertiary-fixed": "#cee9d3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        .glass-header {
+            background: rgba(243, 250, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+        input:checked + label {
+            background-color: #a1f4c8;
+            border-color: #116c4a;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container">
+<header class="fixed top-0 w-full z-50 glass-header">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#002d1c]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold tracking-tight text-lg text-[#002d1c]">Create Listing</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label text-xs font-semibold uppercase tracking-widest text-on-surface-variant">Step 5 of 5</span>
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#002d1c]">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<div class="w-full h-1 bg-surface-container">
+<div class="h-full horizon-gradient w-full"></div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-3xl mx-auto">
+<section class="mb-10">
+<h2 class="font-headline font-extrabold text-4xl text-primary leading-tight mb-3">Trust &amp; Legal</h2>
+<p class="text-on-surface-variant leading-relaxed">Verification ensures your land attracts serious surveyors. Provide the necessary documentation and highlight key property advantages.</p>
+</section>
+<section class="space-y-4 mb-12">
+<h3 class="font-headline font-bold text-xl text-primary mb-6">Property Assertions</h3>
+<div class="grid grid-cols-1 gap-3">
+<div class="relative">
+<input class="peer hidden" id="clear_title" type="checkbox"/>
+<label class="flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl border-2 border-transparent cursor-pointer transition-all hover:bg-surface-container-low peer-checked:bg-secondary-container peer-checked:border-secondary" for="clear_title">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<span class="font-headline font-bold text-on-surface">Clear title</span>
+</div>
+<span class="material-symbols-outlined opacity-0 peer-checked:opacity-100 text-secondary">check_circle</span>
+</label>
+</div>
+<div class="relative">
+<input class="peer hidden" id="survey_available" type="checkbox"/>
+<label class="flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl border-2 border-transparent cursor-pointer transition-all hover:bg-surface-container-low peer-checked:bg-secondary-container peer-checked:border-secondary" for="survey_available">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">architecture</span>
+<span class="font-headline font-bold text-on-surface">Survey available</span>
+</div>
+<span class="material-symbols-outlined opacity-0 peer-checked:opacity-100 text-secondary">check_circle</span>
+</label>
+</div>
+<div class="relative">
+<input class="peer hidden" id="utilities_available" type="checkbox"/>
+<label class="flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl border-2 border-transparent cursor-pointer transition-all hover:bg-surface-container-low peer-checked:bg-secondary-container peer-checked:border-secondary" for="utilities_available">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">power</span>
+<span class="font-headline font-bold text-on-surface">Utilities available</span>
+</div>
+<span class="material-symbols-outlined opacity-0 peer-checked:opacity-100 text-secondary">check_circle</span>
+</label>
+</div>
+<div class="relative">
+<input class="peer hidden" id="road_access" type="checkbox"/>
+<label class="flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl border-2 border-transparent cursor-pointer transition-all hover:bg-surface-container-low peer-checked:bg-secondary-container peer-checked:border-secondary" for="road_access">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">add_road</span>
+<span class="font-headline font-bold text-on-surface">Road access</span>
+</div>
+<span class="material-symbols-outlined opacity-0 peer-checked:opacity-100 text-secondary">check_circle</span>
+</label>
+</div>
+<div class="relative">
+<input class="peer hidden" id="financing_available" type="checkbox"/>
+<label class="flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl border-2 border-transparent cursor-pointer transition-all hover:bg-surface-container-low peer-checked:bg-secondary-container peer-checked:border-secondary" for="financing_available">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">payments</span>
+<span class="font-headline font-bold text-on-surface">Financing available</span>
+</div>
+<span class="material-symbols-outlined opacity-0 peer-checked:opacity-100 text-secondary">check_circle</span>
+</label>
+</div>
+</div>
+</section>
+<section class="space-y-6">
+<h3 class="font-headline font-bold text-xl text-primary">Required Documentation</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="group relative flex flex-col items-center justify-center p-8 border-2 border-dashed border-outline-variant bg-surface-container-low rounded-xl hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant mb-3 group-hover:scale-110 transition-transform">cloud_upload</span>
+<span class="font-headline font-bold text-on-surface">Deed copy</span>
+<span class="font-label text-xs text-on-surface-variant mt-1">PDF or JPEG, max 10MB</span>
+<input class="absolute inset-0 opacity-0 cursor-pointer" type="file"/>
+</div>
+<div class="group relative flex flex-col items-center justify-center p-8 border-2 border-dashed border-outline-variant bg-surface-container-low rounded-xl hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant mb-3 group-hover:scale-110 transition-transform">description</span>
+<span class="font-headline font-bold text-on-surface">Survey docs</span>
+<span class="font-label text-xs text-on-surface-variant mt-1">Plot maps, soil tests</span>
+<input class="absolute inset-0 opacity-0 cursor-pointer" type="file"/>
+</div>
+</div>
+<div class="bg-surface-container-highest/30 p-6 rounded-xl flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary">lock</span>
+<p class="text-sm text-on-surface-variant"><strong class="block mb-1 text-on-surface">Security Note</strong>Documents will be held in a secure vault and only shared with verified potential buyers after your approval.</p>
+</div>
+</section>
+</main>
+<div class="fixed bottom-0 left-0 w-full p-6 bg-surface/80 backdrop-blur-md">
+<div class="max-w-3xl mx-auto flex items-center justify-between gap-4">
+<button class="px-8 py-4 font-headline font-bold text-primary hover:bg-surface-container-low rounded-full transition-colors active:scale-95">
+                Save Draft
+            </button>
+<button class="flex-1 horizon-gradient text-on-primary font-headline font-bold py-4 px-8 rounded-full shadow-lg hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+                Review Territory
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-fixed opacity-10 rounded-full blur-3xl"></div>
+<div class="absolute top-1/2 -left-24 w-64 h-64 bg-secondary-fixed opacity-10 rounded-full blur-3xl"></div>
+</div>
+</body></html>

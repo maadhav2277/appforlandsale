@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create Listing - Pricing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#95d4b3",
+                        "on-tertiary-container": "#93ad98",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#414844",
+                        "on-primary-fixed": "#002114",
+                        "inverse-surface": "#123441",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#001f29",
+                        "inverse-primary": "#95d4b3",
+                        "surface": "#f3faff",
+                        "outline-variant": "#c1c8c2",
+                        "outline": "#717973",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "surface-variant": "#c6e8f8",
+                        "on-tertiary-fixed-variant": "#354c3b",
+                        "on-tertiary-fixed": "#092012",
+                        "primary-container": "#00452e",
+                        "surface-container-low": "#e6f6ff",
+                        "secondary-container": "#a1f4c8",
+                        "surface-dim": "#bedfef",
+                        "tertiary": "#152b1c",
+                        "surface-tint": "#2c694e",
+                        "surface-container-highest": "#c6e8f8",
+                        "surface-container-high": "#ccedfe",
+                        "secondary": "#116c4a",
+                        "surface-bright": "#f3faff",
+                        "secondary-fixed-dim": "#86d7ad",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#b3cdb7",
+                        "on-error": "#ffffff",
+                        "on-background": "#001f29",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-secondary-container": "#1b724f",
+                        "on-error-container": "#93000a",
+                        "primary": "#002d1c",
+                        "on-primary-container": "#76b394",
+                        "inverse-on-surface": "#dff4ff",
+                        "surface-container": "#d8f2ff",
+                        "tertiary-container": "#2a4131",
+                        "background": "#f3faff",
+                        "secondary-fixed": "#a1f4c8",
+                        "on-secondary-fixed": "#002113",
+                        "primary-fixed": "#b1f0ce",
+                        "tertiary-fixed": "#cee9d3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .label-font { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#002d1c] dark:text-[#a1f4c8] cursor-pointer" data-icon="arrow_back">arrow_back</span>
+<h1 class="font-['Manrope'] font-bold tracking-tight text-lg text-[#002d1c] dark:text-[#a1f4c8]">Create Listing</h1>
+</div>
+<span class="material-symbols-outlined text-[#002d1c] dark:text-[#a1f4c8] cursor-pointer" data-icon="more_vert">more_vert</span>
+</div>
+</header>
+<main class="pt-20 px-6 max-w-2xl mx-auto">
+<!-- Progress Bar -->
+<div class="mt-8 mb-12">
+<div class="flex justify-between items-end mb-3">
+<span class="font-label text-xs font-semibold uppercase tracking-widest text-on-surface-variant">Step 4 of 5</span>
+<span class="font-label text-xs font-bold text-secondary">80% Complete</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-primary-container w-[80%] rounded-full"></div>
+</div>
+</div>
+<!-- Pricing Section Header -->
+<div class="mb-10">
+<h2 class="text-3xl font-extrabold text-primary tracking-tight mb-2">Set your price</h2>
+<p class="text-on-surface-variant leading-relaxed">Establish the market value for your land. Competitive pricing helps attract serious buyers faster.</p>
+</div>
+<!-- Main Pricing Input Card -->
+<div class="bg-surface-container-low rounded-xl p-8 mb-6">
+<div class="flex flex-col items-center">
+<label class="font-label text-sm font-medium text-on-surface-variant mb-4" for="price-input">Total Listing Price</label>
+<div class="relative w-full max-w-md">
+<span class="absolute left-0 top-1/2 -translate-y-1/2 text-4xl font-extrabold text-primary/30">$</span>
+<input class="w-full bg-transparent border-none text-center text-5xl font-extrabold text-primary focus:ring-0 p-0 tracking-tight" id="price-input" type="text" value="890,000"/>
+<div class="h-0.5 w-full bg-primary/10 mt-2"></div>
+</div>
+<div class="mt-6 flex items-center gap-2 bg-secondary-fixed/30 px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-on-secondary-container text-sm" data-icon="calculate">calculate</span>
+<span class="font-label text-sm font-bold text-on-secondary-container">$12,450 per acre</span>
+</div>
+</div>
+</div>
+<!-- Market Insight Bento Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-highest/40 p-5 rounded-xl border border-outline-variant/10">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="analytics">analytics</span>
+<span class="font-label text-sm font-bold text-primary">Market Comparison</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-3">Similar listings in this region typically range between:</p>
+<div class="flex items-baseline gap-2">
+<span class="text-xl font-bold text-on-surface">$820k</span>
+<span class="text-on-surface-variant text-sm">—</span>
+<span class="text-xl font-bold text-on-surface">$910k</span>
+</div>
+<div class="mt-4 h-1 w-full bg-surface-container flex rounded-full overflow-hidden">
+<div class="w-1/4"></div>
+<div class="w-1/2 bg-secondary/20 border-x border-secondary/40"></div>
+</div>
+<p class="text-[10px] uppercase font-bold tracking-tighter text-secondary mt-2">Your price is in the optimal range</p>
+</div>
+<div class="space-y-4">
+<!-- Toggle Item 1 -->
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/5">
+<div>
+<p class="font-bold text-primary text-sm">Negotiable</p>
+<p class="text-xs text-on-surface-variant">Allow counter-offers</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Toggle Item 2 -->
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/5">
+<div>
+<p class="font-bold text-primary text-sm">Open to offers</p>
+<p class="text-xs text-on-surface-variant">Show "Make an offer" button</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-4 rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold text-lg shadow-lg hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+            Continue to Review
+            <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</main>
+<!-- BottomNavBar (Hidden on desktop, shown on mobile as per logic) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-[#f3faff] dark:bg-[#001f29] rounded-t-[0.75rem] shadow-[0px_-4px_20px_rgba(0,31,41,0.04)] md:hidden">
+<div class="flex flex-col items-center justify-center text-[#001f29]/50 dark:text-[#f3faff]/50 px-5 py-2 hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Inter'] font-medium text-[11px]">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#a1f4c8] dark:bg-[#116c4a] text-[#002d1c] dark:text-[#f3faff] rounded-[0.75rem] px-5 py-2 hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="landscape" style="font-variation-settings: 'FILL' 1;">landscape</span>
+<span class="font-['Inter'] font-medium text-[11px]">Listings</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/50 dark:text-[#f3faff]/50 px-5 py-2 hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-['Inter'] font-medium text-[11px]">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/50 dark:text-[#f3faff]/50 px-5 py-2 hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] font-medium text-[11px]">Profile</span>
+</div>
+</nav>
+<!-- Desktop Sidebar/Nav Placeholder -->
+<div class="hidden md:flex fixed left-0 top-0 h-full w-20 bg-surface-container-low flex-col items-center py-24 gap-8">
+<div class="p-3 text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-3xl" data-icon="explore">explore</span>
+</div>
+<div class="p-3 bg-secondary-container text-on-secondary-container rounded-xl cursor-pointer">
+<span class="material-symbols-outlined text-3xl" data-icon="landscape" style="font-variation-settings: 'FILL' 1;">landscape</span>
+</div>
+<div class="p-3 text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-3xl" data-icon="bookmark">bookmark</span>
+</div>
+<div class="p-3 text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-3xl" data-icon="person">person</span>
+</div>
+</div>
+</body></html>
