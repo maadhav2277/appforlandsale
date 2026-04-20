@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#002d1c",
+            "outline-variant": "#c1c8c2",
+            "tertiary-container": "#2a4131",
+            "inverse-on-surface": "#dff4ff",
+            "on-primary-fixed-variant": "#0e5138",
+            "on-primary-fixed": "#002114",
+            "surface-tint": "#2c694e",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed-variant": "#354c3b",
+            "on-tertiary": "#ffffff",
+            "outline": "#717973",
+            "secondary-container": "#a1f4c8",
+            "error": "#ba1a1a",
+            "primary-fixed-dim": "#95d4b3",
+            "primary-fixed": "#b1f0ce",
+            "surface-container-high": "#ccedfe",
+            "on-secondary-fixed": "#002113",
+            "on-primary-container": "#76b394",
+            "on-tertiary-container": "#93ad98",
+            "on-secondary-fixed-variant": "#005236",
+            "tertiary": "#152b1c",
+            "on-tertiary-fixed": "#092012",
+            "tertiary-fixed-dim": "#b3cdb7",
+            "surface": "#f3faff",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "secondary-fixed": "#a1f4c8",
+            "on-background": "#001f29",
+            "inverse-primary": "#95d4b3",
+            "background": "#f3faff",
+            "surface-container": "#d8f2ff",
+            "on-secondary-container": "#1b724f",
+            "surface-container-highest": "#c6e8f8",
+            "primary-container": "#00452e",
+            "tertiary-fixed": "#cee9d3",
+            "surface-dim": "#bedfef",
+            "secondary": "#116c4a",
+            "on-surface-variant": "#414844",
+            "on-error": "#ffffff",
+            "on-error-container": "#93000a",
+            "surface-bright": "#f3faff",
+            "on-surface": "#001f29",
+            "inverse-surface": "#123441",
+            "secondary-fixed-dim": "#86d7ad",
+            "surface-variant": "#c6e8f8",
+            "surface-container-low": "#e6f6ff",
+            "error-container": "#ffdad6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Manrope"],
+            "body": ["Manrope"],
+            "label": ["Inter"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .horizon-gradient {
+      background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+    }
+    .ghost-border {
+      border: 1px solid rgba(193, 200, 194, 0.15);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface antialiased">
+<!-- TopAppBar Navigation (Shell Suppressed/Simplified for Transactional Success) -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#002d1c] dark:text-[#a1f4c8]">arrow_back</span>
+<h1 class="font-manrope font-bold tracking-tight text-xl text-[#001f29] dark:text-[#f3faff]">Promote Listing</h1>
+</div>
+</header>
+<main class="min-h-screen pt-24 pb-12 px-6 flex flex-col items-center justify-center">
+<!-- Success Hero Section -->
+<div class="w-full max-w-xl text-center mb-12">
+<div class="relative inline-block mb-8">
+<!-- Organic Asymmetric Background Elements -->
+<div class="absolute -inset-4 bg-secondary-container opacity-20 rounded-full blur-2xl"></div>
+<div class="relative w-24 h-24 horizon-gradient rounded-full flex items-center justify-center shadow-xl">
+<span class="material-symbols-outlined text-on-primary text-5xl" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+</div>
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-primary mb-4 font-headline">Listing Promoted!</h2>
+<p class="text-lg text-on-surface-variant max-w-md mx-auto leading-relaxed">Your property is now being featured to thousands of potential buyers.</p>
+</div>
+<!-- Promotion Summary Bento-ish Grid -->
+<div class="w-full max-w-2xl bg-surface-container-low p-1 rounded-full overflow-hidden mb-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<!-- Summary Card 1 -->
+<div class="bg-surface-container-lowest p-8 flex flex-col items-center justify-center text-center rounded-l-full">
+<span class="font-label text-[10px] font-medium tracking-wide uppercase text-on-secondary-container mb-2">Plan</span>
+<span class="text-xl font-bold text-primary">Elite Placement</span>
+</div>
+<!-- Summary Card 2 -->
+<div class="bg-surface-container-lowest p-8 flex flex-col items-center justify-center text-center">
+<span class="font-label text-[10px] font-medium tracking-wide uppercase text-on-secondary-container mb-2">Duration</span>
+<span class="text-xl font-bold text-primary">14 Days</span>
+</div>
+<!-- Summary Card 3 -->
+<div class="bg-surface-container-lowest p-8 flex flex-col items-center justify-center text-center rounded-r-full">
+<span class="font-label text-[10px] font-medium tracking-wide uppercase text-on-secondary-container mb-2">Ends</span>
+<span class="text-xl font-bold text-primary">Nov 12, 2024</span>
+</div>
+</div>
+</div>
+<!-- Visual Confirmation Canvas -->
+<div class="w-full max-w-2xl relative mb-12 rounded-full overflow-hidden aspect-[16/7] group">
+<img class="w-full h-full object-cover" data-alt="expansive green pastoral land under a vast blue sky at sunset with soft golden light highlighting the rolling topography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdg8pDQwnwLCFAKDDLCJKs2s1348Vv2HIYSHXRjL05Kxmah85teg_gDGvC5VwkeNGD--G4Xd439wAil338n2zJKvGMSMuPB_pRGeCNVMw-WRNanTEbqMhaM-HI6w8ZdbnWJphcSnyaY1zVklMdD10oKqnGiX9dcW9opJjRBmTLcsmcwMhWY3fJ6IkXNqRMep0revv6QTu0ar7cbrSAeRFq7LeDisNH3EQs2eDdI4ZYCevlXAq8hSFABXN-uYZ7HOXqJe_aBmqHdie4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-6 left-8 flex items-center gap-3">
+<div class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md text-xs font-bold font-label uppercase tracking-widest">Featured</div>
+<span class="text-white font-bold text-lg">Valley View Acres</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col md:flex-row gap-4 w-full max-w-md">
+<button class="flex-1 horizon-gradient text-on-primary py-4 px-8 rounded-full font-bold hover:opacity-90 active:scale-95 transition-all text-center">
+        View Live Listing
+      </button>
+<button class="flex-1 ghost-border bg-surface-container-lowest text-primary py-4 px-8 rounded-full font-bold hover:bg-surface-container-low active:scale-95 transition-all text-center">
+        Back to My Listings
+      </button>
+</div>
+</main>
+<!-- Navigation Shell (Suppressed on Success/Transactional screens as per Destination Rule) -->
+<!-- Note: The shared component is hidden here to prioritize the success content canvas -->
+<footer class="mt-auto py-8 text-center">
+<div class="flex justify-center items-center gap-2 text-on-surface-variant/40">
+<span class="material-symbols-outlined text-sm">security</span>
+<span class="font-label text-[10px] uppercase tracking-widest">Transaction Secure • Terra Nova Editorial</span>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Listings - Sold | The Topographic Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "surface-variant": "#c6e8f8",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "outline": "#717973",
+                        "secondary-container": "#a1f4c8",
+                        "primary": "#002d1c",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#001f29",
+                        "inverse-surface": "#123441",
+                        "surface-dim": "#bedfef",
+                        "secondary": "#116c4a",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#092012",
+                        "on-secondary-container": "#1b724f",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#b3cdb7",
+                        "on-surface-variant": "#414844",
+                        "surface-tint": "#2c694e",
+                        "secondary-fixed-dim": "#86d7ad",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#002113",
+                        "on-background": "#001f29",
+                        "primary-container": "#00452e",
+                        "tertiary-fixed": "#cee9d3",
+                        "on-tertiary-fixed-variant": "#354c3b",
+                        "surface": "#f3faff",
+                        "inverse-primary": "#95d4b3",
+                        "tertiary": "#152b1c",
+                        "surface-container": "#d8f2ff",
+                        "outline-variant": "#c1c8c2",
+                        "surface-container-high": "#ccedfe",
+                        "primary-fixed": "#b1f0ce",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-primary-fixed": "#002114",
+                        "inverse-on-surface": "#dff4ff",
+                        "tertiary-container": "#2a4131",
+                        "primary-fixed-dim": "#95d4b3",
+                        "on-tertiary-container": "#93ad98",
+                        "surface-container-low": "#e6f6ff",
+                        "secondary-fixed": "#a1f4c8",
+                        "background": "#f3faff",
+                        "on-primary-container": "#76b394",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#c6e8f8",
+                        "surface-bright": "#f3faff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .premium-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        body {
+            background-color: #f3faff;
+            color: #001f29;
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#f3faff]/70 backdrop-blur-xl docked full-width top-0 z-50 shadow-[0px_20px_40px_rgba(0,31,41,0.06)] fixed w-full">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#1B4332]" data-icon="landscape">landscape</span>
+<h1 class="font-['Manrope'] font-extrabold text-[#1B4332] tracking-tighter text-lg">The Topographic Editorial</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-slate-500 hover:opacity-80 transition-opacity font-['Manrope'] font-bold tracking-tight text-lg" href="#">Explore</a>
+<a class="text-[#1B4332] font-bold hover:opacity-80 transition-opacity font-['Manrope'] font-bold tracking-tight text-lg" href="#">Listings</a>
+<a class="text-slate-500 hover:opacity-80 transition-opacity font-['Manrope'] font-bold tracking-tight text-lg" href="#">Insights</a>
+</nav>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden border-2 border-white">
+<img alt="User" class="w-full h-full object-cover" data-alt="Portrait of a professional man in a tailored suit with a clean office background, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgdxfakBf67JcfrPSf8zEn7aZLyP_npEM-rmb4wiggVH3lxNZBLkONNZjoK3L3S3TvGzhEuxFdVJ5JILzqxL-98ulCbTRcD5M4MqBdDudE97tRkZK04yqcaP50AqCX-kpCoOjPuMcRPHIuYsxZHc-ycjWkGZTC5NG1iFsQr6IiiBUEADWkhRzqal2zMoGTJJKfynrQktsK-edxcfexcxpYz0zLxGEPLxFDWA6kJa7q8hyM3t-cLdVtc4lJUOW3XlDa55KoTAEA3kUM"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Dashboard Header & Tabs -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h2 class="text-display-lg font-headline font-extrabold text-primary text-5xl tracking-tighter mb-2">Inventory Ledger</h2>
+<p class="text-on-surface-variant font-body max-w-lg">Managing the legacy of terrestrial assets. Review your archived and completed acquisitions.</p>
+</div>
+<div class="flex bg-surface-container-low p-1.5 rounded-xl self-start">
+<button class="px-6 py-2.5 rounded-lg font-label text-sm font-semibold text-on-surface-variant hover:bg-white/50 transition-all">Active</button>
+<button class="px-6 py-2.5 rounded-lg font-label text-sm font-bold bg-white text-primary shadow-sm">Sold</button>
+<button class="px-6 py-2.5 rounded-lg font-label text-sm font-semibold text-on-surface-variant hover:bg-white/50 transition-all">Drafts</button>
+</div>
+</div>
+</section>
+<!-- Sold Listings Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Featured Sold Property -->
+<div class="md:col-span-8 group">
+<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col h-full transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-[450px] overflow-hidden">
+<img alt="Highland Estate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Wide expansive shot of a rolling green highland estate at dawn with mist in the valleys and golden sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlulIQvw8HGpQ6OwZT3nGQqCIXh32W9excPSXN0N8BHcoQw0fD8-ypeOzRHv0udXwBlgtQh-UqYE17vAGt0t5e9WEzW7LtqGt5s19bi0bzFedT2HqxIzZVdjA6HoEnilFggsX0RRNvlIYXNCjb8bcVuT0Tvshn9i8hBjNBCkwsqFxzuPXYB-VklJ75dbyLFB7iAhS0KsJKzxT7wlabtrQX3G285vC83JxOw-ur5MMmt7hXfqELL7vX0qywzCw13slsb1GNX-vRZaWO"/>
+<div class="absolute top-6 left-6 flex gap-2">
+<span class="bg-primary text-white px-4 py-1.5 rounded-md font-label text-[10px] font-bold tracking-widest uppercase flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                                Sold
+                            </span>
+</div>
+</div>
+<div class="p-8 bg-surface-container-lowest flex-grow">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="text-3xl font-headline font-bold text-primary tracking-tight">The Obsidian Ridge Plateau</h3>
+<p class="text-on-surface-variant font-label text-sm mt-1">45.2 Acres • Blue Ridge Mountains, NC</p>
+</div>
+<div class="text-right">
+<p class="text-on-surface-variant font-label text-[10px] uppercase tracking-widest font-bold">Closing Value</p>
+<p class="text-3xl font-headline font-extrabold text-primary">$1,240,000</p>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12 pt-8 border-t border-outline-variant/15">
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-label text-[11px] uppercase tracking-wider mb-1">Total Leads</span>
+<span class="text-2xl font-headline font-bold text-secondary">342</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-label text-[11px] uppercase tracking-wider mb-1">Time on Market</span>
+<span class="text-2xl font-headline font-bold text-secondary">18 Days</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-label text-[11px] uppercase tracking-wider mb-1">Efficiency Index</span>
+<span class="text-2xl font-headline font-bold text-secondary">94%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Cards Column -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<!-- Card 2 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden group border border-outline-variant/10">
+<div class="relative h-56 overflow-hidden">
+<img alt="Alpine Basin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Scenic alpine basin with clear turquoise lake surrounded by jagged snowy mountain peaks in the afternoon sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyijyn8GbERauiUCxgsf9GHMn_jzkXENOgWdK4_Xkd-mJfoL6LyX2qduLyWTPKt3GF9bGmekWIbXaWFNS_RMSnBRgR5N0z76qkxYy6UlZppmkESiseWnVvqtjAJZPCo4Dwx7wNnxzG5aI5JmeFpIxc_iCc6GaKJSruakbHxnE632Nq6uIjvF-TxbnlyIpJvmlA3wtdaEfdSvCCVJuV1ybdSMcmqfZkpWl7ulKJyTCjeK2KniNGIUwfKL_XwxvTnF1YVFzrPhchBcoC"/>
+<div class="absolute bottom-4 left-4">
+<span class="bg-white/90 backdrop-blur-md text-primary px-3 py-1 rounded-md font-label text-[10px] font-extrabold tracking-widest uppercase">Sold</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<h4 class="text-xl font-headline font-bold text-primary tracking-tight mb-6">Silver Lake Basin</h4>
+<div class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant/10 pb-2">
+<span class="text-on-surface-variant font-label text-[10px] uppercase tracking-widest">Closing Value</span>
+<span class="text-lg font-headline font-bold text-primary">$890,000</span>
+</div>
+<div class="flex justify-between items-end">
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-label text-[10px] uppercase tracking-widest">Leads</span>
+<span class="text-lg font-headline font-bold text-secondary">128</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="text-on-surface-variant font-label text-[10px] uppercase tracking-widest">Market Days</span>
+<span class="text-lg font-headline font-bold text-secondary">24</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden group border border-outline-variant/10">
+<div class="relative h-56 overflow-hidden">
+<img alt="Forest Plot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dense redwood forest with sunlight streaming through the canopy creating long dramatic shadows on the forest floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_VJUbkAhtJmwbMxk7GK6JvT_Ab0pcD3P9raCrsvAvasgZ-S-U4_eg-Zl5IFUNFiu2iJrDZpHImuJWRrhasPjEdVXwsmgUa8GHqz-sgfI-SPMQrTz3yZbRUTnIGpmoDNd7x-ujWJqlsuZhffclqT3yT5eqUaKes1kfyYKXk5fF4WNpazqTPRoxyks5gSqS2HBGavZylYGLyi74ChRk1s8MHyp_tJtK00F3ooyRaXOEPcJe5wNWciCfVgatOL-rVkTIkfSrcY1ozoWs"/>
+<div class="absolute bottom-4 left-4">
+<span class="bg-white/90 backdrop-blur-md text-primary px-3 py-1 rounded-md font-label text-[10px] font-extrabold tracking-widest uppercase">Sold</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<h4 class="text-xl font-headline font-bold text-primary tracking-tight mb-6">Old Growth Timber</h4>
+<div class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant/10 pb-2">
+<span class="text-on-surface-variant font-label text-[10px] uppercase tracking-widest">Closing Value</span>
+<span class="text-lg font-headline font-bold text-primary">$455,000</span>
+</div>
+<div class="flex justify-between items-end">
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-label text-[10px] uppercase tracking-widest">Leads</span>
+<span class="text-lg font-headline font-bold text-secondary">84</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="text-on-surface-variant font-label text-[10px] uppercase tracking-widest">Market Days</span>
+<span class="text-lg font-headline font-bold text-secondary">15</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quarterly Summary (Bento Piece) -->
+<section class="mt-16 bg-surface-container p-8 rounded-3xl flex flex-col md:flex-row items-center gap-12 border border-outline-variant/10">
+<div class="flex-shrink-0 relative">
+<div class="w-48 h-48 rounded-full border-8 border-primary/10 flex items-center justify-center">
+<div class="text-center">
+<p class="text-primary font-headline font-extrabold text-3xl">82%</p>
+<p class="text-on-surface-variant font-label text-[10px] uppercase font-bold tracking-widest">Sell Rate</p>
+</div>
+</div>
+<div class="absolute -top-2 -right-4 bg-white p-3 rounded-xl shadow-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="trending_up">trending_up</span>
+</div>
+</div>
+<div class="flex-grow text-center md:text-left">
+<h3 class="text-2xl font-headline font-bold text-primary mb-2">Quarterly Liquidity Report</h3>
+<p class="text-on-surface-variant font-body mb-6">Your listings are performing 14% better than the regional average. Total capital realized this quarter exceeds your primary projections by $2.4M.</p>
+<div class="flex flex-wrap gap-4 justify-center md:justify-start">
+<div class="bg-white/60 px-4 py-2 rounded-lg">
+<p class="text-on-surface-variant font-label text-[10px] uppercase font-bold tracking-widest">Total Realized</p>
+<p class="text-primary font-headline font-bold">$12.4M</p>
+</div>
+<div class="bg-white/60 px-4 py-2 rounded-lg">
+<p class="text-on-surface-variant font-label text-[10px] uppercase font-bold tracking-widest">Avg. Close</p>
+<p class="text-primary font-headline font-bold">22 Days</p>
+</div>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label font-bold text-sm whitespace-nowrap hover:bg-primary-container transition-colors shadow-lg">
+                Download PDF Report
+            </button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-white/80 dark:bg-[#001f29]/80 backdrop-blur-2xl flex justify-around items-center px-4 pb-6 pt-2 shadow-[0_-10px_30px_rgba(0,31,41,0.04)] md:hidden">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 tap-highlight-none transition-all duration-300 ease-out hover:text-[#1B4332]" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Inter'] font-medium text-[11px]">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#e6f6ff] dark:bg-[#1B4332]/30 text-[#1B4332] dark:text-[#a1f4c8] rounded-2xl px-5 py-2 tap-highlight-none transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+<span class="font-['Inter'] font-medium text-[11px]">Listings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 tap-highlight-none transition-all duration-300 ease-out hover:text-[#1B4332]" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] font-medium text-[11px]">Insights</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 tap-highlight-none transition-all duration-300 ease-out hover:text-[#1B4332]" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] font-medium text-[11px]">Profile</span>
+</a>
+</nav>
+</body></html>

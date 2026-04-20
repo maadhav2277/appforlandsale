@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Listings - The Topographic Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "surface-variant": "#c6e8f8",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "outline": "#717973",
+                    "secondary-container": "#a1f4c8",
+                    "primary": "#002d1c",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#001f29",
+                    "inverse-surface": "#123441",
+                    "surface-dim": "#bedfef",
+                    "secondary": "#116c4a",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#092012",
+                    "on-secondary-container": "#1b724f",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "on-surface-variant": "#414844",
+                    "surface-tint": "#2c694e",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#002113",
+                    "on-background": "#001f29",
+                    "primary-container": "#00452e",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "surface": "#f3faff",
+                    "inverse-primary": "#95d4b3",
+                    "tertiary": "#152b1c",
+                    "surface-container": "#d8f2ff",
+                    "outline-variant": "#c1c8c2",
+                    "surface-container-high": "#ccedfe",
+                    "primary-fixed": "#b1f0ce",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-primary-fixed": "#002114",
+                    "inverse-on-surface": "#dff4ff",
+                    "tertiary-container": "#2a4131",
+                    "primary-fixed-dim": "#95d4b3",
+                    "on-tertiary-container": "#93ad98",
+                    "surface-container-low": "#e6f6ff",
+                    "secondary-fixed": "#a1f4c8",
+                    "background": "#f3faff",
+                    "on-primary-container": "#76b394",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#c6e8f8",
+                    "surface-bright": "#f3faff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 z-50 w-full bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl shadow-[0px_20px_40px_rgba(0,31,41,0.06)] flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#1B4332] dark:text-[#a1f4c8]">landscape</span>
+<h1 class="font-['Manrope'] font-extrabold text-[#1B4332] dark:text-[#a1f4c8] tracking-tighter text-lg">The Topographic Editorial</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex gap-6 items-center mr-6">
+<a class="text-slate-500 font-medium text-sm hover:opacity-80 transition-opacity" href="#">Explore</a>
+<a class="text-[#1B4332] font-bold text-sm" href="#">Listings</a>
+<a class="text-slate-500 font-medium text-sm hover:opacity-80 transition-opacity" href="#">Insights</a>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed">
+<img alt="User Profile" data-alt="professional portrait of a young woman with a neutral expression against a soft studio background, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCriHFfxuui6XvwqWyUX4W8hKBqJxSLX5YCRPlhvaKAozXHyRx53hMDMNpDfdscewPuZwNGloSFV-B5WrBKo6J-TOetAELuuXzzsgf8wx33D4x6PEYGsvJWdFZxxqaIdgX6LKiv0FchCv01oj-f_zIzYbWp4X8D_rvDigRhH90TGJUiUetSYkqDI0aab18s-5RK6GBtJosMsFTcCJ-_dm_dRwlp7Zz_lROMUXeeT9ublWjvVZTuRTo2OTq7_zOsQ6L6tlEdJjwJa5SM"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Editorial Header Section -->
+<section class="mb-12">
+<span class="font-label text-on-surface-variant text-xs uppercase tracking-widest font-semibold">Portfolio Management</span>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mt-2">
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-primary tracking-tight leading-none">
+                    My Listings
+                </h2>
+<div class="flex gap-2 p-1 bg-surface-container-low rounded-xl">
+<button class="px-6 py-2 rounded-lg font-label text-sm font-medium text-on-surface-variant hover:bg-surface-container transition-colors">Published</button>
+<button class="px-6 py-2 rounded-lg font-label text-sm font-bold bg-surface-container-lowest text-primary shadow-sm">Drafts</button>
+<button class="px-6 py-2 rounded-lg font-label text-sm font-medium text-on-surface-variant hover:bg-surface-container transition-colors">Archived</button>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout for Drafts -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Draft Card 1 (Large Featured Draft) -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl overflow-hidden group">
+<div class="grid grid-cols-1 lg:grid-cols-2 h-full">
+<div class="relative overflow-hidden h-64 lg:h-auto">
+<img alt="Valley View Estate" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="wide aerial shot of a sprawling green valley with a small stream winding through, soft morning mist and golden light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCikdK9rO_QDhtM-d2m3xDAMub_wfFP6pwhs5PPZSFFLmmIheczD13PAXLSmifNJHw94t9sSREtUrSk5ykpoUu20HENuIJjSQ3O8DM6Bky75z4Iz0r9F40RiFL1lqOLsa_5-wkzUuLtah2ugpjMzZ2lAHg6jF5mR4G_Ows7vJAizLrRYcO4pBERYCfwXOg6uhGU_318HW-aL-MLB8Ky00Szk4UsbdhpVjs4lg3ZwvRjVJDFIvqHkwUiniriUbaVQ_D0Z8cwj1Td0iKE"/>
+<div class="absolute top-4 left-4">
+<span class="bg-surface-container-lowest/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold font-label uppercase tracking-tighter text-primary">In Progress</span>
+</div>
+</div>
+<div class="p-8 flex flex-col justify-between bg-surface-container-lowest">
+<div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline font-bold text-2xl text-primary leading-tight">Highland Crest Plateau</h3>
+<p class="font-label text-on-surface-variant text-sm flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                                        Blue Ridge Mountains, NC
+                                    </p>
+</div>
+<div class="text-right">
+<span class="font-label text-xs font-bold text-on-surface-variant uppercase">Step 3 of 5</span>
+<p class="text-[10px] font-medium text-outline">Topographic Survey</p>
+</div>
+</div>
+<div class="space-y-2 mb-8">
+<div class="flex justify-between text-[11px] font-bold font-label text-primary uppercase tracking-tighter">
+<span>Completion</span>
+<span>60%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[60%] rounded-full"></div>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                                The boundary definition and primary soil tests are complete. Missing detailed topographic mapping and environmental impact documentation.
+                            </p>
+</div>
+<button class="w-full bg-horizon-gradient text-on-primary py-4 px-6 rounded-xl font-headline font-bold text-sm flex items-center justify-center gap-2 active:scale-95 transition-transform">
+                            Continue Survey
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Draft Card 2 (Vertical Compact) -->
+<div class="md:col-span-4 bg-surface-container-low p-6 rounded-xl flex flex-col justify-between">
+<div>
+<div class="aspect-[4/3] rounded-lg overflow-hidden mb-6">
+<img alt="Pine Timberland" class="w-full h-full object-cover" data-alt="dense forest of tall pine trees with sunlight filtering through the canopy, mossy ground, cinematic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU4U8p2Zh7cgrsCSDKsK28wjqEEaS-yjkH7FABA4N5bf9aq2p4c_AyOYuENdzHpWlOd4ynpHe1woaU21Wa4ljdECi1pMxhHFgrOx7RWvW_0MAUH3u6PnKDzgYdysv3huzChbdYccmCi2LOtg2GRME9GqEa3c0JtyWPU6vaRHOuIpGlTAVsRWArIDmILO-1mu_eSk24s627sjf_L4g5dsFjyJsvScVJc6GifTK2F7WXsRnRCPCCBLKuRKgSR2rGzkVGGYdehkqxI6z4"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-bold text-lg text-primary">Blackwood Timber Tract</h3>
+<span class="font-label text-[10px] font-bold text-on-secondary-container bg-secondary-container px-2 py-0.5 rounded">Step 4/5</span>
+</div>
+<p class="font-label text-on-surface-variant text-xs mb-6">Willamette Valley, Oregon</p>
+<div class="space-y-1.5 mb-8">
+<div class="w-full h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[80%] rounded-full"></div>
+</div>
+<div class="flex justify-between text-[10px] font-medium text-outline uppercase">
+<span>80% Drafted</span>
+<span>Awaiting Media</span>
+</div>
+</div>
+</div>
+<button class="w-full border border-outline/15 bg-surface-container-lowest text-primary py-3 px-6 rounded-xl font-headline font-bold text-sm flex items-center justify-center gap-2 hover:bg-surface-container transition-colors active:scale-95 transition-transform">
+                    Continue Survey
+                </button>
+</div>
+<!-- Draft Card 3 (Horizontal Narrow) -->
+<div class="md:col-span-6 bg-surface-container-low p-5 rounded-xl flex gap-6 items-center">
+<div class="w-32 h-32 flex-shrink-0 rounded-lg overflow-hidden">
+<img alt="Riverside Plot" class="w-full h-full object-cover" data-alt="serene river flowing through a lush green meadow, distant mountains under a soft blue sky, tranquil landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMBDbRUyHJM_mOD29HSGIVSzDqhEIYwxOYix-UHDXIl6mW0Le1afX3Km9jtmcwgzfpfA3MHLN38J4c3VVd7BrA0HnjUhn3IjxR5ss3RgfwgBdvlD_VfB0WQSrW0-ON_ASH0v6rIbu3eKVg3MqyO7IyL3w6pATP-_bx3IyLFlyPCc0RyoXZc97vqzsEEBibEDtHi3of-ApO7Vxfvwyw0K2tsy6mPEi2uDyXU2WEWjYpPDJfBKlKtt9pJFvHxT8wYVzHXoK96buuWjV4"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-center mb-1">
+<h3 class="font-headline font-bold text-base text-primary">River's Edge Parcel</h3>
+<span class="font-label text-[10px] font-bold text-outline">Step 2 of 5</span>
+</div>
+<p class="font-label text-on-surface-variant text-xs mb-3">Hudson Valley, NY</p>
+<div class="w-full h-1 bg-surface-container rounded-full overflow-hidden mb-4">
+<div class="h-full bg-secondary w-[35%] rounded-full"></div>
+</div>
+<button class="text-primary font-headline font-bold text-xs flex items-center gap-1 hover:opacity-70 transition-opacity">
+                        Resume Listing <span class="material-symbols-outlined text-xs">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Draft Card 4 (Empty/Placeholder Style) -->
+<div class="md:col-span-6 border-2 border-dashed border-outline-variant rounded-xl flex flex-col items-center justify-center p-8 text-center group cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-fixed">add_location_alt</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-primary">Initiate New Survey</h3>
+<p class="text-on-surface-variant text-xs max-w-[200px] mt-1">Start a fresh topographic evaluation for a new property listing.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-white/80 dark:bg-[#001f29]/80 backdrop-blur-2xl shadow-[0_-10px_30px_rgba(0,31,41,0.04)] md:hidden">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-[#1B4332] dark:hover:text-[#a1f4c8] transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">explore</span>
+<span class="font-['Inter'] font-medium text-[11px]">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#e6f6ff] dark:bg-[#1B4332]/30 text-[#1B4332] dark:text-[#a1f4c8] rounded-2xl px-5 py-2 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">layers</span>
+<span class="font-['Inter'] font-medium text-[11px]">Listings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-[#1B4332] dark:hover:text-[#a1f4c8] transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">analytics</span>
+<span class="font-['Inter'] font-medium text-[11px]">Insights</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-[#1B4332] dark:hover:text-[#a1f4c8] transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Inter'] font-medium text-[11px]">Profile</span>
+</a>
+</nav>
+<!-- Map FAB (Contextual for Listings) -->
+<button class="fixed bottom-24 right-6 md:bottom-12 md:right-12 w-14 h-14 bg-primary text-on-primary rounded-full shadow-xl flex items-center justify-center active:scale-90 transition-transform z-40">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">map</span>
+</button>
+</body></html>

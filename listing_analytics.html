@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "tertiary": "#152b1c",
+                    "inverse-on-surface": "#dff4ff",
+                    "primary-fixed": "#b1f0ce",
+                    "primary-fixed-dim": "#95d4b3",
+                    "tertiary-container": "#2a4131",
+                    "secondary-fixed": "#a1f4c8",
+                    "background": "#f3faff",
+                    "surface-bright": "#f3faff",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#cee9d3",
+                    "outline": "#717973",
+                    "inverse-primary": "#95d4b3",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "surface-dim": "#bedfef",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-background": "#001f29",
+                    "on-surface": "#001f29",
+                    "on-primary-container": "#76b394",
+                    "surface-container-high": "#ccedfe",
+                    "surface": "#f3faff",
+                    "primary-container": "#00452e",
+                    "on-primary-fixed": "#002114",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "surface-container": "#d8f2ff",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "surface-container-highest": "#c6e8f8",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "secondary-container": "#a1f4c8",
+                    "on-secondary-fixed": "#002113",
+                    "primary": "#002d1c",
+                    "inverse-surface": "#123441",
+                    "surface-tint": "#2c694e",
+                    "secondary": "#116c4a",
+                    "on-tertiary-fixed": "#092012",
+                    "surface-variant": "#c6e8f8",
+                    "surface-container-low": "#e6f6ff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#1b724f",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#c1c8c2",
+                    "on-tertiary-container": "#93ad98",
+                    "on-surface-variant": "#414844",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        .ghost-border {
+            border: 1px solid rgba(193, 200, 194, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f3faff]/70 backdrop-blur-md dark:bg-[#001f29]/70">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#002d1c] dark:text-[#b1f0ce]">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-manrope font-bold text-lg tracking-tight text-[#002d1c] dark:text-[#b1f0ce]">Listing Analytics</h1>
+</div>
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#002d1c] dark:text-[#b1f0ce]">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</header>
+<main class="mt-20 px-6 max-w-screen-2xl mx-auto space-y-8">
+<!-- Property Summary Card -->
+<section class="bg-surface-container-low p-1 rounded-full">
+<div class="bg-surface-container-lowest rounded-full p-2 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+<img alt="Emerald Highland Estate" class="w-full h-full object-cover" data-alt="Stunning aerial view of a luxury modern estate nestled in lush green emerald highlands with misty mountains in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRZsRF5NsVoCIhqHzPQx5qRtO7SqEeUtKrzyy2wHvOrFnj6LYeIsMoQKMdd-5fe0Nz9yPi7WbR3R4TcCGdeJWr2ILKfJ1XiS1u2sux0hCmuUJGj-3aAyq9fhgdoUy25QYmBe0-DWnW_e02g2SQ6IV55X_yzHeO0o4bUaqaAy1e4DopQItO2MFs0W5DUWZxMonpTw3ilm8MN_Yt7R0KcM5NfQV2W3sI7U_I9CU4QolUMJUwk7oIosBkYx3gKZbb0yWi_2iO1c3lkY3k"/>
+</div>
+<div class="flex-grow">
+<h2 class="font-headline font-bold text-primary text-base">Emerald Highland Estate</h2>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label text-xs font-semibold text-on-surface-variant tracking-wider uppercase">Active Listing</span>
+</div>
+</div>
+<div class="pr-4 hidden md:block">
+<span class="font-label text-xs font-medium text-outline">ID: TN-99284</span>
+</div>
+</div>
+</section>
+<!-- Core Metrics Bento -->
+<section class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_20px_40px_rgba(0,31,41,0.04)]">
+<div class="flex flex-col gap-1">
+<span class="font-label text-xs font-semibold text-on-surface-variant uppercase tracking-widest">Total Views</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline font-extrabold text-2xl text-primary">12.4k</span>
+<span class="font-label text-xs font-bold text-secondary flex items-center">
+<span class="material-symbols-outlined text-[14px]" data-icon="trending_up">trending_up</span>
+                            15%
+                        </span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_20px_40px_rgba(0,31,41,0.04)]">
+<div class="flex flex-col gap-1">
+<span class="font-label text-xs font-semibold text-on-surface-variant uppercase tracking-widest">Active Leads</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline font-extrabold text-2xl text-primary">45</span>
+<span class="font-label text-xs font-medium text-outline">8 Serious</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_20px_40px_rgba(0,31,41,0.04)]">
+<div class="flex flex-col gap-1">
+<span class="font-label text-xs font-semibold text-on-surface-variant uppercase tracking-widest">Save Count</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline font-extrabold text-2xl text-primary">284</span>
+<span class="material-symbols-outlined text-secondary-container" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_20px_40px_rgba(0,31,41,0.04)]">
+<div class="flex flex-col gap-1">
+<span class="font-label text-xs font-semibold text-on-surface-variant uppercase tracking-widest">Avg. Duration</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline font-extrabold text-2xl text-primary">1m 24s</span>
+<span class="material-symbols-outlined text-outline" data-icon="timer">timer</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Performance Chart Section -->
+<section class="bg-surface-container-low rounded-xl p-8">
+<div class="flex items-center justify-between mb-8">
+<div>
+<h3 class="font-headline font-bold text-xl text-primary">Traffic &amp; Leads</h3>
+<p class="font-label text-sm text-on-surface-variant">Last 30 days performance</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-label text-xs font-medium">Views</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label text-xs font-medium">Leads</span>
+</div>
+</div>
+</div>
+<!-- Mock Topographic Chart -->
+<div class="h-64 w-full relative flex items-end justify-between px-2 gap-1 overflow-hidden">
+<svg class="absolute inset-0 w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0,80 Q10,70 20,75 T40,60 T60,65 T80,45 T100,55 L100,100 L0,100 Z" fill="url(#grad1)" opacity="0.1"></path>
+<path d="M0,80 Q10,70 20,75 T40,60 T60,65 T80,45 T100,55" fill="none" stroke="#002d1c" stroke-width="2"></path>
+<defs>
+<lineargradient id="grad1" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:#002d1c;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#002d1c;stop-opacity:0"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="w-1/6 h-full border-r border-outline-variant/15 flex flex-col justify-end pb-2">
+<span class="font-label text-[10px] text-outline text-center uppercase tracking-tighter">Week 1</span>
+</div>
+<div class="w-1/6 h-full border-r border-outline-variant/15 flex flex-col justify-end pb-2">
+<span class="font-label text-[10px] text-outline text-center uppercase tracking-tighter">Week 2</span>
+</div>
+<div class="w-1/6 h-full border-r border-outline-variant/15 flex flex-col justify-end pb-2">
+<span class="font-label text-[10px] text-outline text-center uppercase tracking-tighter">Week 3</span>
+</div>
+<div class="w-1/6 h-full border-r border-outline-variant/15 flex flex-col justify-end pb-2">
+<span class="font-label text-[10px] text-outline text-center uppercase tracking-tighter">Week 4</span>
+</div>
+<div class="w-1/6 h-full border-r border-outline-variant/15 flex flex-col justify-end pb-2">
+<span class="font-label text-[10px] text-outline text-center uppercase tracking-tighter">Current</span>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Audience Insights -->
+<section class="space-y-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(0,31,41,0.04)]">
+<h3 class="font-headline font-bold text-xl text-primary mb-6">Audience Insights</h3>
+<div class="space-y-6">
+<!-- Geography -->
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label text-xs font-semibold text-on-surface-variant uppercase tracking-widest">Geographic Breakdown</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-full bg-surface-container rounded-full h-2">
+<div class="bg-secondary h-2 rounded-full w-[65%]"></div>
+</div>
+<span class="font-label text-xs font-bold text-primary w-24">Bangalore (65%)</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-full bg-surface-container rounded-full h-2">
+<div class="bg-secondary h-2 rounded-full w-[20%]"></div>
+</div>
+<span class="font-label text-xs font-bold text-primary w-24">Mumbai (20%)</span>
+</div>
+</div>
+</div>
+<!-- Traffic Source -->
+<div class="pt-6 border-t border-outline-variant/10">
+<span class="font-label text-xs font-semibold text-on-surface-variant uppercase tracking-widest block mb-4">Source of Traffic</span>
+<div class="flex flex-wrap gap-4">
+<div class="flex-1 min-w-[100px] text-center p-3 rounded-lg bg-surface-container-low">
+<span class="block font-headline font-bold text-primary">Direct</span>
+<span class="font-label text-[10px] text-outline uppercase font-semibold">42%</span>
+</div>
+<div class="flex-1 min-w-[100px] text-center p-3 rounded-lg bg-surface-container-low">
+<span class="block font-headline font-bold text-primary">Search</span>
+<span class="font-label text-[10px] text-outline uppercase font-semibold">38%</span>
+</div>
+<div class="flex-1 min-w-[100px] text-center p-3 rounded-lg bg-surface-container-low">
+<span class="block font-headline font-bold text-primary">Social</span>
+<span class="font-label text-[10px] text-outline uppercase font-semibold">20%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Market Comparison -->
+<section class="space-y-6">
+<div class="bg-surface-container-highest/30 p-8 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline font-bold text-xl text-primary mb-2">Market Comparison</h3>
+<p class="font-label text-sm text-on-surface-variant mb-6">Similar Listings in Coorg</p>
+<div class="space-y-6">
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="visibility">visibility</span>
+</div>
+<div>
+<span class="block font-label text-xs font-medium text-on-surface-variant">Views</span>
+<span class="font-headline font-bold text-primary text-base">20% higher than average</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="payments">payments</span>
+</div>
+<div>
+<span class="block font-label text-xs font-medium text-on-surface-variant">Price</span>
+<span class="font-headline font-bold text-primary text-base">Highly Competitive</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-4 border-2 border-secondary/20">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<span class="block font-label text-xs font-medium text-on-surface-variant">Lead Conversion</span>
+<span class="font-headline font-bold text-primary text-base">Top 5% in Region</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Action Buttons -->
+<section class="flex flex-col md:flex-row gap-4 pt-4">
+<button class="flex-1 bg-horizon-gradient text-on-primary font-headline font-bold py-4 px-8 rounded-full shadow-lg hover:opacity-90 transition-all active:scale-95 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+                Promote Listing
+            </button>
+<button class="flex-1 ghost-border bg-white text-primary font-headline font-bold py-4 px-8 rounded-full hover:bg-surface-container-low transition-all active:scale-95 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="file_download">file_download</span>
+                Export Report (PDF)
+            </button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 backdrop-blur-xl dark:bg-[#001f29]/80 z-50 rounded-t-3xl shadow-[0px_-10px_30px_rgba(0,31,41,0.04)]">
+<button class="flex flex-col items-center justify-center text-[#404944] dark:text-[#bfc9c2] px-5 py-1.5 hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] rounded-2xl transition-all">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider mt-1">Overview</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-[#a1f4c8] dark:bg-[#00452e] text-[#002d1c] dark:text-[#b1f0ce] rounded-2xl px-5 py-1.5 active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="analytics" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider mt-1">Insights</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#404944] dark:text-[#bfc9c2] px-5 py-1.5 hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] rounded-2xl transition-all">
+<span class="material-symbols-outlined" data-icon="person_search">person_search</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider mt-1">Leads</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#404944] dark:text-[#bfc9c2] px-5 py-1.5 hover:bg-[#e6f6ff] dark:hover:bg-[#002d1c] rounded-2xl transition-all">
+<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider mt-1">Market</span>
+</button>
+</nav>
+</body></html>

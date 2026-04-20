@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#002114",
+                        "tertiary-fixed-dim": "#b3cdb7",
+                        "inverse-on-surface": "#dff4ff",
+                        "inverse-primary": "#95d4b3",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-background": "#001f29",
+                        "on-tertiary-container": "#93ad98",
+                        "on-surface-variant": "#414844",
+                        "surface-container": "#d8f2ff",
+                        "tertiary": "#152b1c",
+                        "outline-variant": "#c1c8c2",
+                        "surface-container-high": "#ccedfe",
+                        "primary-fixed": "#b1f0ce",
+                        "on-secondary-fixed": "#002113",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "tertiary-fixed": "#cee9d3",
+                        "surface-container-highest": "#c6e8f8",
+                        "on-tertiary-fixed-variant": "#354c3b",
+                        "on-surface": "#001f29",
+                        "on-primary-container": "#76b394",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#e6f6ff",
+                        "secondary-container": "#a1f4c8",
+                        "surface-variant": "#c6e8f8",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#2a4131",
+                        "on-tertiary-fixed": "#092012",
+                        "surface-tint": "#2c694e",
+                        "surface-bright": "#f3faff",
+                        "on-error-container": "#93000a",
+                        "surface": "#f3faff",
+                        "inverse-surface": "#123441",
+                        "background": "#f3faff",
+                        "surface-dim": "#bedfef",
+                        "primary-container": "#00452e",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#1b724f",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#a1f4c8",
+                        "outline": "#717973",
+                        "secondary-fixed-dim": "#86d7ad",
+                        "secondary": "#116c4a",
+                        "primary": "#002d1c",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#95d4b3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface min-h-screen pb-32">
+<!-- TopAppBar Section -->
+<header class="bg-[#f3faff]/70 backdrop-blur-md dark:bg-slate-900/70 docked full-width top-0 z-40 sticky">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high">
+<img alt="User profile photo" class="w-full h-full object-cover" data-alt="Professional headshot of a land surveyor in a natural outdoor setting, soft morning light, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRWqfFITQG0LFnEa9i-4gyVoi8ym_53nU7_mvsY-jv2kWlogfJY-rzddmy8xwe6LjF0Y-DNId1ixCSA_sqxMN116euSdO5tmPxN2EzLigCjNfXQlB29df6RxOB8Pn7T-PamGzK5daMI8S_lLkSj9_hh8T1mYD8BVrgLhMlOdDRafwgXj2PzJs5yVy0ArOXxduwOlglVRO8607uXdFhP8vOeihTWiBIOn-oGJcg_Pe01AmZHE6lQo5S4ZawkrlrRWjxsyS2nJgQZACN"/>
+</div>
+<h1 class="font-['Manrope'] font-bold tracking-tight text-3xl text-[#1B4332]">My Listings</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#1B4332] hover:opacity-80 transition-opacity">add_circle</button>
+</div>
+</div>
+<!-- Tabs Section (Contextual to My Listings) -->
+<div class="flex px-6 gap-8 border-none bg-surface-container-low/30">
+<button class="py-3 text-slate-500 font-semibold font-label text-sm transition-opacity hover:opacity-80">Published</button>
+<button class="py-3 text-[#1B4332] border-b-2 border-[#1B4332] font-semibold font-label text-sm">Drafts</button>
+<button class="py-3 text-slate-500 font-semibold font-label text-sm transition-opacity hover:opacity-80">Archived</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-8">
+<!-- Dashboard Overview / Summary -->
+<div class="mb-12">
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest mb-2">Inventory Overview</p>
+<h2 class="text-4xl font-headline font-extrabold text-primary tracking-tight">3 Drafts in Progress</h2>
+</div>
+<!-- Bento Grid for Draft Listings -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Draft Card 1: Green Valley Plot -->
+<div class="group bg-surface-container-lowest rounded-full overflow-hidden flex flex-col h-full shadow-[0px_20px_40px_rgba(0,31,41,0.04)]">
+<div class="relative h-64 overflow-hidden">
+<img alt="Green Valley Plot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="expansive rolling green hills in a valley under a soft morning mist, cinematic wide angle, landscape photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCqXumPdIIWYj1RCfPo5kbaOyPvjC4XuJUz8WWKKuvn2JbVbW8EvEwsBYqmzyb1bvua5Mw6FZms0-0umPhSQ9lC3r4nXTQ3qkHn4usneW-slVrdoRp-og4uGznjZSMGGDqf5BY_GqqLPv8hrMGr1CRjVs7Dz8l3QEOnmVq6YJi01Qd_TmO3HZkFCTgl9SAVW020BcoPaxDf6Go2TveQzFQO9gFaO5EKbCVVQ48yhVr-pHpaZEZq-Y8F-2oo7ngv0r7qLwC1SPx4Npt"/>
+<div class="absolute top-4 left-4 bg-primary/90 text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest glass-nav">
+                        Step 3 of 5
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow bg-surface-container-lowest">
+<h3 class="text-2xl font-headline font-bold text-primary mb-2">Green Valley Plot</h3>
+<div class="flex items-center gap-3 mb-6">
+<div class="flex-grow h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[60%]"></div>
+</div>
+<span class="font-label text-xs font-semibold text-secondary">60% Complete</span>
+</div>
+<p class="text-on-surface-variant font-body text-sm mb-8 leading-relaxed">Next: Add high-resolution media and panoramic drone footage of the valley floor.</p>
+<div class="mt-auto flex flex-col gap-3">
+<button class="horizon-gradient text-on-primary font-bold py-4 rounded-full w-full transition-opacity hover:opacity-90 flex items-center justify-center gap-2">
+                            Continue Editing
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="text-on-surface-variant font-semibold py-2 text-sm hover:text-error transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-base">delete</span>
+                            Delete Draft
+                        </button>
+</div>
+</div>
+</div>
+<!-- Draft Card 2: Sunset Ridge -->
+<div class="group bg-surface-container-lowest rounded-full overflow-hidden flex flex-col h-full shadow-[0px_20px_40px_rgba(0,31,41,0.04)]">
+<div class="relative h-64 overflow-hidden">
+<img alt="Sunset Ridge" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="rugged mountain ridge silhouetted against a vibrant orange and purple sunset sky, dramatic atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdd2FLZDDnjhsxuL2JcpJeaAAyKt9C16NeSlpraTuGh86WkUZAuAuTMQjZiceDNKmLEE2TVwyIzCfdt6pQGWjMldt1X0Ymyv-J5ylwKtHXqWAKXya05Bu6o2GCEZaqdfJ7Ha8zF6odNcFimdh1C-PdBgUtdFqx9d2xmsZFh8sEYQkhtY3wTjDIWPayhKlFASvC6pq6xoV2ECMR9WVo2h10vQ90nsq3zSu0qcKOrE5wO02h3t5B70sekrZR5SPYwsNWynF3c8KWYb8U"/>
+<div class="absolute top-4 left-4 bg-primary/90 text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest glass-nav">
+                        Step 1 of 5
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow bg-surface-container-lowest">
+<h3 class="text-2xl font-headline font-bold text-primary mb-2">Sunset Ridge</h3>
+<div class="flex items-center gap-3 mb-6">
+<div class="flex-grow h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[20%]"></div>
+</div>
+<span class="font-label text-xs font-semibold text-secondary">20% Complete</span>
+</div>
+<p class="text-on-surface-variant font-body text-sm mb-8 leading-relaxed">Next: Define exact GPS coordinates and property boundaries on the topographic map.</p>
+<div class="mt-auto flex flex-col gap-3">
+<button class="horizon-gradient text-on-primary font-bold py-4 rounded-full w-full transition-opacity hover:opacity-90 flex items-center justify-center gap-2">
+                            Continue Editing
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="text-on-surface-variant font-semibold py-2 text-sm hover:text-error transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-base">delete</span>
+                            Delete Draft
+                        </button>
+</div>
+</div>
+</div>
+<!-- Draft Card 3: Industrial Parcel -->
+<div class="group bg-surface-container-lowest rounded-full overflow-hidden flex flex-col h-full shadow-[0px_20px_40px_rgba(0,31,41,0.04)]">
+<div class="relative h-64 overflow-hidden">
+<img alt="Industrial Parcel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="flat industrial land site near urban infrastructure, clean geometric lines, bright daylight, editorial architectural style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL5jcXbBOt4z3S_T0HmJRFWxP9JIc8cWWSu267nzIcsZ3pujUifWam_XfodgbZSVcV99HHi5zs4-Z-PWMpQfUcNad4pm_Y53obnKXuNfgr1qzI2flowa04H0jP5MkskRx-aVg0ssxdy7WYr_1X21yHNYwhhz_sFD1IH1BzRiHdgzilFZVQ4DGRgGvrjvllN4y_NKBz6PGMvmpe1RRGOtnUc-rQ-5ptj-JGcj_XWYHPJI5lVaLq1xcPMiZh3Q2QAROhDukc74VioSXV"/>
+<div class="absolute top-4 left-4 bg-primary/90 text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest glass-nav">
+                        Step 4 of 5
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow bg-surface-container-lowest">
+<h3 class="text-2xl font-headline font-bold text-primary mb-2">Industrial Parcel</h3>
+<div class="flex items-center gap-3 mb-6">
+<div class="flex-grow h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[80%]"></div>
+</div>
+<span class="font-label text-xs font-semibold text-secondary">80% Complete</span>
+</div>
+<p class="text-on-surface-variant font-body text-sm mb-8 leading-relaxed">Next: Set final pricing structure, investment details, and listing availability dates.</p>
+<div class="mt-auto flex flex-col gap-3">
+<button class="horizon-gradient text-on-primary font-bold py-4 rounded-full w-full transition-opacity hover:opacity-90 flex items-center justify-center gap-2">
+                            Continue Editing
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="text-on-surface-variant font-semibold py-2 text-sm hover:text-error transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-base">delete</span>
+                            Delete Draft
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Section -->
+<nav class="fixed bottom-0 left-0 w-full bg-[#f3faff]/80 backdrop-blur-lg dark:bg-slate-950/80 z-50 rounded-t-2xl shadow-[0_-10px_30px_rgba(0,31,41,0.04)] flex justify-around items-center px-4 py-3 pb-6">
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-[#116c4a] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">explore</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-[#116c4a] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">terrain</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1B4332] bg-[#a1f4c8]/20 rounded-xl px-4 py-1" href="#">
+<span class="material-symbols-outlined mb-1">list_alt</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider">Listings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-[#116c4a] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>

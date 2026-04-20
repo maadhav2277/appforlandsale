@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Listings - The Topographic Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "surface-variant": "#c6e8f8",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "outline": "#717973",
+                        "secondary-container": "#a1f4c8",
+                        "primary": "#002d1c",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#001f29",
+                        "inverse-surface": "#123441",
+                        "surface-dim": "#bedfef",
+                        "secondary": "#116c4a",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#092012",
+                        "on-secondary-container": "#1b724f",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#b3cdb7",
+                        "on-surface-variant": "#414844",
+                        "surface-tint": "#2c694e",
+                        "secondary-fixed-dim": "#86d7ad",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#002113",
+                        "on-background": "#001f29",
+                        "primary-container": "#00452e",
+                        "tertiary-fixed": "#cee9d3",
+                        "on-tertiary-fixed-variant": "#354c3b",
+                        "surface": "#f3faff",
+                        "inverse-primary": "#95d4b3",
+                        "tertiary": "#152b1c",
+                        "surface-container": "#d8f2ff",
+                        "outline-variant": "#c1c8c2",
+                        "surface-container-high": "#ccedfe",
+                        "primary-fixed": "#b1f0ce",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-primary-fixed": "#002114",
+                        "inverse-on-surface": "#dff4ff",
+                        "tertiary-container": "#2a4131",
+                        "primary-fixed-dim": "#95d4b3",
+                        "on-tertiary-container": "#93ad98",
+                        "surface-container-low": "#e6f6ff",
+                        "secondary-fixed": "#a1f4c8",
+                        "background": "#f3faff",
+                        "on-primary-container": "#76b394",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#c6e8f8",
+                        "surface-bright": "#f3faff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            background: linear-gradient(180deg, #f3faff 0%, #e6f6ff 100%);
+        }
+        .horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        .glass-sheet {
+            background: rgba(243, 250, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen pb-24">
+<!-- TopAppBar Shell -->
+<header class="bg-[#f3faff]/70 dark:bg-[#001f29]/70 backdrop-blur-xl docked full-width top-0 z-50 shadow-[0px_20px_40px_rgba(0,31,41,0.06)] flex justify-between items-center px-6 py-4 w-full sticky">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#1B4332] dark:text-[#a1f4c8]" data-icon="landscape">landscape</span>
+<h1 class="font-['Manrope'] font-extrabold text-[#1B4332] dark:text-[#a1f4c8] tracking-tighter text-lg">The Topographic Editorial</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-['Manrope'] font-bold tracking-tight text-lg text-[#1B4332] dark:text-[#a1f4c8] hidden md:block">My Holdings</span>
+<div class="w-10 h-10 rounded-full horizon-gradient flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="professional male headshot portrait with soft natural lighting and blurred office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACIY-hqO7w1o0FmAclHrUJfBsiLz7gyiCIXrWNha5tY6_GFbNMPD4FrXSMjRzMMZoVPw7Il4X-hUjBwHhoUnOgO0VdaDGIhqGDm-E2zmuNzWJ7CFYrF227gxQ1IwFiJ3udBc1P-h81QUq2HTb_rEjJm_brRLOsxPYrYqL-Xl6D6RsNz6L0ScwofuPJkBVp3rwNiTBYdNx1ZrJQ9m4oB8vfmMqiyNZZOU79ee-PuIW0m-6BJM-_3g6E26aiP60cP0FvuVeI_lH_lJ0G"/>
+</div>
+</div>
+</header>
+<!-- Content Canvas (Subtly Blurred for Menu) -->
+<main class="px-6 py-8 max-w-5xl mx-auto filter blur-[2px] transition-all duration-500">
+<header class="mb-10">
+<h2 class="font-headline font-extrabold text-4xl text-primary tracking-tight mb-2">My Listings</h2>
+<p class="text-on-surface-variant font-medium">Manage your active plots and surveying inventory.</p>
+</header>
+<!-- Listing Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Active Listing Card (The one being managed) -->
+<div class="bg-surface-container-low rounded-xl p-4 transition-all duration-300">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<div class="h-56 w-full relative">
+<img class="w-full h-full object-cover" data-alt="expansive green pasture under a clear blue sky with a distant mountain range at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQCZeQgLxAoL5KyhOTX8xvrSFPKTeNxyDY-ks0oz-G3PKr3bpxdF143p1ZxqA-egCS4VMHrAfqFKprrNmSzvDbCI6MJBMSOj7W74uvbo-8a48BmqUu5tJhq33q_BnoEqpfP1toDg_28vhxQu8zHPmbxswq2F-vFs-LD6rEy7Vbj09Jg918Yl3eJ6LL9bYNzAt78jK4UzJvhzyWmSXfJ2hRcszdIHG_BTrx-C61WzQ1DMM6Bykv3yQCuzyab4KQVBAQcQ4BJABYeAGK"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-[10px] font-label font-bold uppercase tracking-wider text-secondary">Active</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline font-bold text-xl text-primary mb-1">Whispering Pines Estate</h3>
+<p class="font-label text-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                                    Oregon High Desert, Plot 402
+                                </p>
+</div>
+<button class="p-2 hover:bg-surface-container rounded-full transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+<div class="flex gap-6 mb-6">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase text-outline tracking-widest">Acreage</span>
+<span class="font-headline font-bold text-lg">120.5</span>
+</div>
+<div class="flex flex-col border-l border-outline-variant/20 pl-6">
+<span class="font-label text-[10px] uppercase text-outline tracking-widest">Valuation</span>
+<span class="font-headline font-bold text-lg">$1.2M</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Second Card for context -->
+<div class="bg-surface-container-low rounded-xl p-4 transition-all duration-300 opacity-60">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<div class="h-56 w-full relative">
+<img class="w-full h-full object-cover" data-alt="majestic alpine lake surrounded by rocky mountains and evergreen trees in crisp daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsOrYcaZ0xKzKok6gmUTCJbcNHUF11odAlpdP9wCNYrmSdOoU2kdhZDM5nTdkB-8qONcb9XzThRa_ITmZxBVoS_g3sESM_-reJBGFLJ0hD8QMg6U7Lv-fnQ5WEowyoJDFh5qF0MUUYHGMXcR0Ftr5k7U_UfnDtSpJ4j8HW_QlXevsTGBeK4AJMskvjGkMFwWfnJ1GBlxfs9i5hPrlsSVIrA5vMnIBI0XggAMghxL7HzGDZr_LGomPBT71d5tOLcpz5Ifnivy3v668a"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline font-bold text-xl text-primary mb-1">Obsidian Peak Plot</h3>
+<p class="font-label text-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                                    Colorado Rockies, NW-12
+                                </p>
+</div>
+<button class="p-2 hover:bg-surface-container rounded-full transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+<div class="flex gap-6">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase text-outline tracking-widest">Acreage</span>
+<span class="font-headline font-bold text-lg">45.2</span>
+</div>
+<div class="flex flex-col border-l border-outline-variant/20 pl-6">
+<span class="font-label text-[10px] uppercase text-outline tracking-widest">Valuation</span>
+<span class="font-headline font-bold text-lg">$890K</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Sheet Overlay / Backdrop -->
+<div class="fixed inset-0 bg-primary/20 backdrop-blur-[4px] z-[60] flex items-end">
+<!-- Bottom Sheet Content -->
+<div class="w-full max-w-xl mx-auto bg-surface-container-lowest rounded-t-[2.5rem] shadow-[0_-20px_50px_rgba(0,31,41,0.15)] overflow-hidden">
+<!-- Grabber -->
+<div class="w-full flex justify-center pt-4 pb-2">
+<div class="w-12 h-1.5 bg-surface-container-highest rounded-full"></div>
+</div>
+<!-- Header Section -->
+<div class="px-8 pt-6 pb-4 border-b border-surface-container">
+<h4 class="font-headline font-extrabold text-2xl text-primary tracking-tight">Whispering Pines Estate</h4>
+<p class="font-label text-sm text-on-surface-variant">Listing ID: #WP-402-24</p>
+</div>
+<!-- Menu Options -->
+<div class="px-4 py-6 space-y-2">
+<!-- Pause Listing -->
+<button class="w-full flex items-center justify-between p-4 rounded-full hover:bg-surface-container-low transition-all duration-300 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary group-hover:bg-white group-hover:shadow-sm transition-all">
+<span class="material-symbols-outlined" data-icon="pause_circle">pause_circle</span>
+</div>
+<div class="text-left">
+<span class="block font-headline font-bold text-primary">Pause Listing</span>
+<span class="block font-label text-xs text-on-surface-variant">Temporarily hide from public view</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<!-- Mark as Sold -->
+<button class="w-full flex items-center justify-between p-4 rounded-full hover:bg-surface-container-low transition-all duration-300 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary group-hover:bg-white group-hover:shadow-sm transition-all">
+<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+</div>
+<div class="text-left">
+<span class="block font-headline font-bold text-primary">Mark as Sold</span>
+<span class="block font-label text-xs text-on-surface-variant">Close listing and notify interested buyers</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<!-- Duplicate -->
+<button class="w-full flex items-center justify-between p-4 rounded-full hover:bg-surface-container-low transition-all duration-300 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary group-hover:bg-white group-hover:shadow-sm transition-all">
+<span class="material-symbols-outlined" data-icon="content_copy">content_copy</span>
+</div>
+<div class="text-left">
+<span class="block font-headline font-bold text-primary">Duplicate</span>
+<span class="block font-label text-xs text-on-surface-variant">Create a new draft with these details</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<!-- Delete -->
+<button class="w-full flex items-center justify-between p-4 rounded-full hover:bg-error-container/20 transition-all duration-300 group mt-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-error-container/40 flex items-center justify-center text-error">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</div>
+<div class="text-left">
+<span class="block font-headline font-bold text-error">Delete Listing</span>
+<span class="block font-label text-xs text-on-error-container/70">Permanently remove this plot from record</span>
+</div>
+</div>
+</button>
+</div>
+<!-- Bottom Spacer for Home Indicator -->
+<div class="h-8"></div>
+</div>
+</div>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-white/80 dark:bg-[#001f29]/80 backdrop-blur-2xl shadow-[0_-10px_30px_rgba(0,31,41,0.04)] docked full-width rounded-t-3xl border-t-0">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 tap-highlight-none transition-all duration-300 ease-out hover:text-[#1B4332] dark:hover:text-[#a1f4c8]" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-['Inter'] font-medium text-[11px]">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#e6f6ff] dark:bg-[#1B4332]/30 text-[#1B4332] dark:text-[#a1f4c8] rounded-2xl px-5 py-2 tap-highlight-none transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="layers" style="font-variation-settings: 'FILL' 1;">layers</span>
+<span class="font-['Inter'] font-medium text-[11px]">Listings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 tap-highlight-none transition-all duration-300 ease-out hover:text-[#1B4332] dark:hover:text-[#a1f4c8]" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] font-medium text-[11px]">Insights</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 tap-highlight-none transition-all duration-300 ease-out hover:text-[#1B4332] dark:hover:text-[#a1f4c8]" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-['Inter'] font-medium text-[11px]">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Listings - The Digital Surveyor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "surface-dim": "#bedfef",
+                        "on-secondary-fixed-variant": "#005236",
+                        "surface-container-highest": "#c6e8f8",
+                        "on-tertiary-container": "#93ad98",
+                        "inverse-surface": "#123441",
+                        "surface-tint": "#2c694e",
+                        "surface-container-high": "#ccedfe",
+                        "on-primary-container": "#76b394",
+                        "background": "#f3faff",
+                        "surface-container": "#d8f2ff",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#e6f6ff",
+                        "inverse-primary": "#95d4b3",
+                        "on-tertiary-fixed-variant": "#354c3b",
+                        "outline-variant": "#c1c8c2",
+                        "on-primary": "#ffffff",
+                        "primary": "#002d1c",
+                        "primary-fixed-dim": "#95d4b3",
+                        "surface": "#f3faff",
+                        "on-surface": "#001f29",
+                        "surface-variant": "#c6e8f8",
+                        "surface-bright": "#f3faff",
+                        "on-secondary-fixed": "#002113",
+                        "on-primary-fixed": "#002114",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#b1f0ce",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#cee9d3",
+                        "secondary": "#116c4a",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#b3cdb7",
+                        "tertiary": "#152b1c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#001f29",
+                        "secondary-fixed-dim": "#86d7ad",
+                        "primary-container": "#00452e",
+                        "on-tertiary-fixed": "#092012",
+                        "secondary-container": "#a1f4c8",
+                        "tertiary-container": "#2a4131",
+                        "on-secondary-container": "#1b724f",
+                        "outline": "#717973",
+                        "inverse-on-surface": "#dff4ff",
+                        "secondary-fixed": "#a1f4c8",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#414844"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            background-color: #f3faff;
+        }
+        .horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        .ghost-border {
+            border: 1px solid rgba(193, 200, 194, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#f3faff]/70 backdrop-blur-xl docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:bg-[#1B4332]/5 transition-colors p-2 rounded-full active:scale-95 duration-150 flex items-center justify-center">
+<span class="material-symbols-outlined text-[#1B4332]" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold tracking-tight text-on-surface text-xl">My Listings</h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="hover:bg-[#1B4332]/5 transition-colors p-2 rounded-full active:scale-95 duration-150 flex items-center justify-center">
+<span class="material-symbols-outlined text-[#1B4332]" data-icon="add">add</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-secondary-container">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="Close-up professional portrait of a land developer with a friendly expression, natural outdoor lighting with soft focus greenery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADQezdg62HHuM-XIk_xeSL6N3KbxXM15QtleUfj9W4z0oXxCi-LS1bglxT-W6PGo-wsgY2pYJLW33H1YZjUqhBz-FoKZS5wuhMJR5YK5o2NBcVBPMpqqxc81YtUQ_X78Cn6ZZEu8KHR-75PmNaVze8NEc25KjDuY1qG-MuesW5S2N9ctV8qL3AgSFOV0dnmPA1EVuVM_k0Pxm0mRI8km5POyqRmY7LtyA4eLM0j1GkrxtDrmO-xjTEI69S1Lpue-3JJPzV2fzQwTqY"/>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 mt-8">
+<!-- Tabs Navigation -->
+<nav class="flex items-center space-x-8 mb-10 overflow-x-auto whitespace-nowrap scrollbar-hide">
+<button class="relative pb-4 text-primary font-bold border-b-2 border-primary">
+                Active
+            </button>
+<button class="pb-4 text-on-surface-variant font-medium hover:text-primary transition-colors">
+                Draft
+            </button>
+<button class="pb-4 text-on-surface-variant font-medium hover:text-primary transition-colors">
+                Sold
+            </button>
+<button class="pb-4 text-on-surface-variant font-medium hover:text-primary transition-colors">
+                Expired
+            </button>
+</nav>
+<!-- Bento Grid / Listing Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Property Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_20px_40px_rgba(0,31,41,0.06)] flex flex-col group">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Emerald Highland Estate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Wide expansive aerial view of rolling green hills and lush forest under a clear blue sky at midday, sharp landscape photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2d92HJX892uKI_fFpfKJSty5sRaljZcb4olhE3R3b6wYCbc8rfTPelp2Xhs0A2DAugH6MMibgcc-kNX3M7HuSNhWvHw3WIiN19SByZd-N2rK-riMnaaDHhKsyG0dmezIpRzo97U5yVo4aqsptmVFUnKe6kBonOTflV8vuBQiV2UPUBsPWXPdkOI-BP9SBvJhHElgdIKxiWWiBioWOP1DoptznW57uCFQLPE04WxeoM-f0eGs1LaILvrxLwKo7hGOntrNFp5c9M5hP"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md text-[10px] font-bold tracking-widest uppercase">
+                        ACTIVE
+                    </div>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-bold text-lg text-primary leading-tight">Emerald Highland Estate</h3>
+<span class="font-label font-semibold text-primary">$450,000</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-sm mb-6">
+<span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span>
+<span>Cascades, WA</span>
+</div>
+<!-- Stats Row -->
+<div class="flex items-center justify-between py-4 border-y border-outline-variant/15 mb-6">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="square_foot">square_foot</span>
+<span class="font-label text-[11px] font-semibold text-on-surface">2.5 Acres</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="visibility">visibility</span>
+<span class="font-label text-[11px] font-semibold text-on-surface">1.2k Views</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="group">group</span>
+<span class="font-label text-[11px] font-semibold text-on-surface">45 Leads</span>
+</div>
+</div>
+<!-- Actions Row -->
+<div class="flex items-center gap-2 mt-auto">
+<button class="ghost-border py-2 rounded-xl text-xs font-bold text-primary hover:bg-surface-container-low transition-colors flex-1 px-2">
+                            Edit
+                        </button>
+<button class="ghost-border py-2 rounded-xl text-xs font-bold text-primary hover:bg-surface-container-low transition-colors flex-1 px-2">
+                            Pause
+                        </button><button class="bg-secondary-container px-3 py-2 rounded-xl text-xs font-bold text-on-secondary-container hover:opacity-90 transition-opacity flex-1 px-2">Analytics</button>
+<button class="horizon-gradient py-2 rounded-xl text-xs font-bold text-on-primary hover:opacity-90 transition-opacity flex-1 px-2">
+                            Promote
+                        </button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Property Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_20px_40px_rgba(0,31,41,0.06)] flex flex-col group">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Alpine Vista Plot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Majestic mountain peaks with snow caps under a vibrant sunset with purple and orange hues, foreground features rocky alpine terrain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8HKjxsQCrnPwH1oDZdQLlkck3zi_QGg1KtQJf4Ma3s-0mT4ko6S0za7bSQUaSR7q0c2Eikpcbw-Z_rtmoDssOrXBs8GREUU9-ixDKsyv2RjBUSwkYSdlMY3ypOZIaa1kpdh7gZw5fvzOnX8KzY--n7PYhXqJ7MIAgRrB9KqIJb9zHoURZaSpsrZPrCTzzmebENiAnjAfxFZ1gysoEojO9OHp7wKgt_KvhFqwaqiR_gFkdp0s14M5RI_9y4STTw8bLlPpInc5lhirs"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md text-[10px] font-bold tracking-widest uppercase">
+                        ACTIVE
+                    </div>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-bold text-lg text-primary leading-tight">Alpine Vista Plot</h3>
+<span class="font-label font-semibold text-primary">$285,000</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-sm mb-6">
+<span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span>
+<span>Aspen Grove, CO</span>
+</div>
+<div class="flex items-center justify-between py-4 border-y border-outline-variant/15 mb-6">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="square_foot">square_foot</span>
+<span class="font-label text-[11px] font-semibold text-on-surface">5.0 Acres</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="visibility">visibility</span>
+<span class="font-label text-[11px] font-semibold text-on-surface">890 Views</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="group">group</span>
+<span class="font-label text-[11px] font-semibold text-on-surface">22 Leads</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-auto">
+<button class="ghost-border py-2 rounded-xl text-xs font-bold text-primary hover:bg-surface-container-low transition-colors flex-1 px-2">
+                            Edit
+                        </button>
+<button class="ghost-border py-2 rounded-xl text-xs font-bold text-primary hover:bg-surface-container-low transition-colors flex-1 px-2">
+                            Pause
+                        </button><button class="bg-secondary-container px-3 py-2 rounded-xl text-xs font-bold text-on-secondary-container hover:opacity-90 transition-opacity flex-1 px-2">Analytics</button>
+<button class="horizon-gradient py-2 rounded-xl text-xs font-bold text-on-primary hover:opacity-90 transition-opacity flex-1 px-2">
+                            Promote
+                        </button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Property Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_20px_40px_rgba(0,31,41,0.06)] flex flex-col group">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Canyon River Bend" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A deep winding river cutting through a dramatic red rock canyon at dusk with warm atmospheric lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBplN3i_ES8G-6O6k9T4ke_wkUewgO_nEr_eT4g7ed3wQ4H249E5SbJsVLE7yq2F3IWG5GV0ue5ZVsLz4ncGabvtx7iyNrZrSbdgsV-sNDgKUkSo0FWqagLvLovkFoD432MKTX_rk7jD61vLJpetG6Cwkh0L2qBwrk3vApBdMsUe-AFQaVJcFGDCTFe5EPijdREdz3ajRGkU9SMDUjC3RCB4-zfok2cbE9Wq6E6rYbd-aDWYXZhoqJk_EfKetnf33YYHnrSP5Shi5lx"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md text-[10px] font-bold tracking-widest uppercase">
+                        ACTIVE
+                    </div>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-bold text-lg text-primary leading-tight">Canyon River Bend</h3>
+<span class="font-label font-semibold text-primary">$1,200,000</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-sm mb-6">
+<span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span>
+<span>Moab, UT</span>
+</div>
+<div class="flex items-center justify-between py-4 border-y border-outline-variant/15 mb-6">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="square_foot">square_foot</span>
+<span class="font-label text-[11px] font-semibold text-on-surface">12.2 Acres</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="visibility">visibility</span>
+<span class="font-label text-[11px] font-semibold text-on-surface">3.4k Views</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="group">group</span>
+<span class="font-label text-[11px] font-semibold text-on-surface">112 Leads</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-auto">
+<button class="ghost-border py-2 rounded-xl text-xs font-bold text-primary hover:bg-surface-container-low transition-colors flex-1 px-2">
+                            Edit
+                        </button>
+<button class="ghost-border py-2 rounded-xl text-xs font-bold text-primary hover:bg-surface-container-low transition-colors flex-1 px-2">
+                            Pause
+                        </button><button class="bg-secondary-container px-3 py-2 rounded-xl text-xs font-bold text-on-secondary-container hover:opacity-90 transition-opacity flex-1 px-2">Analytics</button>
+<button class="horizon-gradient py-2 rounded-xl text-xs font-bold text-on-primary hover:opacity-90 transition-opacity flex-1 px-2">
+                            Promote
+                        </button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination or Load More (Editorial Style) -->
+<div class="mt-16 flex flex-col items-center">
+<p class="text-on-surface-variant font-label text-xs mb-4">Showing 3 of 14 Active Listings</p>
+<button class="ghost-border px-10 py-3 rounded-full text-sm font-bold text-primary hover:bg-surface-container-high transition-colors">
+                Load More
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-6 bg-white dark:bg-slate-900 rounded-t-[24px] z-50 shadow-[0px_-10px_30px_rgba(0,31,41,0.04)]">
+<div class="flex flex-col items-center justify-center text-[#001f29]/60 dark:text-slate-400 px-5 py-2 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/60 dark:text-slate-400 px-5 py-2 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#001f29]/60 dark:text-slate-400 px-5 py-2 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Inquiries</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#a1f4c8] dark:bg-[#1B4332] text-[#002d1c] dark:text-[#a1f4c8] rounded-[16px] px-5 py-2 active:scale-98 duration-200">
+<span class="material-symbols-outlined" data-icon="add_box">add_box</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Sell</span>
+</div>
+</nav>
+</body></html>

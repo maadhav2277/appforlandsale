@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#00452e",
+                    "surface-bright": "#f3faff",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "inverse-primary": "#95d4b3",
+                    "on-secondary-container": "#1b724f",
+                    "tertiary-container": "#2a4131",
+                    "secondary-fixed": "#a1f4c8",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "surface-container-high": "#ccedfe",
+                    "surface-container": "#d8f2ff",
+                    "background": "#f3faff",
+                    "inverse-surface": "#123441",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-background": "#001f29",
+                    "inverse-on-surface": "#dff4ff",
+                    "tertiary": "#152b1c",
+                    "surface": "#f3faff",
+                    "on-surface": "#001f29",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "on-primary-container": "#76b394",
+                    "primary": "#002d1c",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#95d4b3",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#c6e8f8",
+                    "primary-fixed": "#b1f0ce",
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#a1f4c8",
+                    "on-secondary-fixed": "#002113",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-surface-variant": "#414844",
+                    "outline-variant": "#c1c8c2",
+                    "on-tertiary-fixed": "#092012",
+                    "surface-dim": "#bedfef",
+                    "on-primary": "#ffffff",
+                    "outline": "#717973",
+                    "surface-container-low": "#e6f6ff",
+                    "on-tertiary-container": "#93ad98",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#2c694e",
+                    "on-primary-fixed": "#002114",
+                    "surface-container-highest": "#c6e8f8",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#116c4a",
+                    "tertiary-fixed": "#cee9d3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-fixed">
+<header class="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#1B4332]" data-icon="arrow_back">arrow_back</span>
+<h1 class="font-manrope font-bold tracking-tight text-lg text-[#1B4332]">Renew Listing</h1>
+</div>
+<div class="text-xl font-manrope font-extrabold tracking-tighter text-[#1B4332]">TERRA NOVA</div>
+</div>
+</header>
+<main class="min-h-screen pt-24 pb-12 flex flex-col items-center justify-center px-6">
+<div class="w-full max-w-2xl">
+<div class="bg-surface-container-low rounded-[32px] p-1 overflow-hidden">
+<div class="bg-surface-container-lowest rounded-[28px] p-8 md:p-12 flex flex-col items-center text-center">
+<div class="relative mb-8">
+<div class="absolute inset-0 bg-secondary-container/30 blur-3xl rounded-full"></div>
+<div class="relative w-24 h-24 bg-secondary-container rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined !text-5xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary tracking-tight mb-4">Listing Renewed</h2>
+<p class="text-on-surface-variant text-lg max-w-md leading-relaxed mb-10">
+                        Highland Vista Estate is now live and visible to buyers. Your property footprint has been updated across our global marketplace.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-10">
+<div class="bg-surface-container rounded-xl p-6 flex flex-col items-center justify-center border border-outline-variant/10">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">Duration</span>
+<span class="font-headline text-2xl font-bold text-primary">60 Days</span>
+</div>
+<div class="bg-surface-container rounded-xl p-6 flex flex-col items-center justify-center border border-outline-variant/10">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">Expiry Date</span>
+<span class="font-headline text-2xl font-bold text-primary">Oct 24, 2024</span>
+</div>
+</div>
+<div class="w-full h-48 rounded-2xl overflow-hidden mb-10 relative">
+<img alt="Aerial view of Highland Vista Estate" class="w-full h-full object-cover" data-alt="Stunning aerial view of a vast green rolling hill landscape under a soft morning mist with golden sunlight filtering through clouds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf3IlohsUFIBvLOlAu0DpVEtgQWAOt-yWpvNV1sbRMjIFEsGeqxXd1R1D9BTw6Dw6uvbHnObrKA7D0FNys6AqBm3nJTb1DUYOnuQbuvzaznWKOWkCEkv3KfFmWR5XGgFYgZ4uoeG0lRlJKtndUnFzZxXObv0z_ET-NMS5BOyJSgefhInBTF1DqbnDNp3Bxatz7gAFl1ju34y9TyBahkiX3x2NkknVec3WoSx4H6wZPjAGpjuZ_Pf3jmDMw5Jw4J1K6WGht_X8q7FtL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<div class="absolute bottom-4 left-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-white text-sm" data-icon="location_on">location_on</span>
+<span class="text-white font-label text-sm font-semibold tracking-wide">Highland Vista Estate • Montana</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full">
+<button class="flex-1 hero-gradient text-on-primary font-headline font-bold py-4 px-8 rounded-xl active:scale-95 transition-all duration-150">
+                            Back to My Listings
+                        </button>
+<button class="flex-1 bg-transparent border border-outline-variant/20 text-on-secondary-container font-headline font-bold py-4 px-8 rounded-xl hover:bg-surface-container-high active:scale-95 transition-all duration-150">
+                            View Live Listing
+                        </button>
+</div>
+</div>
+</div>
+<div class="mt-8 flex items-center justify-center gap-8">
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="material-symbols-outlined text-primary-fixed-dim" data-icon="share">share</span>
+<span class="font-label text-sm font-semibold text-on-surface-variant group-hover:text-primary transition-colors">Share Listing</span>
+</div>
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="material-symbols-outlined text-primary-fixed-dim" data-icon="analytics">analytics</span>
+<span class="font-label text-sm font-semibold text-on-surface-variant group-hover:text-primary transition-colors">Performance Insights</span>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 w-full z-50 bg-[#ffffff] shadow-[0px_-10px_30px_rgba(0,31,41,0.04)] rounded-t-[24px] md:hidden">
+<div class="flex justify-around items-center px-4 pt-3 pb-6">
+<div class="flex flex-col items-center justify-center text-slate-400">
+<span class="material-symbols-outlined" data-icon="landscape">landscape</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest mt-1">Portfolio</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest mt-1">Map</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest mt-1">Insights</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest mt-1">Settings</span>
+</div>
+</div>
+</div>
+</body></html>
