@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Verify Phone | Terrane</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#86d7ad",
+                    "secondary-container": "#a1f4c8",
+                    "on-secondary-container": "#1b724f",
+                    "surface-container-low": "#e6f6ff",
+                    "surface-container": "#d8f2ff",
+                    "surface": "#f3faff",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#002113",
+                    "on-surface": "#001f29",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#00452e",
+                    "on-tertiary-container": "#93ad98",
+                    "on-background": "#001f29",
+                    "surface-variant": "#c6e8f8",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-tertiary-fixed": "#092012",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#c6e8f8",
+                    "outline-variant": "#c1c8c2",
+                    "primary-fixed": "#b1f0ce",
+                    "on-primary": "#ffffff",
+                    "on-primary-container": "#76b394",
+                    "inverse-primary": "#95d4b3",
+                    "primary": "#002d1c",
+                    "background": "#f3faff",
+                    "surface-bright": "#f3faff",
+                    "surface-tint": "#2c694e",
+                    "primary-fixed-dim": "#95d4b3",
+                    "inverse-surface": "#123441",
+                    "inverse-on-surface": "#dff4ff",
+                    "tertiary-fixed": "#cee9d3",
+                    "outline": "#717973",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "on-surface-variant": "#414844",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#a1f4c8",
+                    "surface-container-high": "#ccedfe",
+                    "tertiary-container": "#2a4131",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "tertiary": "#152b1c",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#bedfef",
+                    "on-primary-fixed": "#002114",
+                    "on-error-container": "#93000a",
+                    "secondary": "#116c4a",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .otp-shadow {
+            box-shadow: 0px 20px 40px rgba(0, 31, 41, 0.06);
+        }
+        .horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col items-center selection:bg-secondary-container">
+<!-- Top Navigation (Transactional Style) -->
+<header class="w-full max-w-7xl px-6 py-6 flex items-center justify-between">
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<span class="text-sm font-label font-bold tracking-[0.2em] uppercase text-primary/40">Step 02/03</span>
+<div class="w-12"></div> <!-- Spacer for balance -->
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 w-full max-w-md px-6 flex flex-col justify-center pb-20">
+<!-- Decorative Editorial Element -->
+<div class="mb-10 relative">
+<div class="aspect-[4/3] w-full rounded-full overflow-hidden mb-8">
+<img class="w-full h-full object-cover" data-alt="Minimalist top-down view of a rolling green hills landscape with a singular winding dirt path, soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwzY79NljJP1kJ9Xqzm1fviFhRf7FjKisKx7JPnAPRC_WSYmaOCr5p6fcQq19EiGb4Ly05gRyKEQbd1skx22S35tMPto5X2AnvdZwR691AZULHFL2kT5y8W84U8crKvcYz-HZjv7NAiISE0Qcoykq0y3nUnwQE70r_1SDPOq9eEWl2JfFMO442Ad9brN1YDgbGvpUdBbbmMFMwsMtNnmmfMPn_JUF18uQ4eI62DDb2YKWvtSi4_f3ABM5aQoir9HEyl4LZxGK2DZad"/>
+</div>
+<!-- Glassmorphism Badge -->
+<div class="absolute -bottom-4 right-4 bg-surface/70 backdrop-blur-xl px-4 py-3 rounded-xl otp-shadow border border-white/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="text-[10px] font-label font-bold uppercase tracking-wider text-on-surface-variant">Secure Session</span>
+</div>
+</div>
+</div>
+<!-- Typography Section -->
+<div class="space-y-3 mb-10">
+<h1 class="text-4xl font-headline font-extrabold tracking-tighter text-primary leading-tight">
+                Verify Phone
+            </h1>
+<p class="text-body-md text-on-surface-variant leading-relaxed opacity-80">
+                Enter the 6-digit code sent to <span class="font-bold text-on-surface">+1 (555) 000-0000</span>.
+            </p>
+</div>
+<!-- Verification Form -->
+<div class="space-y-8">
+<!-- OTP Inputs -->
+<div class="grid grid-cols-6 gap-3">
+<input class="w-full aspect-square text-center text-2xl font-headline font-bold rounded-xl bg-surface-container-lowest border-none ring-0 focus:ring-2 focus:ring-secondary/20 otp-shadow text-primary placeholder:text-outline-variant" maxlength="1" placeholder="•" type="text"/>
+<input class="w-full aspect-square text-center text-2xl font-headline font-bold rounded-xl bg-surface-container-lowest border-none ring-0 focus:ring-2 focus:ring-secondary/20 otp-shadow text-primary placeholder:text-outline-variant" maxlength="1" placeholder="•" type="text"/>
+<input class="w-full aspect-square text-center text-2xl font-headline font-bold rounded-xl bg-surface-container-lowest border-none ring-0 focus:ring-2 focus:ring-secondary/20 otp-shadow text-primary placeholder:text-outline-variant" maxlength="1" placeholder="•" type="text"/>
+<input class="w-full aspect-square text-center text-2xl font-headline font-bold rounded-xl bg-surface-container-lowest border-none ring-0 focus:ring-2 focus:ring-secondary/20 otp-shadow text-primary placeholder:text-outline-variant" maxlength="1" placeholder="•" type="text"/>
+<input class="w-full aspect-square text-center text-2xl font-headline font-bold rounded-xl bg-surface-container-lowest border-none ring-0 focus:ring-2 focus:ring-secondary/20 otp-shadow text-primary placeholder:text-outline-variant" maxlength="1" placeholder="•" type="text"/>
+<input class="w-full aspect-square text-center text-2xl font-headline font-bold rounded-xl bg-surface-container-lowest border-none ring-0 focus:ring-2 focus:ring-secondary/20 otp-shadow text-primary placeholder:text-outline-variant" maxlength="1" placeholder="•" type="text"/>
+</div>
+<!-- Resend Section -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-xs font-label font-semibold text-on-surface-variant">Waiting for SMS...</span>
+</div>
+<button class="text-xs font-label font-bold text-on-surface-variant/40 cursor-not-allowed">
+                    Resend Code (0:59)
+                </button>
+</div>
+<!-- Primary Action -->
+<div class="space-y-6">
+<button class="w-full py-5 rounded-full horizon-gradient text-on-primary font-headline font-bold tracking-wide text-lg shadow-xl shadow-primary/10 active:scale-[0.98] transition-all duration-300">
+                    Verify
+                </button>
+<!-- Secondary Support Link -->
+<p class="text-center text-xs font-label text-on-surface-variant/60">
+                    Having trouble? <a class="text-on-primary-fixed-variant underline underline-offset-4 hover:text-primary transition-colors" href="#">Contact Support</a>
+</p>
+</div>
+</div>
+</main>
+<!-- Subtle Topographic Texture Overlay (Simulated via SVG Pattern) -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] z-[-1]" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxdwp1D480d7ej4UW1klLY_6huOp3Jbq_fl9Ksu7fiLtMjEXKcSwE6zsBvfbyKhAHNbmCm6j7pzOsJxEGM_2HGYTLATNL691NxhzZ0Mma7xNGnfZ2hy3wUm-_VfNbpCH09aEWFPDgnDcwUCkxv_icYVx71jCUkgJ_HvT2qZjdsQCCx28zzd-8TCljM34b57tTJsq8coUU8M6sLOtdUIgtzf4ja_2AVJU8BvmbSiRF81xFgVMHBVEia_-MvJmFRs4eJE75PCxz3P9_7');"></div>
+</body></html>
