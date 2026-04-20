@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#2c694e",
+                        "tertiary-fixed": "#cee9d3",
+                        "secondary": "#116c4a",
+                        "surface-container-highest": "#c6e8f8",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#002114",
+                        "surface-container-low": "#e6f6ff",
+                        "on-tertiary-container": "#93ad98",
+                        "outline": "#717973",
+                        "surface-dim": "#bedfef",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c1c8c2",
+                        "on-tertiary-fixed": "#092012",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#002113",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#a1f4c8",
+                        "on-surface-variant": "#414844",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#95d4b3",
+                        "primary": "#002d1c",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#c6e8f8",
+                        "primary-fixed": "#b1f0ce",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#001f29",
+                        "surface": "#f3faff",
+                        "tertiary-fixed-dim": "#b3cdb7",
+                        "on-primary-container": "#76b394",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "on-background": "#001f29",
+                        "on-secondary-fixed-variant": "#005236",
+                        "inverse-surface": "#123441",
+                        "tertiary": "#152b1c",
+                        "inverse-on-surface": "#dff4ff",
+                        "on-tertiary-fixed-variant": "#354c3b",
+                        "tertiary-container": "#2a4131",
+                        "secondary-fixed": "#a1f4c8",
+                        "background": "#f3faff",
+                        "surface-container-high": "#ccedfe",
+                        "surface-container": "#d8f2ff",
+                        "surface-bright": "#f3faff",
+                        "primary-container": "#00452e",
+                        "on-secondary-container": "#1b724f",
+                        "inverse-primary": "#95d4b3",
+                        "secondary-fixed-dim": "#86d7ad"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .label-text { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-white/70 backdrop-blur-md dark:bg-slate-950/70 docked full-width top-0 sticky z-50 shadow-[0px_20px_40px_rgba(0,31,41,0.06)]">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors p-2 rounded-full active:opacity-80 active:scale-95">
+<span class="material-symbols-outlined text-[#002d1c] dark:text-[#a1f4c8]">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold tracking-tight text-lg text-[#002d1c] dark:text-[#a1f4c8]">Edit Property</h1>
+</div>
+<button class="font-['Manrope'] font-semibold text-[#002d1c] dark:text-[#a1f4c8] hover:bg-slate-100 dark:hover:bg-slate-800 px-4 py-2 rounded-xl transition-all active:scale-95">
+                Save
+            </button>
+</div>
+<div class="bg-slate-100 dark:bg-slate-800 h-[1px] w-full"></div>
+</header>
+<main class="max-w-4xl mx-auto px-4 py-8 space-y-6">
+<!-- Collapsed: Land Characteristics -->
+<section class="bg-surface-container-low rounded-xl overflow-hidden group hover:bg-surface-container transition-colors cursor-pointer">
+<div class="px-6 py-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">landscape</span>
+</div>
+<h2 class="text-on-surface font-semibold text-lg">Land Characteristics</h2>
+</div>
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</section>
+<!-- Expanded: Location Details -->
+<section class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/10 shadow-[0px_20px_40px_rgba(0,31,41,0.04)]">
+<div class="px-6 py-5 flex items-center justify-between bg-surface-container">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<h2 class="text-on-surface font-bold text-lg">Location Details</h2>
+</div>
+<span class="material-symbols-outlined text-primary">expand_less</span>
+</div>
+<div class="p-6 space-y-8 bg-surface-container-lowest">
+<!-- Map Section -->
+<div class="space-y-4">
+<div class="flex justify-between items-end">
+<div>
+<p class="label-text text-[11px] font-semibold uppercase tracking-wider text-outline mb-1">Geographic Boundary</p>
+<h3 class="font-bold text-on-surface">Plot Overlay</h3>
+</div>
+<button class="flex items-center gap-2 text-sm font-semibold text-secondary hover:bg-secondary-container/20 px-3 py-1.5 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-sm">edit_square</span>
+                            Redraw Boundary
+                        </button>
+</div>
+<div class="relative h-64 w-full rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover grayscale-[20%] brightness-90" data-alt="Aerial topographic view of a rectangular plot of green farmland surrounded by forest with a thin emerald boundary line highlight" data-location="Northern California Highlands" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDHTn1l61Hisk3gc_HoZaNP3hkErKkEuQviRkAic5uEiq1T0RJWCWgOJ7Elk8p7CbyvdlSsjIlp4fKf9R8TKoaBq-FriOZkD5_UxsblklGSS72JP12g390Hajeo3nHZmUlF40vNCKLN16Bs1RaXh32tSAWLLs5c_xKhjZ70xfRpE2ss9xK5vZB7yHrUn-aZPRJm_VVCOLEybjuQ0fxyTQLK_cT8QmxrOfRkmLvqLRvjzwUKf-QRToG6CScxF106fvFtmjNw7xa441b"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-primary border-4 border-white shadow-xl flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-white animate-pulse"></div>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur p-3 rounded-lg shadow-lg flex items-center gap-3">
+<div class="text-xs">
+<p class="label-text text-outline uppercase font-bold text-[10px]">Coordinates</p>
+<p class="font-mono text-on-surface">39.7392° N, 104.9903° W</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Fields -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="label-text text-[12px] font-bold text-outline uppercase tracking-wide px-1">Street Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-medium placeholder:text-outline-variant" type="text" value="742 Evergreen Terrace"/>
+</div>
+<div class="space-y-2">
+<label class="label-text text-[12px] font-bold text-outline uppercase tracking-wide px-1">Acreage</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-medium" type="text" value="42.5"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 label-text text-outline font-medium">Acres</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="label-text text-[12px] font-bold text-outline uppercase tracking-wide px-1">City / Township</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-medium" type="text" value="Springfield"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="label-text text-[12px] font-bold text-outline uppercase tracking-wide px-1">State</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-medium" type="text" value="OR"/>
+</div>
+<div class="space-y-2">
+<label class="label-text text-[12px] font-bold text-outline uppercase tracking-wide px-1">Zip Code</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-medium" type="text" value="97401"/>
+</div>
+</div>
+</div>
+<div class="pt-4 flex items-start gap-3 p-4 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary">info</span>
+<p class="text-xs text-on-surface-variant leading-relaxed">The location data is automatically synchronized with public land registries. Adjustments to the boundary may require document verification.</p>
+</div>
+</div>
+</section>
+<!-- Collapsed: Media & Photos -->
+<section class="bg-surface-container-low rounded-xl overflow-hidden group hover:bg-surface-container transition-colors cursor-pointer">
+<div class="px-6 py-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">photo_library</span>
+</div>
+<h2 class="text-on-surface font-semibold text-lg">Media &amp; Photos</h2>
+</div>
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</section>
+<!-- Collapsed: Pricing & Availability -->
+<section class="bg-surface-container-low rounded-xl overflow-hidden group hover:bg-surface-container transition-colors cursor-pointer">
+<div class="px-6 py-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">payments</span>
+</div>
+<h2 class="text-on-surface font-semibold text-lg">Pricing &amp; Availability</h2>
+</div>
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</section>
+<!-- Collapsed: Legal & Documents -->
+<section class="bg-surface-container-low rounded-xl overflow-hidden group hover:bg-surface-container transition-colors cursor-pointer">
+<div class="px-6 py-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">gavel</span>
+</div>
+<h2 class="text-on-surface font-semibold text-lg">Legal &amp; Documents</h2>
+</div>
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</section>
+</main>
+<!-- Bottom Action Bar (Sticky) -->
+<div class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-2xl border-t border-outline-variant/10 px-6 py-6 z-40">
+<div class="max-w-4xl mx-auto flex items-center justify-between gap-6">
+<div class="hidden md:block">
+<p class="label-text text-[10px] font-bold text-outline uppercase tracking-[0.1em]">Last Autosave</p>
+<p class="text-sm font-medium text-on-surface-variant">Today at 2:45 PM</p>
+</div>
+<div class="flex-1 md:flex-none flex gap-4">
+<button class="flex-1 md:flex-none px-8 py-4 rounded-xl font-bold text-on-surface-variant hover:bg-surface-container transition-colors border border-outline-variant/20">
+                    Discard
+                </button>
+<button class="flex-1 md:flex-none px-12 py-4 rounded-xl font-bold text-on-primary bg-gradient-to-br from-primary to-primary-container shadow-lg shadow-primary/20 active:scale-95 transition-all">
+                    Save Changes
+                </button>
+</div>
+</div>
+</div>
+<!-- BottomNavBar (Mobile Shell Only) -->
+<nav class="md:hidden bg-white/80 backdrop-blur-2xl fixed bottom-0 w-full z-50 border-t border-slate-200/20 hidden">
+<div class="flex justify-around items-center w-full pt-3 pb-8 px-4">
+<div class="flex flex-col items-center justify-center text-slate-400">
+<span class="material-symbols-outlined">explore</span>
+<span class="label-text text-[11px] font-medium uppercase tracking-wider mt-1">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400">
+<span class="material-symbols-outlined">map</span>
+<span class="label-text text-[11px] font-medium uppercase tracking-wider mt-1">Map</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#002d1c] relative after:content-[''] after:absolute after:bottom-[-4px] after:w-1 after:h-1 after:bg-[#002d1c] after:rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">landscape</span>
+<span class="label-text text-[11px] font-medium uppercase tracking-wider mt-1">Portfolio</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400">
+<span class="material-symbols-outlined">person</span>
+<span class="label-text text-[11px] font-medium uppercase tracking-wider mt-1">Account</span>
+</div>
+</div>
+</nav>
+</body></html>
