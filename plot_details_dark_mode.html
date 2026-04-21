@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#02161d",
+                    "primary-fixed-dim": "#85d7ad",
+                    "tertiary-fixed-dim": "#e1c291",
+                    "on-tertiary-container": "#796138",
+                    "surface-container-lowest": "#001017",
+                    "surface-tint": "#85d7ad",
+                    "inverse-primary": "#0f6c49",
+                    "secondary": "#adceba",
+                    "on-secondary": "#193628",
+                    "on-tertiary-fixed-variant": "#59431d",
+                    "inverse-on-surface": "#20333b",
+                    "on-secondary-fixed": "#032014",
+                    "on-surface-variant": "#bec9c0",
+                    "on-tertiary": "#402d09",
+                    "on-background": "#d1e6f0",
+                    "on-secondary-container": "#9cbda9",
+                    "on-tertiary-fixed": "#271900",
+                    "on-primary-fixed": "#002113",
+                    "on-primary": "#003824",
+                    "tertiary-fixed": "#ffdeab",
+                    "error-container": "#93000a",
+                    "surface-container-highest": "#24373f",
+                    "secondary-fixed-dim": "#adceba",
+                    "surface-container-low": "#0a1e25",
+                    "secondary-container": "#304d3d",
+                    "on-primary-container": "#1a724f",
+                    "surface-container-high": "#192d34",
+                    "on-error": "#690005",
+                    "on-secondary-fixed-variant": "#304d3d",
+                    "on-primary-fixed-variant": "#005235",
+                    "outline-variant": "#3f4943",
+                    "error": "#ffb4ab",
+                    "surface-dim": "#02161d",
+                    "tertiary": "#ffffff",
+                    "on-error-container": "#ffdad6",
+                    "primary": "#ffffff",
+                    "inverse-surface": "#d1e6f0",
+                    "on-surface": "#d1e6f0",
+                    "surface-container": "#0e2229",
+                    "primary-container": "#a1f4c8",
+                    "tertiary-container": "#ffdeab",
+                    "surface": "#02161d",
+                    "secondary-fixed": "#c9ead5",
+                    "surface-bright": "#293c44",
+                    "primary-fixed": "#a1f4c8",
+                    "surface-variant": "#24373f",
+                    "outline": "#89938b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .glass-effect { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed-dim selection:text-on-primary-fixed min-h-screen pb-24">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-[#02161d]/80 backdrop-blur-xl bg-gradient-to-b from-[#02161d] to-transparent shadow-[0_20px_50px_rgba(0,16,23,0.3)]">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#a1f4c8] active:opacity-80 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-black tracking-widest text-[#a1f4c8] uppercase font-['Manrope']">TERRA NOVA</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8 text-[#bec9c0] font-bold text-sm tracking-widest">
+<a class="text-[#a1f4c8] transition-colors" href="#">EXPLORE</a>
+<a class="hover:text-[#a1f4c8] transition-colors" href="#">PORTFOLIO</a>
+<a class="hover:text-[#a1f4c8] transition-colors" href="#">ANALYSIS</a>
+</nav>
+<button class="text-[#a1f4c8] active:opacity-80 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[751px] w-full overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Lush valley at sunset" class="w-full h-full object-cover" data-alt="expansive aerial view of a verdant valley with rolling hills at twilight, cinematic lighting with emerald green highlights and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUsPknvPFX2O6qjub4tzen6_4_Ctisq_F3jGlVoAIWFrSUcgIVUz4q6mjQBBrCqhv7QhqS8FaujxKANzLSDsxkh838PBBcaCV8ydoFuh2sOfDgMv34LcQY6-6gMrDAnLzAUcNaaox7QJKje4VoQXGkJU_ektzpkgBP902XqgZT8BTwgZ9UGv368smAo0bK98fDayHy1WFvRn850pQGMDp5-oRoZexPtuCm_JBO59iXgV8KtBwDBO-AJnVvBMdYH-UZQRq0828o63bl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 h-full flex flex-col justify-end px-6 md:px-12 pb-16 max-w-7xl mx-auto">
+<div class="space-y-4 max-w-3xl">
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold tracking-[0.1em] rounded-md uppercase">AVAILABLE</span>
+<span class="px-3 py-1 bg-surface-bright/40 glass-effect text-[#a1f4c8] text-[10px] font-bold tracking-[0.1em] rounded-md uppercase">PREMIUM PLOT</span>
+</div>
+<h2 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-none">Emerald Ridge <br/><span class="text-primary-fixed">Estate 04</span></h2>
+<p class="text-on-surface-variant body-lg max-w-xl leading-relaxed">A pristine parcel of high-altitude land featuring ancient rock formations and panoramic sunset views over the valley floor.</p>
+</div>
+</div>
+<!-- Coordinate HUD -->
+<div class="absolute bottom-16 right-6 md:right-12 z-20 hidden lg:block">
+<div class="bg-surface-bright/60 glass-effect p-6 rounded-xl border border-outline-variant/20 shadow-2xl space-y-3">
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant font-bold tracking-widest uppercase">LATITUDE</span>
+<span class="text-primary-fixed font-mono text-lg">34.0522° N</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant font-bold tracking-widest uppercase">LONGITUDE</span>
+<span class="text-primary-fixed font-mono text-lg">118.2437° W</span>
+</div>
+<div class="pt-2 border-t border-outline-variant/10">
+<span class="text-[10px] text-on-surface-variant font-bold tracking-widest uppercase">ELEVATION</span>
+<span class="text-white font-mono block">1,420 FT</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats & Action Grid -->
+<section class="px-6 md:px-12 -mt-12 relative z-30 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Price Card -->
+<div class="md:col-span-2 bg-surface-container-high rounded-xl p-8 flex flex-col md:flex-row justify-between items-center gap-8 shadow-2xl border-l-4 border-primary-fixed">
+<div>
+<span class="text-[10px] text-on-surface-variant font-bold tracking-[0.2em] uppercase">MARKET VALUE</span>
+<div class="flex items-baseline gap-2">
+<span class="text-5xl font-black text-white">$1.2M</span>
+<span class="text-on-surface-variant body-lg">USD</span>
+</div>
+<p class="text-primary-fixed-dim text-sm font-semibold mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="trending_up">trending_up</span>
+                            +12.4% Est. Annual Growth
+                        </p>
+</div>
+<button class="w-full md:w-auto px-10 py-5 bg-gradient-to-br from-primary-fixed to-primary-fixed-dim text-on-primary-fixed font-bold rounded-full text-lg shadow-[0_0_20px_rgba(161,244,200,0.3)] hover:scale-[1.02] transition-transform active:scale-95">
+                        Contact Owner
+                    </button>
+</div>
+<!-- Acreage Card -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col justify-center border border-outline-variant/10">
+<span class="text-[10px] text-on-surface-variant font-bold tracking-[0.2em] uppercase">TOTAL AREA</span>
+<div class="flex items-baseline gap-2">
+<span class="text-5xl font-black text-white">42.5</span>
+<span class="text-on-surface-variant body-lg">Acres</span>
+</div>
+<div class="mt-4 flex gap-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[#a1f4c8] text-sm" data-icon="landscape">landscape</span>
+<span class="text-xs text-on-surface-variant font-bold">FLATLAND 30%</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[#a1f4c8] text-sm" data-icon="forest">forest</span>
+<span class="text-xs text-on-surface-variant font-bold">WOODED 70%</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Details Bento Grid -->
+<section class="px-6 md:px-12 py-20 max-w-7xl mx-auto space-y-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Topo Details -->
+<div class="lg:col-span-7 space-y-12">
+<div class="space-y-4">
+<h3 class="text-sm font-bold text-primary-fixed tracking-[0.3em] uppercase">Topographic Details</h3>
+<p class="text-3xl font-bold text-white leading-tight">Precision analysis of terrain, soil quality, and utility access points.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/10">
+<div class="bg-background py-8 pr-8 space-y-2">
+<span class="text-[10px] font-black text-on-surface-variant tracking-widest uppercase">SOIL PROFILE</span>
+<p class="text-on-surface">Loamy silt with deep root penetration capacity. Ideal for sustainable orchard development or vineyard cultivation.</p>
+</div>
+<div class="bg-background py-8 pl-0 md:pl-8 space-y-2">
+<span class="text-[10px] font-black text-on-surface-variant tracking-widest uppercase">WATER ACCESS</span>
+<p class="text-on-surface">Subterranean aquifer access confirmed at 140ft. Dual natural spring outlets located in the northern quadrant.</p>
+</div>
+<div class="bg-background py-8 pr-8 space-y-2">
+<span class="text-[10px] font-black text-on-surface-variant tracking-widest uppercase">ZONING CODE</span>
+<p class="text-on-surface">R-1 Low-Density Residential. Approved for singular luxury residence or boutique agricultural operation.</p>
+</div>
+<div class="bg-background py-8 pl-0 md:pl-8 space-y-2">
+<span class="text-[10px] font-black text-on-surface-variant tracking-widest uppercase">POWER GRID</span>
+<p class="text-on-surface">Main line connection available at the property boundary. High solar potential (Avg 280 sunny days/yr).</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Map Preview -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-highest rounded-xl overflow-hidden shadow-2xl group">
+<div class="p-6 flex justify-between items-center border-b border-outline-variant/10">
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">SURVEYOR OVERLAY</span>
+<button class="text-primary-fixed text-sm font-bold flex items-center gap-1">
+                                FULL MAP
+                                <span class="material-symbols-outlined text-sm" data-icon="open_in_full">open_in_full</span>
+</button>
+</div>
+<div class="h-[400px] bg-surface-container-low relative">
+<img alt="Topographic map" class="w-full h-full object-cover opacity-50 grayscale contrast-125" data-alt="detailed monochromatic topographic map with glowing emerald contour lines and data overlays representing land borders" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF_cg2WS-Pk2ZuuCN-EDTzP4VO1_kRR-YKOptebL3SjdeJQ6y6KXh2oHWlmwV5PUNpbYHJjgtgvZT3XALd0PJlpGnoZhZn0Lc3NjmA_s1WtTGYsFxXclvaLFcf0seHP1mLThyMneExyRTjVw3IIzxKkVwXBs969Z-UN7NMz5PZq7itePDKtI2eD0sic1LG3ynEvksw1fOlO19XAEQMI8r7ZKtKlo5NRCytPVDmnSGSQEaMX2iH1RrPIKZ9ng2-v-2ktTTdiFPLjYH0"/>
+<!-- Overlay UI elements -->
+<div class="absolute inset-0 p-8 flex flex-col justify-between pointer-events-none">
+<div class="flex justify-between">
+<div class="w-12 h-12 border-t-2 border-l-2 border-primary-fixed/40"></div>
+<div class="w-12 h-12 border-t-2 border-r-2 border-primary-fixed/40"></div>
+</div>
+<div class="self-center">
+<span class="material-symbols-outlined text-primary-fixed text-4xl" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="flex justify-between">
+<div class="w-12 h-12 border-b-2 border-l-2 border-primary-fixed/40"></div>
+<div class="w-12 h-12 border-b-2 border-r-2 border-primary-fixed/40"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full rounded-t-[1.5rem] z-50 bg-[#02161d]/90 backdrop-blur-md border-t border-[#a1f4c8]/10 shadow-[0_-10px_40px_rgba(0,16,23,0.5)] md:hidden">
+<div class="flex justify-around items-center w-full px-4 pb-6 pt-3">
+<button class="flex flex-col items-center justify-center text-[#a1f4c8] bg-[#a1f4c8]/10 rounded-2xl px-4 py-1 active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-wider mt-1">Explore</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#bec9c0] opacity-60 hover:opacity-100 hover:text-[#a1f4c8] transition-all active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-wider mt-1">Saved</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#bec9c0] opacity-60 hover:opacity-100 hover:text-[#a1f4c8] transition-all active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-wider mt-1">Inquiries</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#bec9c0] opacity-60 hover:opacity-100 hover:text-[#a1f4c8] transition-all active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-wider mt-1">Profile</span>
+</button>
+</div>
+</nav>
+</body></html>

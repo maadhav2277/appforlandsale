@@ -1,86 +1,105 @@
-```markdown
-# Design System Document: The Topographic Editorial
+# Design System Document: The Nocturnal Surveyor
 
-## 1. Overview & Creative North Star: "The Digital Surveyor"
-This design system moves away from the cluttered, transactional nature of traditional real estate platforms. Our Creative North Star is **"The Digital Surveyor."** We treat land not as a commodity, but as a destination. The aesthetic is rooted in high-end editorial layouts—think *Kinfolk* meets *National Geographic*. 
+## 1. Overview & Creative North Star
+**Creative North Star: The Nocturnal Cartographer**
 
-We achieve this through **Organic Asymmetry** and **Tonal Depth**. Instead of rigid grids and harsh borders, we use expansive white space and "layered landscapes" to guide the user. The experience should feel as stable as the ground itself, yet as fluid as a natural horizon.
+This design system is built for the "Nocturnal Surveyor"—an aesthetic that marries the precision of high-end surveying equipment with the quiet, atmospheric depth of a moonlit landscape. We are moving away from the "generic SaaS" look. Instead, we are leaning into a **High-End Editorial** experience. 
+
+The goal is to make the user feel like they are operating a premium, specialized tool for land acquisition. We achieve this through:
+*   **Intentional Asymmetry:** Breaking the 12-column grid to create a sense of discovery.
+*   **Tonal Depth:** Replacing borders with sophisticated layer stacking.
+*   **Luminous Accents:** Using our signature emerald palette to "illuminate" key data points against an obsidian void.
 
 ---
 
-## 2. Colors: The Earth & Atmosphere
-Our palette is a sophisticated interplay of deep forest pigments and airy slate tones.
+## 2. Colors
+Our palette is a study in high-contrast elegance. We utilize deep obsidian tones for stability and luminous emerald for action.
 
 ### The "No-Line" Rule
-**Prohibition:** 1px solid borders are strictly forbidden for sectioning. 
-**Execution:** Boundaries must be defined through background color shifts. A section using `surface-container-low` should sit directly against the `background` to create a soft, natural break. Use vertical white space to define "rooms" within the layout.
+To maintain a premium, bespoke feel, **1px solid borders are strictly prohibited for sectioning.** We do not use "boxes" to separate content. Boundaries must be defined through:
+1.  **Background Color Shifts:** Placing a `surface_container_low` element against a `surface` background.
+2.  **Strategic Spacing:** Using whitespace to imply containment.
+3.  **Tonal Transitions:** Subtle shifts between obsidian shades.
 
 ### Surface Hierarchy & Nesting
-Treat the UI as physical layers of vellum.
-- **Base:** `background` (#f3faff) for the vast majority of the canvas.
-- **The Nested Stack:** Place a `surface-container-lowest` (#ffffff) card on top of a `surface-container-low` (#e6f6ff) section. This creates a "lifted" effect that feels intentional and premium.
-- **Glassmorphism:** For floating map controls or navigation bars, use `surface` with a 70% opacity and a `24px` backdrop-blur. This allows the property imagery or map textures to bleed through, maintaining a sense of place.
+Treat the UI as a series of physical layers. We use the surface-container tiers to create depth:
+*   **Background (`#02161d`):** The base level.
+*   **Surface Container Lowest (`#001017`):** Used for "sunken" elements like search bars or secondary content.
+*   **Surface Container High (`#192d34`):** Used for prominent interactive cards that need to "lift" toward the user.
 
-### Signature Textures
-- **The Horizon Gradient:** For Hero CTAs and primary buttons, use a subtle linear gradient from `primary` (#002d1c) to `primary_container` (#00452e) at a 135-degree angle. This adds "visual soul" and depth that flat hex codes lack.
-
----
-
-## 3. Typography: Authority & Clarity
-We utilize a dual-sans-serif approach to balance editorial character with functional precision.
-
-- **The Voice (Manrope):** Our primary typeface for `display`, `headline`, and `title` scales. Manrope’s geometric yet warm proportions evoke modern stability.
-    - *Editorial Note:* Use `display-lg` (3.5rem) with tighter letter-spacing (-0.02em) for property names to create an authoritative, "magazine cover" feel.
-- **The Utility (Inter):** Reserved for `label-md` and `label-sm`. Inter provides maximum legibility for technical data like acreage, coordinates, and price-per-square-foot.
-- **Hierarchy as Brand:** Use high contrast between `headline-lg` (2rem) in `primary` and `body-md` (0.875rem) in `on_surface_variant`. This ensures the brand "shouts" its confidence while the details "whisper" their data.
+### The "Glass & Gradient" Rule
+Standard flat colors feel "out-of-the-box." To elevate the experience:
+*   **Luminous CTAs:** Main buttons should use a gradient from `primary_fixed` (`#a1f4c8`) to `primary_fixed_dim` (`#85d7ad`) at a 135-degree angle.
+*   **Surveyor Glass:** Floating navigation bars or modal overlays must use `surface_bright` with a 12px `backdrop-blur` and 60% opacity. This creates a "frosted lens" effect consistent with professional optical equipment.
 
 ---
 
-## 4. Elevation & Depth: Tonal Layering
-Traditional drop shadows are too "digital." We prefer **Atmospheric Perspective.**
+## 3. Typography
+We use **Manrope** exclusively. Its geometric yet approachable form fits the "Professional Surveyor" persona perfectly.
 
-- **The Layering Principle:** Stack `surface-container` tiers. A sidebar should be `surface-container-high` (#ccedfe) against a `surface` map background. 
-- **Ambient Shadows:** For floating elements like a property preview card on a map, use a custom shadow: `0px 20px 40px rgba(0, 31, 41, 0.06)`. Note the color—it’s a tinted version of `on-surface`, not pure black.
-- **The Ghost Border:** If a boundary is required for accessibility in forms, use `outline-variant` (#c1c8c2) at **15% opacity**. It should be felt, not seen.
+*   **Display & Headlines:** Use `display-lg` (3.5rem) for hero sections with intentional negative letter-spacing (-0.02em). These are our "Editorial Statements."
+*   **The Power of Labels:** `label-md` and `label-sm` should be used for metadata (coordinates, acreage, price). These should often be in ALL CAPS with a slight tracking increase (+0.05em) to mimic the technical readout of a surveyor’s tool.
+*   **Body Copy:** Use `body-lg` for descriptions. Ensure line heights are generous (1.6) to allow the deep background colors to "breathe" through the text.
 
 ---
 
-## 5. Components: Functional Elegance
+## 4. Elevation & Depth
+In this system, depth is a function of light and shadow, not lines.
 
-### Property Cards
-- **No Dividers:** Separate the image, title, and price using padding alone (referencing the `xl` 0.75rem roundedness for the container).
-- **Background Shift:** Use `surface-container-lowest` for the card body to make it "pop" against the `surface-container-low` page background.
+### The Layering Principle
+Depth is achieved by "stacking" the surface-container tiers. For instance:
+1.  **Level 0:** `background`
+2.  **Level 1:** `surface_container_low` (The Section)
+3.  **Level 2:** `surface_container_highest` (The Card)
 
-### Map Markers & Boundary Tools
-- **The "Pin":** Use a `primary` (#002d1c) circular glyph with a thick `on_primary` border. When active, it should expand and glow with a `secondary_container` (#a1f4c8) halo.
-- **Boundary Drawing:** Lines should be drawn using `secondary` (#116c4a) with a 2px width. The enclosed area should have a 10% opacity fill of `primary_fixed` (#b1f0ce) to simulate a "highlighted plot."
+### Ambient Shadows
+When an element must float (e.g., a property detail modal), use a "Nocturnal Shadow":
+*   **Blur:** 40px to 60px.
+*   **Opacity:** 15%.
+*   **Color:** Use the `surface_container_lowest` (`#001017`) color rather than black. This ensures the shadow feels like a natural occlusion of light in an emerald-tinted environment.
+
+### The "Ghost Border" Fallback
+If a border is required for extreme accessibility or data-heavy grids, use a **Ghost Border**:
+*   **Token:** `outline_variant` at 20% opacity. 
+*   **Rule:** Never use a 100% opaque border.
+
+---
+
+## 5. Components
 
 ### Buttons
-- **Primary:** Gradient fill (`primary` to `primary_container`), `on_primary` text, `xl` roundedness.
-- **Secondary:** No fill. A `Ghost Border` (15% `outline`) and `on_secondary_container` text.
-- **Tertiary:** Pure text-link style using `on_primary_fixed_variant` with a 2px underline that appears only on hover.
+*   **Primary:** Rounded `full`. Background: `primary_container` (`#a1f4c8`). Text: `on_primary_container` (`#1a724f`). Add a subtle outer glow (4px blur) of the same color on hover.
+*   **Secondary:** Rounded `full`. Background: `transparent`. Border: Ghost Border (`outline_variant` @ 30%). 
 
-### Inputs & Search
-- **The "Field-less" Search:** Use a `surface-container-highest` bar with no border. The "Search" icon should be `primary` to anchor the eye. 
-- **Error States:** Use `error` (#ba1a1a) text but ground the input in `error_container` (#ffdad6) to soften the visual "alarm."
+### Cards & Property Lists
+*   **Rule:** No dividers. Use `surface_container_low` for the card body. 
+*   **Interaction:** On hover, shift the card background to `surface_container_high` and apply a `primary_fixed` (emerald) left-accent bar (4px width).
+
+### Input Fields
+*   **Visual:** "Sunken" appearance. Use `surface_container_lowest`. 
+*   **Focus State:** Do not just change the border color. Apply a subtle internal glow and change the label color to `primary_fixed`.
+
+### Surveyor Chips
+*   Used for land status (e.g., "Available", "Pending"). 
+*   Use `secondary_container` with `on_secondary_container` text. Keep corners `md` (0.75rem) to differentiate from the `full` rounded buttons.
+
+### Specialized Component: The Coordinate HUD
+*   A custom floating element for land coordinates.
+*   **Style:** `surface_bright` with `backdrop-blur`. Use `label-sm` in emerald for the data. This reinforces the "Nocturnal Surveyor" vibe.
 
 ---
 
 ## 6. Do’s and Don’ts
 
 ### Do:
-- **Do** use `surface-container` shifts to create sections.
-- **Do** allow imagery to take up 60% of the screen in property details; the land is the hero.
-- **Do** use `xl` (0.75rem) corners for large containers and `md` (0.375rem) for smaller interactive elements like chips.
+*   **Do** use asymmetrical layouts. Place a high-contrast `display-lg` title overlapping a `surface_container_high` image block.
+*   **Do** use emerald (`primary_fixed`) sparingly. It is a high-intensity signal; use it for calls to action and critical data points only.
+*   **Do** leverage the `rounded-xl` (1.5rem) corner radius for large containers to soften the high-contrast professional vibe.
 
 ### Don’t:
-- **Don’t** use black (#000000) for text. Always use `on_surface` (#001f29) to keep the palette organic.
-- **Don’t** use 1px solid borders to separate list items. Use 16px of vertical spacing instead.
-- **Don’t** use harsh "Material Design" ripples. Use soft opacity fades (e.g., 100% to 80%) for hover states to maintain the premium feel.
+*   **Don’t** use pure white (`#ffffff`) for body text. Use `on_surface_variant` (`#bec9c0`) to reduce eye strain in dark mode.
+*   **Don’t** use standard 1px dividers to separate list items. Use 16px of vertical whitespace or a 1-step shift in surface color.
+*   **Don’t** use vibrant "Error Red" indiscriminately. Use the `error_container` (`#93000a`) sparingly so it doesn't clash with the emerald palette.
 
 ---
-
-## 7. Accessibility
-- All text must maintain a 4.5:1 contrast ratio against its respective `surface` tier.
-- Interactive targets (buttons, markers) must be at least 44x44px.
-- Use `label-sm` (Inter) for fine print, but never go below `0.6875rem` to ensure legibility for older demographics often found in land investment.
+**Director's Note:** This system is about the balance between the "void" (the dark background) and the "signal" (the emerald data). If a screen feels too busy, remove a container and let the typography do the work. If it feels too flat, add a layer of `surface_container_high`.
