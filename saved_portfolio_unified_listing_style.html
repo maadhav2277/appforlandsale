@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#bedfef",
+                    "surface": "#f3faff",
+                    "surface-variant": "#c6e8f8",
+                    "outline-variant": "#c1c8c2",
+                    "on-tertiary-fixed": "#092012",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#123441",
+                    "secondary-fixed": "#a1f4c8",
+                    "secondary-container": "#a1f4c8",
+                    "primary-container": "#00452e",
+                    "secondary": "#116c4a",
+                    "inverse-on-surface": "#dff4ff",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#95d4b3",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "tertiary-fixed": "#cee9d3",
+                    "on-surface-variant": "#414844",
+                    "on-background": "#001f29",
+                    "on-secondary-fixed-variant": "#005236",
+                    "surface-tint": "#2c694e",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#d8f2ff",
+                    "primary-fixed-dim": "#95d4b3",
+                    "surface-container-low": "#e6f6ff",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#76b394",
+                    "outline": "#717973",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#b1f0ce",
+                    "on-tertiary-container": "#93ad98",
+                    "on-tertiary-fixed-variant": "#354c3b",
+                    "background": "#f3faff",
+                    "surface-bright": "#f3faff",
+                    "surface-container-high": "#ccedfe",
+                    "tertiary": "#152b1c",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#001f29",
+                    "on-secondary-fixed": "#002113",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#c6e8f8",
+                    "tertiary-fixed-dim": "#b3cdb7",
+                    "primary": "#002d1c",
+                    "on-secondary-container": "#1b724f",
+                    "on-primary-fixed": "#002114",
+                    "secondary-fixed-dim": "#86d7ad",
+                    "tertiary-container": "#2a4131"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-horizon-gradient {
+            background: linear-gradient(135deg, #002d1c 0%, #00452e 100%);
+        }
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/70 backdrop-blur-xl">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-900" data-icon="landscape">landscape</span>
+</div>
+<h1 class="text-xl font-extrabold tracking-[0.2em] text-emerald-900 font-headline">TERRA NOVA</h1>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-900" data-icon="search">search</span>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-5xl mx-auto">
+<!-- Editorial Header -->
+<section class="mb-8">
+<p class="font-label text-xs uppercase tracking-widest text-on-secondary-container mb-2">Collection</p>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary tracking-tight leading-none mb-4">Saved Portfolio</h2>
+<p class="text-on-surface-variant max-w-md">Curated land opportunities, from fertile valleys to secluded forest ridges.</p>
+</section>
+<!-- Tabs Section -->
+<div class="flex gap-4 mb-10 bg-surface-container-low p-1.5 rounded-full w-fit">
+<button class="px-8 py-2.5 rounded-full text-sm font-label font-semibold bg-primary text-on-primary shadow-lg shadow-primary/20">
+                    Listings
+                </button>
+<button class="px-8 py-2.5 rounded-full text-sm font-label font-semibold text-on-surface-variant hover:bg-surface-container transition-colors">
+                    Agents
+                </button>
+</div>
+<!-- Hybrid Layout - Updated with straight corners and premium styling -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8">
+<!-- Large Hero Card (Card 1) -->
+<div class="md:col-span-8 bg-surface-container-low overflow-hidden group shadow-sm border border-outline-variant/30">
+<div class="relative h-96 w-full overflow-hidden">
+<img alt="Emerald Valley Estate" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Aerial view of a sprawling green meadow surrounded by ancient oak trees during a golden sunset, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHzGF2sAqL-9mtPtiavuA-abBOieLGDt0cNntPGx_i9GwgdWL_ByeZcfDf2aIcD9hsuem2q8wBrGGZmTQPg4yJVxlAmeJToyFzlJrVfOXv51hsV1gfd_6ZfZ8mzrKe1lcxUWobv2DZr7nvngT1MzhgR272TJx34R20Snojah7PwuMKyt3kIqe_zTvZLllfu3TTGlpJE3G4K6Sc9SjjWgpVWcftaEvVUq-2PdQbrhxHY0LimlZLEGxq61YQJSEM1sO_cgODdxWPfXxH"/>
+<div class="absolute top-4 right-4 bg-surface-container-lowest/80 backdrop-blur-md p-2 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary text-on-primary font-label text-[10px] px-3 py-1 rounded-none uppercase tracking-wider">Premium Listing</span>
+</div>
+</div>
+<div class="p-8 bg-surface-container-lowest">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-headline font-bold text-on-surface">Emerald Valley Estate</h3>
+<p class="text-xl font-headline font-bold text-secondary">$1,200,000</p>
+</div>
+<div class="flex gap-6 text-on-surface-variant font-label text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">square_foot</span> 42.5 Acres</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">location_on</span> Sonoma, CA</span>
+</div>
+</div>
+</div>
+<!-- Side Card Stack (Cards 2 & 3) -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<!-- Small Card 2 -->
+<div class="bg-surface-container-low overflow-hidden group shadow-sm border border-outline-variant/30">
+<div class="relative h-48 w-full overflow-hidden">
+<img alt="Alpine Ridge Plot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High altitude mountain landscape with jagged peaks and a clear blue alpine lake, morning mist rising from the water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzsl37OATehFXRBaIL3YKJFJY8MofcHSPC1pAfhomQE10WqJ4dJ83Vmt4Qq1YT7dIcq3jhrf9e3-YxQs3ws1CAMTTOWIKsw0xkEFMA8l4qtpGi4ue42P150aASaXedTd5JRj191uW60audPcJmaSZ7p0Zn_FYeR37Mn_znhuMZXbbNUcL_MVoOaYdSlki-5ZhCI6gUsT7TCk3J0ZLBDR62jCfxXdhEY3RD5jPXFk8NxEGhkHlDLYWkxvuI4heeJbQfS5SlM4NkrMew"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/80 backdrop-blur-md p-1.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+</div>
+<div class="p-5 bg-surface-container-lowest">
+<h3 class="font-headline font-bold text-on-surface">Alpine Ridge Plot</h3>
+<p class="text-secondary font-label font-bold">$850,000</p>
+<p class="text-xs text-on-surface-variant mt-1 font-label">15.0 Acres • Aspen, CO</p>
+</div>
+</div>
+<!-- Small Card 3 -->
+<div class="bg-surface-container-low overflow-hidden group shadow-sm border border-outline-variant/30">
+<div class="relative h-48 w-full overflow-hidden">
+<img alt="The Mesa Sanctuary" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Vast desert landscape with red rock formations and sparse vegetation under a wide starry night sky, ethereal glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBszHzVPo1S7jnV70Inwafw3_VEETXI2WhKlT-NkJ8I2g1KHPsaDoy7LeO33oYkmrbfyZuGUYpOn1hUagTukyr9iidr5YHELd0bmM_FQ1CpIzEnM12m3X_gaRJjD4qH7ea7I6_gYrKaLoQbH-SG8EH-6DDXyNx1mya3H1F4H91ubZH6y0T5vmf7rYomTFpXWX-K4L3eWkWuMlzmQB-WVqXSkk7wKOZ0Z2I2jcIlB7Pj5jd69-IJTPOE-ULfT9EPE-6Z26Zr7do9PSt1"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/80 backdrop-blur-md p-1.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+</div>
+<div class="p-5 bg-surface-container-lowest">
+<h3 class="font-headline font-bold text-on-surface">The Mesa Sanctuary</h3>
+<p class="text-secondary font-label font-bold">$420,000</p>
+<p class="text-xs text-on-surface-variant mt-1 font-label">120.0 Acres • Sedona, AZ</p>
+</div>
+</div>
+</div>
+<!-- Bottom Row Horizontal Items -->
+<!-- List Item 1 -->
+<div class="md:col-span-6 bg-surface-container-low overflow-hidden flex shadow-sm group border border-outline-variant/30">
+<div class="w-1/3 h-full overflow-hidden">
+<img alt="Whispering Pines" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up of dense pine forest floor with dappled sunlight hitting ferns and moss, moody forest aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2gQlhBlH6pyZjUZHp53bo3P0s4VLXYiK1qddgaHFxAO7vV7MS309I8itx-7wXOgJC3N1I82_b0nrcQ7YGGAYiafkFSPqLTspQo8ld8WRH9L1gq4TUWDCtGZy6BPZ2niHdr86wB8wEdE4-fOKMaD788G6PbALAZmEY3LysM7B-Y0aWyVLExUVHDGyafvct9XRgSzflUUiwRdixCvKbFSXLvULszwneIfmDakfTaOHFLDDdo3hMVlyjnWW0heGpkge2pS1t5nPtQYoi"/>
+</div>
+<div class="w-2/3 p-6 bg-surface-container-lowest flex flex-col justify-center">
+<h3 class="font-headline font-bold text-lg text-on-surface">Whispering Pines</h3>
+<p class="text-on-surface-variant font-label text-xs mb-3">Ancient woodland preservation plot.</p>
+<div class="flex justify-between items-center">
+<p class="text-secondary font-bold">$215,000</p>
+<button class="text-on-primary-fixed-variant font-label text-xs font-semibold underline underline-offset-4 hover:opacity-70 transition-opacity">View Details</button>
+</div>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="md:col-span-6 bg-surface-container-low overflow-hidden flex shadow-sm group border border-outline-variant/30">
+<div class="w-1/3 h-full overflow-hidden">
+<img alt="Pacific Bluff Cove" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Rugged coastline with steep cliffs meeting the dark blue ocean waves, foggy morning atmospheric perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2ek7twTWbNqJ6zVm6oyPnLBGmSIyIlJ577byEGs4uimVrZ1BUtQbBC_cR8fA17t1M87M2aUQGfqXwmc0wLa3cTymp4DJJPJ_eL9d5gmT7e7XyRJlfJYn8wxn3SK490PZzMGA6aUbu1HD5_FWPPlo5yR3qTu3GUzPPL8w-9v0HBQYRuFUEjFJ5i1nOsNLSt8Cz_Ff5uST-GiWuClSa_9Nv59hxeusEPn1Ttl4EX7fsMYa73YLopw6Vt8cenI3gNkXW3sIdIuHCThDQ"/>
+</div>
+<div class="w-2/3 p-6 bg-surface-container-lowest flex flex-col justify-center">
+<h3 class="font-headline font-bold text-lg text-on-surface">Pacific Bluff Cove</h3>
+<p class="text-on-surface-variant font-label text-xs mb-3">Rugged coastline with steep cliffs.</p>
+<div class="flex justify-between items-center">
+<p class="text-secondary font-bold">$3,450,000</p>
+<button class="text-on-primary-fixed-variant font-label text-xs font-semibold underline underline-offset-4 hover:opacity-70 transition-opacity">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-slate-50/80 backdrop-blur-xl z-50 rounded-t-[2rem] shadow-[0_-10px_40px_rgba(0,31,41,0.06)]">
+<!-- Explore -->
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1 hover:text-emerald-800 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-label text-[11px] font-semibold tracking-wide uppercase">Explore</span>
+</a>
+<!-- Saved (Active) -->
+<a class="flex flex-col items-center justify-center text-emerald-900 bg-emerald-500/10 rounded-xl px-4 py-1 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span class="font-label text-[11px] font-semibold tracking-wide uppercase">Saved</span>
+</a>
+<!-- Inquiries -->
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1 hover:text-emerald-800 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-label text-[11px] font-semibold tracking-wide uppercase">Inquiries</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1 hover:text-emerald-800 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-label text-[11px] font-semibold tracking-wide uppercase">Profile</span>
+</a>
+</nav>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-6 md:bottom-12 md:right-12 w-16 h-16 rounded-full bg-horizon-gradient text-white flex items-center justify-center shadow-2xl hover:scale-105 active:scale-95 transition-all z-40">
+<span class="material-symbols-outlined text-2xl">add_location</span>
+</button>
+</body></html>
